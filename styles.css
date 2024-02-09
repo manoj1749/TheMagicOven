@@ -157,29 +157,32 @@ section {
     width: 380px;
     height: 391px;
     background-color: #D2CEC2;
+    border-radius: 18px;
 }
 .recipes{
-    margin-left: 20px;
-    justify-content: center;
+    /* margin-left: 20px; */
+    /* justify-content: center; */
     align-items: center;
 }
 
-.recipies {
-    /* padding-left: 140px; */
-    align-items: center;
-    justify-content: center;
-    /* display: grid; */
+.rounded-image {
+    border-radius: 18px; /* Adjust the value as needed */
 }
+
 
 .recipe_desc{
-    padding-left: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 320px;
+    padding-left: 5%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: left; */
+    /* align-items: left; */
+    /* text-align: left; */
+    /* max-width: 320px; */
 }
+/* .line {
+    border: 1px rgb(52, 52, 52); /* Adjust the properties as needed 
+    margin: 18px 0; Adjust the margin to control the space between the line and the content
+}  */
 
 .heading {
     position: relative;
@@ -219,8 +222,8 @@ section {
 
 /* Image */
 .testimonials .carousel-inner .carousel-item .team {
-    width: 100px;
-    height: 100px;
+    width: 72px;
+    height: 72px;
     border-radius: 100%;
     padding: 5px;
     margin: 50px 0 15px;
@@ -275,7 +278,7 @@ section {
 .stuff {
     justify-content: center;
     align-items: center;
-    gap: 10vh;
+    gap: 20vh;
     display: flex;
 }
 
@@ -289,4 +292,25 @@ section {
     display: flex;
     justify-content: space-between;
     height: 140px;
+
+}
+
+
+.toast-container {
+    display: flex;
+    align-items: center;
+}
+
+.toast-container span {
+    flex: 1; /* To make the text take up remaining space */
+}
+
+.toast-image {
+    float: right;
+}
+
+.vertical-line {
+    border-left: 1px #343434; /* Adjust the properties as needed */
+    height: 99px; /* Height of the vertical line */
+    margin: 0 20px; /* Adjust the margin to control spacing */
 }
