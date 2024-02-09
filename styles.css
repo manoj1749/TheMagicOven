@@ -4,17 +4,21 @@
     position: relative;
     align-items: center;
 }
-body{
-    padding-left: 5%;
-    padding-right: 5%;
+
+body {
+    display: grid;
     justify-content: center;
     align-items: center;
-    max-width: fit-content;
 }
 
-.navbar{
+section {
+    margin-top: 12%;
+}
+
+.navbar {
     color: #343434;
 }
+
 .nav-item {
     justify-content: center;
     font-family: "League Spartan";
@@ -27,4 +31,179 @@ body{
     justify-items: center;
     padding: 10px;
     max-height: 120px;
+}
+
+.favorites {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #DD7E1A;
+    height: 395px;
+    width: 285px;
+    border-radius: 19px;
+}
+
+.favorites_box {
+    background-color: #E1DDD2;
+    height: 195px;
+    width: 265px;
+    margin-left: 10px;
+}
+
+.favorites_text {
+    color: #FFF;
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.favorites_desc {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.selling-price {
+    color: #174542;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.recipe {
+    margin: 20px;
+    display: inline-grid;
+    width: 380px;
+    height: 391px;
+    background-color: #D2CEC2;
+}
+.recipies {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+.heading {
+    position: relative;
+}
+.testimonials {
+    color: #ffffff;
+    position: relative;
+}
+.testimonials:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+.testimonials .heading h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+
+.testimonials p {
+    color: #174542;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Image */
+.testimonials .carousel-inner .carousel-item .team {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 50px 0 15px;
+}
+
+.testimonials .carousel-inner .carousel-item h3 {
+    color: #1E1E1E;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.testimonials .carousel-inner .carousel-item h4 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #e2e1e1;
+    margin-bottom: 20px;
+}
+
+.testimonials .carousel-indicators {
+    bottom: -30px;
+}
+
+.testimonials .carousel-indicators li {
+    background-color: #b8b7b7;
+    border-radius: 30px;
+    height: 14px;
+    width: 14px;
+}
+
+.testimonials .carousel-indicators .active {
+    background-color: #ff0000;
+    border-radius: 100%;
+}
+
+.testimonials .control span {
+    cursor: pointer;
+}
+
+.testimonials .icon {
+    height: 40px;
+    width: 40px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    font-size: 30px;
+    background-image: none;
+    color: #ffffff;
+}
+
+.stuff{
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    display: flex;
+}
+.stuff_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
 }
