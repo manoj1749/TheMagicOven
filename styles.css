@@ -148,7 +148,7 @@ section {
 }
 
 .whyus{
-    padding-left: 130px;
+     /* padding-left: 100px; */
     max-height: 700px;
 }
 .recipe {
@@ -165,7 +165,7 @@ section {
 }
 
 .recipies {
-    padding-left: 140px;
+    /* padding-left: 140px; */
     align-items: center;
     justify-content: center;
     /* display: grid; */
