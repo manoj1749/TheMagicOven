@@ -1,0 +1,30 @@
+.home {
+    padding-top: 20vh;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+body{
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+}
+
+.navbar{
+    color: #343434;
+}
+.nav-item {
+    justify-content: center;
+    font-family: "League Spartan";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.logo {
+    justify-items: center;
+    padding: 10px;
+    max-height: 120px;
+}
