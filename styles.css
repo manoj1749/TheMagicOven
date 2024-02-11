@@ -1,8 +1,5 @@
 .home {
-    padding-top: 20vh;
-    justify-content: center;
-    /* position: relative; */
-    align-items: center;
+    margin-top: 20vh;
 }
 
 h1 {
@@ -19,44 +16,43 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 2vw;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-  }
-  
-  @media (max-width: 768px) {
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
     body {
         padding: 0 5vw;
-      }
-    
-      .favorites {
+    }
+
+    .favorites {
         margin-left: 5vw;
         margin-right: 5vw;
-      }
-    
-      .recipe,
-      .favorites_imgBox {
+    }
+
+    .recipe,
+    .favorites_imgBox {
         width: 100%;
         max-width: none;
-      }
-    
-      .navbar {
+    }
+
+    .navbar {
         max-height: none;
-      }
-    
-      .footer_right {
+    }
+
+    .footer_right {
         text-align: center;
-      }
-    
-      .footer_right ul {
+    }
+
+    .footer_right ul {
         text-align: center;
         list-style-type: none;
         padding: 0;
-      }
-  }
-  
+    }
+}
+
 
 section {
-    max-width: 3669px;
-    margin-top: 15vh;
+    padding-top: 3vh;
 }
 
 .buttons {
@@ -77,22 +73,54 @@ section {
     }
 }
 
-/* Initial state (navbar without shadow) */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #DD7E1A;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #DD7E1A;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 40%;
+}
+
+
 .navbar {
     background-color: #E1DDD2;
     color: #000000;
     max-height: 135px;
 }
 
-/* Add shadow on scroll using JavaScript/jQuery */
+.nav-link:active::after {
+    width: 40%;
+    color: #DD7E1A;
 
+}
 
-/* Shadow styles for the added class */
+.active .nav-link::after {
+    width: 60%;
+    color: #DD7E1A;
+}
+
+.nav-link:focus::after {
+    width: 40%;
+    color: #DD7E1A;
+}
+
 .navbar-shadow {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Nav link styles */
 .navbar a {
     color: #000000;
     justify-content: center;
@@ -103,12 +131,12 @@ section {
 
     &:hover {
         color: #DD7E1A;
+
     }
 }
 
 .nav-item {
     margin-right: 20px;
-    /* Adjust as needed */
     font-family: League Spartan;
     font-size: 20px;
     font-weight: 600;
@@ -118,8 +146,11 @@ section {
 
 }
 
+.navbar-nav {
+    align-items: center;
+}
 
-/* .nav-item {} */
+
 
 .logo {
     justify-items: center;
@@ -128,9 +159,7 @@ section {
 }
 
 .favorites {
-    margin-left: 20vw;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    margin: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -141,13 +170,14 @@ section {
     filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
 }
 
+
 .landingImg {
     max-width: fit-content;
     padding-left: 0;
 }
 
 .favorites_imgBox {
-    margin-top: 12px;
+    margin-top: 10px;
     padding-top: 10px;
     justify-content: center;
     align-items: center;
@@ -156,6 +186,7 @@ section {
     max-width: 260px;
     border-radius: 19px 19px 0 0
 }
+
 
 .favorites_img {
     height: 100%;
@@ -182,8 +213,16 @@ section {
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
+    line-height: 18.75px;
     font-style: normal;
     font-weight: 400;
+}
+
+
+.favorites .line {
+    border: 1px solid #FFFFFF;
+    width: 53px;
+
 }
 
 .mrp {
@@ -208,15 +247,15 @@ section {
 }
 
 .whyus {
-    /* padding-left: 100px; */
-    max-height: 700px;
+    margin-top: 15vh;
 }
 
-.WhyMagic{
-    padding-top: 5%;
+.WhyMagic {
+    margin-top: 12%;
 }
 
 .recipe {
+    text-align: start;
     margin: 20px;
     display: inline-grid;
     font-family: League Spartan;
@@ -225,56 +264,55 @@ section {
     background-color: #D2CEC2;
     border-radius: 18px;
 }
-.recipe span{
+
+.recipe span {
+
     font-weight: 600;
     font-size: 25px;
     line-height: 23px;
-    color:#174542;
+    color: #174542;
     font-family: League Spartan;
-
 }
-.recipe p{
+
+.recipe p {
     margin-right: 20px;
     font-family: Roboto;
-
-}
-
-
-.recipes {
-    /* margin-left: 20px; */
-    /* justify-content: center; */
-    align-items: center;
 }
 
 .rounded-image {
     border-radius: 18px;
-    /* Adjust the value as needed */
+    width: 100%;
 }
 
+
+.recipes {
+    align-items: center;
+}
 
 .recipe_desc {
     padding-left: 5%;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: left; */
-    /* align-items: left; */
-    /* text-align: left; */
-    /* max-width: 320px; */
 }
 
-/* .line {
-    border: 1px rgb(52, 52, 52); /* Adjust the properties as needed 
-    margin: 18px 0; Adjust the margin to control the space between the line and the content
-}  */
+
+
+.line {
+    border: 1px solid rgb(52, 52, 52);
+    margin: 10px 0;
+}
 
 .heading {
     position: relative;
 }
 
+
 /* .testimonials {
     color: #ffffff;
     position: relative;
 } */
+.testimonials .line {
+    border: 2px solid;
+    width: 30vw;
+}
 
 .testimonials .heading h2 {
     font-size: 25px;
@@ -292,6 +330,7 @@ section {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    width: 450px;
 }
 
 /* Image */
@@ -319,13 +358,12 @@ section {
     margin-bottom: 20px;
 }
 
-.testimonials .carousel-indicators {
-    bottom: -30px;
-}
+/* .testimonials .carousel-indicators {
+} */
 
 .testimonials .carousel-indicators li {
-    background-color: #b8b7b7;
-    border-radius: 30px;
+    background-color: #174542;
+    border-radius: 100%;
     height: 14px;
     width: 14px;
 }
@@ -333,11 +371,10 @@ section {
 .testimonials .carousel-indicators .active {
     background-color: #174542;
     border-radius: 100%;
+    height: 16px;
+    width: 16px;
 }
 
-.testimonials .control span {
-    cursor: pointer;
-}
 
 .testimonials .icon {
     height: 40px;
@@ -349,16 +386,11 @@ section {
     color: #ffffff;
 }
 
-.stuff {
-    justify-content: center;
-    align-items: center;
-    gap: 20vh;
-    display: flex;
-}
+
 
 .stuff_box {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -375,7 +407,6 @@ section {
 
 .toast-container span {
     flex: 1;
-    /* To make the text take up remaining space */
 }
 
 .toast-image {
@@ -384,11 +415,8 @@ section {
 
 .vertical-line {
     border-left: 1px #343434;
-    /* Adjust the properties as needed */
     height: 99px;
-    /* Height of the vertical line */
     margin: 0 20px;
-    /* Adjust the margin to control spacing */
 }
 
 .testimonials .heading h2 {
@@ -413,6 +441,7 @@ section {
 
 .whyus .carousel {
     max-width: 530px;
+    height: 240px;
     align-items: start;
     justify-content: start;
 }
@@ -427,7 +456,6 @@ section {
     line-height: 23.44px;
 }
 
-/* Image */
 
 .whyus .carousel-inner .carousel-item h3 {
     text-align: start;
@@ -444,7 +472,7 @@ section {
 .whyus .carousel-indicators {
     justify-content: start;
     margin: 0;
-    bottom: -20px;
+    bottom: -50px;
 }
 
 .whyus .carousel ol {
@@ -453,18 +481,17 @@ section {
 
 .whyus .carousel-indicators li {
     align-items: start;
-    background-color: #b8b7b7;
-    border-radius: 30px;
+    background-color: #174542;
+    border-radius: 100%;
     height: 14px;
     width: 14px;
 }
 
-.whyus .text-center{
-    text-align: start!important;
+.whyus .text-center {
+    text-align: start !important;
 }
 
 .whyus .carousel-indicators .active {
-    justify-content: start;
     background-color: #174542;
     border-radius: 100%;
 }
@@ -473,33 +500,38 @@ section {
     cursor: pointer;
 }
 
-.stuff h2{
+.stuff h2 {
     font-family: League Spartan;
     font-weight: 600;
     font-size: 30px;
     line-height: 27.6px;
 }
-.stuff p{
+
+.stuff p {
     font-family: Roboto;
     font-weight: 400;
     font-size: 20px;
     line-height: 23.6px;
 }
 
-.card_footer{
+.card_footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer_right p{
+.footer_right p {
     font-family: League Spartan;
     font-weight: 700;
     font-size: 20px;
     line-height: 18.4px;
 }
 
-.footer_right li{
+.card_footer {
+    width: 100%;
+}
+
+.footer_right li {
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
