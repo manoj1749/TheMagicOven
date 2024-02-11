@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
 
     </head>
 
@@ -67,28 +70,22 @@
 
                     </div>
                 </div>
-                <div class="col">
+                <div class="col landingImg">
                     <img src="./assets/Sourdough 1.png">
                 </div>
             </div>
-        </section>
-        <section class="customers_favorite" style="margin-left: 60px;"  >
-            <!-- <p class=""> 48 Hours Delivery Timeline</p> -->
+        </section>  
+        <section class="customers_favorite">
 
-
-            <!-- <div class="mb-xl-5 mt-0"
-                    style="position: absolute; opacity: 0.20; color: #ACACAC; font-size: 150px; font-family: League Spartan; font-weight: 500; left: 70vw;">
-                    Bakery</div> -->
-
-                
             <div class="d-flex align-items-center mb-xl-3">
-                <h1 class="mr-3">Customers Favrourite </h1>
+                <h1 class="mr-3">Customers Favorite </h1>
                 <span><img src="./assets/Line 2.png" width="100%" alt=""></span>
+                <span><button class="buttons">View All</button></span>
             </div>
-            <div class="row "  >
-                <div class="favorites align-items-center col">
+            <div class="row w-100" style="margin-left: 45px;">
+                <div class="favorites col-4">
                     <div>
-                        <div class="favorites_img position-relative "><img src="./assets/classicCountry.png"></div>
+                        <div class="favorites_imgBox position-relative "><img class="favorites_img" src="./assets/classicCountry.png"></div>
                         <div class="pt-2 favorites_text">Classic Country</div>
                         <p class="favorites_desc">Delight in soft-crusted sourdough</p>
                     </div>
@@ -100,9 +97,9 @@
                         <button class=" buttons">Shop Now</button>
                     </div>
                 </div>
-                <div class="favorites align-items-center col">
+                <div class="favorites col-4">
                     <div>
-                        <div class="favorites_img position-relative "><img src="./assets/classicCountry.png"></div>
+                        <div class="favorites_imgBox position-relative "><img class="favorites_img" src="./assets/cranberryWalnut.png"></div>
                         <div class="pt-2 favorites_text">Cranberry Wallnut</div>
                         <p class="favorites_desc">Delight in Cranberry Harmony</p>
                     </div>
@@ -114,9 +111,9 @@
                         <button class=" buttons">Shop Now</button>
                     </div>
                 </div>
-                <div class="favorites align-items-center col">
+                <div class="favorites  col-4">
                     <div>
-                        <div class="favorites_img position-relative "><img src="./assets/classicCountry.png"></div>
+                        <div class="favorites_imgBox position-relative "><img class="favorites_img" src="./assets/multiSeeded.png"></div>
                         <div class="pt-2 favorites_text">Multi-seeded</div>
                         <p class="favorites_desc">Flaxseed Infusion Nutty richness</p>
                     </div>
@@ -128,9 +125,10 @@
                         <button class=" buttons">Shop Now</button>
                     </div>
                 </div>
-                <div class="favorites align-items-center col ">
+                <div class="favorites col-4 ">
                     <div>
-                        <div class="favorites_img position-relative "><img src="./assets/classicCountry.png"></div>
+                        <div class="favorites_imgBox position-relative ">
+                            <img class="favorites_img" src="./assets/fresh-whole-grain-sourdough-bread-with-flax-seeds-oatmeal-sesame-seeds-colored-background_141549-1523-removebg-preview 2.png"></div>
                         <div class="pt-2 favorites_text">Flaxseed</div>
                         <p class="favorites_desc">Flaxseed Infusion Nutty richness</p>
                     </div>
@@ -147,49 +145,61 @@
 
         </section>
 
-        <section class="whyus" style="margin-left: 60px;">
-            <!-- <div class="d-flex align-items-center mb-xl-3">
-                <h1 class="mr-3">Customers Favrourite </h1>
+        <section class="whyus" >
+            <div class="d-flex align-items-center mb-xl-3">
+                <h1 class="mr-3">Why Magic Oven? </h1>
                 <span><img src="./assets/Line 2.png" width="100%" alt=""></span>
-            </div> -->
-            <div class="d-flex align-items-center">
-                <h1 class="mr-3">Why Magic Oven</h1>
-                <span><img src="./assets/Line 2.png" width="110%" alt=""></span>
+                <span><button class="buttons">View All</button></span>
             </div>
-            <div class="row mt-4">
-
-                <div style="margin-top: 20px;" class="col ml-4">
-                    <div class="">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <h1 style="color: #DD7E1A; padding-left: 10px;">1000+</h1>Orders
-                            </li>
-                            <li class="list-inline-item">
-                                <h1 style="color: #DD7E1A; padding-left: 10px">4+</h1>Cities
-                            </li>
-                            <li class="list-inline-item">
-                                <h1 style="color: #DD7E1A; padding-left: 10px">10+</h1>Products
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h1 style="margin-top: 20px;">The most amazing Sourdough bread in house.</h1>
-                        <p style="margin-top: 20px;">
-                            It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.
-                        </p>
-                        <button class=" buttons"> Read More</button>
+            <div class="WhyMagic"> 
+                <div class="row w-100">
+                    <div style="padding-top: 7cap;" class="col">
+                    <div class="row text-center">
+                        <div class="col-xl-12">
+                            <div class="carousel slide" data-ride="carousel">
+                                <!-- Indicators-->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+    
+                                <div class="carousel-inner">
+                                    <!-- Item-1 -->
+                                    <div class="carousel-item active text-center">
+                                        <img src="./assets/100-percent (1) 1.png" alt="" class="team mb-sm-4">
+                                        <h3>Genuine Sourdough</h3>
+                                        <p>The most amazing Sourdough bread in house.</p>
+                                    </div>
+                                    <!-- Item-2 -->
+                                    <div class="carousel-item text-center">
+                                        <img src="./assets/Ellipse 169.png" alt="" class="team mb-sm-4" >
+                                        <h3>Genuine Sourdough</h3>
+                                        <p>One of the finest that I have eaten.</p>
+                                    </div>
+                                    <!-- Item-3 -->
+                                    <div class="carousel-item text-center">
+                                        <img src="./assets/Ellipse 169.png" alt="" class="team mb-sm-4">
+                                        <h3>Genuine Sourdough</h3>
+                                        <p>The most amazing Sourdough bread in house.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col ml-5">
-                    <img style="max-height: 250px; margin: 20px; padding: 20px;" src="./assets/pngimg 1.png">
+                <div class="col">
+                    <img style="max-height: 308px" src="./assets/Group 45.svg">
                 </div>
-            </div>
+            </div> 
+        </div>
         </section>
-        <section class="recipies" style="margin-left: 60px;">
-            <div class="d-flex align-items-center">
-                <h1 class="mr-3">Explore Sourdough Recipes</h1>
-                <span><img src="./assets/Line 2.png" width="90%" alt=""></span>
+        <section class="recipies">
+            <div class="d-flex align-items-center mb-xl-3" style="max-width: inherit;">
+                <h1 class="mr-3">Explore Sourdough Recipees </h1>
+                <span><img src="./assets/Line 10.png" width="120%" alt=""></span>
+                <span><button style="position: relative;left:82px" class="buttons">View All</button></span>
             </div>
             <div class="recipes">
                 <div class="recipe">
@@ -215,10 +225,11 @@
                         </div>
                         <hr class="line">
                         <p>
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
                         </p>
                     </div>
-                </div> 
+                </div>
                 <div class="recipe">
                     <img src="/assets/mango2.png" class="rounded-image">
                     <div class="recipe_desc">
@@ -228,11 +239,12 @@
                         </div>
                         <hr class="line">
                         <p>
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
                         </p>
                     </div>
                 </div>
-            
+
             </div>
         </section>
         <section class="testimonials">
@@ -293,23 +305,23 @@
             <div class="stuff">
 
                 <div class="stuff_box">
-                    <img src="./assets/delivery (1) 1.png">
+                    <img class="m-2 mb-lg-5" src="./assets/delivery (1) 1.png">
                     <div>
                         <h2>Free Delivery</h2>
                         <p>The most amazing Sordough bread in house.</p>
                     </div>
                 </div>
-                <div class="vertical-line"></div>
+                <div class="vertical-line"><img src="./assets/Line 15.png"></div>
                 <div class="stuff_box">
-                    <img src="./assets/fresh (1) 1.png">
+                    <img class=" mb-lg-3 pr-2" style="object-fit:contain;" src="./assets/fresh (1) 1.png">
                     <div>
                         <h2>100% Freshly Baked</h2>
-                        <p>The most amazing Sordough bread in house.</p>
+                        <p>  The most amazing Sordough bread in house.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- <div class="footer-container">
             <div class="background"></div>
             <div class="copyright">© 2023 Classic Health Foods LLP. All rights reserved.</div>
@@ -350,7 +362,7 @@
                 <img src="https://via.placeholder.com/30x30" />
             </div>
         </div> -->
-        
+
         <section class="card-footer">
             <div class="row" style="width: 100%; padding-left: 20px;">
                 <div class="col-md-6">
@@ -362,11 +374,12 @@
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
                                     <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
-                                    <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard"></li>
+                                    <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard">
+                                    </li>
                                     <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
                                     <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal"></li>
                                 </ul>
-                                
+
                             </div>
 
                         </div>
