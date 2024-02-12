@@ -20,8 +20,9 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 0 2vw;
     overflow-x: hidden;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 
@@ -158,8 +159,8 @@ body {
 }
 .customers_favorite .BigText{
     position: relative;
-    right: 6%;
     top: 45px;
+    padding-right: 2rem;
     z-index: -1;
 }
 
@@ -179,9 +180,12 @@ section {
     flex-shrink: 0;
     border-radius: 43px;
     background: #174542;
+    border-color: transparent;
 
     &:hover {
         background: #008F85;
+        border-color: transparent;
+
     }
 }
 
@@ -243,12 +247,13 @@ section {
 
     &:hover {
         color: #DD7E1A;
+        font-weight: 600px;
 
     }
 }
 
 .nav-item {
-    margin-right: 20px;
+    margin-right: 50px;
     font-family: League Spartan;
     font-size: 20px;
     font-weight: 600;
@@ -363,7 +368,8 @@ section {
 }
 
 .WhyMagic {
-    margin-top: 12%;
+    margin-top: 10rem;
+    padding-left: 1rem;
 }
 
 .recipe {
