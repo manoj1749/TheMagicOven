@@ -7,9 +7,9 @@
 }
 
 h1 {
-    color: #343434;
+    color: #174542;
     font-family: "League Spartan";
-    font-size: 40px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -23,6 +23,7 @@ body {
     padding: 0 2vw;
     overflow-x: hidden;
 }
+
 
 /* Adjust carousel height */
 .carousel-inner {
