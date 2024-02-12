@@ -20,43 +20,42 @@
     <body style="background-color: #E1DDD2;;">
         <div class="container-fluid">
 
-            <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
-                <a class="navbar-brand" href="#">
-                    <img class="logo" src="./assets/logo.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-lg-end align-items-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active mr-3">
-                            <a class="nav-link" href="">Home</a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link" href="/about-us">About Us</a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link" href="/our-products">Our Products</a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link" href="#">Your Orders</a>
-                        </li>
-                        <li class="nav-item position-relative">
-                            <a class="nav-link" href="./checkout/cart">
-                                <img style="max-height: 37px; max-width: 37px;"  src="./assets/Shopping Cart.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            
-
 
             <section class="home">
-                <div class="d-flex justify-content-center align-content-center">
+                <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="./assets/logo.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <div class="m-auto">
+                    <div class="collapse navbar-collapse justify-content-lg-end align-items-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active mr-3">
+                                <a class="nav-link" href="">Home</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="/about-us">About Us</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="/our-products">Our Products</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">Your Orders</a>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link" href="./checkout/cart">
+                                    <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="row landingPage">
+
+                    <div class="col-md-6  m-auto">
                         <div class="socials">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><img src="./assets/Instagram.png"></li>
@@ -73,36 +72,24 @@
 
                         </div>
                     </div>
-                    <div class="landingImg">
-                        <img src="./assets/Sourdough 1.png">
+                    <div class="col-md-6 col-sm-12 landingImg image-fluid">
+                        <img style="max-width: 80%;" src="./assets/Sourdough 1.png">
                     </div>
                 </div>
 
             </section>
             <section class="customers_favorite">
                 <div class="d-flex justify-content-end">
-                    <h2 style="font-family: League Spartan;
-                    color: #ACACAC;
-                    opacity: 0.2;
-                    font-size: 150px;
-                    font-weight: 500;
-                    line-height: 138px;
-                    letter-spacing: 0em;
-                    text-align: left;
-                    position: relative;
-                    top: 30px;
-                    right:30px;
-                    z-index: -2;
-                    ">Bakery</h2>
+                    <h2 class="BigText">Bakery</h2>
                 </div>
                 <div class="d-flex align-items-center mb-xl-3">
-                    <h1 class="mr-3">Customers Favorite </h1>
-                    <span><img src="./assets/Line 2.png" width="100%" alt=""></span>
+                    <h1 class="mr-3" style="width: 400px;">Customers Favorite </h1>
+                    <span class="lineVectors"><img src="./assets/Line 2.png" width="100%" alt=""></span>
                     <span><button class="buttons">View All</button></span>
                 </div>
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="favorites col-md-4">
+                    <div class="row row-cols-lg-4 row-cols-sm-12">
+                        <div class="favorites col-md-6">
                             <div>
                                 <div class="favorites_imgBox position-relative "><img class="favorites_img"
                                         src="./assets/classicCountry.png"></div>
@@ -121,7 +108,7 @@
                                 <button class=" buttons">Shop Now</button>
                             </div>
                         </div>
-                        <div class="favorites col-md-4">
+                        <div class="favorites col-md-6 row-cols-sm-12">
                             <div>
                                 <div class="favorites_imgBox position-relative "><img class="favorites_img"
                                         src="./assets/cranberryWalnut.png"></div>
@@ -141,7 +128,7 @@
                                 <button class=" buttons">Shop Now</button>
                             </div>
                         </div>
-                        <div class="favorites col-md-4">
+                        <div class="favorites col-md-6 row-cols-sm-12">
                             <div>
                                 <div class="favorites_imgBox position-relative "><img class="favorites_img"
                                         src="./assets/multiSeeded.png"></div>
@@ -159,7 +146,7 @@
                                 <button class=" buttons">Shop Now</button>
                             </div>
                         </div>
-                        <div class="favorites col-md-4 ">
+                        <div class="favorites col-md-6 row-cols-sm-12">
                             <div>
                                 <div class="favorites_imgBox position-relative ">
                                     <img class="favorites_img"
@@ -187,15 +174,15 @@
 
             <section class="whyus">
                 <div class="d-flex align-items-center mb-xl-3">
-                    <h1 class="mr-3">Why Magic Oven? </h1>
-                    <span><img src="./assets/Line 2.png" width="100%" alt=""></span>
+                    <h1 class="mr-3" style="width: 400px;">Why Magic Oven? </h1>
+                    <span class="lineVectors"><img src="./assets/Line 2.png" width="100%" alt=""></span>
                     <span><button class="buttons">View All</button></span>
                 </div>
                 <div class="WhyMagic">
-                    <div class="row w-100">
-                        <div style="padding-top: 7px;" class="col">
+                    <div class="row w-100 WhyMagic">
+                        <div class="col">
                             <div class="row">
-                                <div class="col-xl-12">
+                                <div class="col-xl-12 col-sm-12">
                                     <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
                                         <!-- Indicators -->
                                         <ol class="carousel-indicators list-unstyled">
@@ -234,29 +221,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <img style="max-height: 308px" src="./assets/Group 45.svg" alt="">
+                        <div class="col col-md-0">
+                            <img class="img-fluid" src="./assets/Group 45.svg" alt="">
                         </div>
                     </div>
-                </div>
+
 
 
             </section>
             <section class="recipies">
                 <div class="d-flex justify-content-end">
-                    <h2 style="font-family: League Spartan;
-                    color: #ACACAC;
-                    opacity: 0.2;
-                    font-size: 150px;
-                    font-weight: 500;
-                    line-height: 138px;
-                    letter-spacing: 0em;
-                    text-align: left;
-                    ">Recipes</h2>
+                    <h2 class="BigText">Recipes</h2>
                 </div>
                 <div class="d-flex align-items-center mb-3" style="max-width: inherit;">
                     <h1 class="me-3">Explore Sourdough Recipes </h1>
-                    <span><img src="./assets/Line 10.png" width="120%" alt=""></span>
+                    <span class="lineVectors"><img src="./assets/Line 10.png" width="120%" alt=""></span>
                     <span><button style="position: relative; left: 82px" class="buttons">View All</button></span>
                 </div>
                 <div class="recipes">
@@ -313,65 +292,65 @@
 
             </section>
             <section class="testimonials position-relative">
-    <div class="d-flex justify-content-start">
-        <img class="position-absolute" style="top: -50px; transform: rotate(300deg); left: -160px;"
-            src="./assets/hand-drawn-leaves-illustration.png">
-    </div>
-    <div class="d-flex justify-content-center align-items-center">
-        <img height="10%" class="my-4 mx-4" src="assets/Line 13.png">
-        <h2 class="text-dark font-weight-bold"
-            style="font-family: 'League Spartan'; font-size: 2.5rem; font-style: normal; line-height: 1.2;">
-            Our Testimonials
-        </h2>
-        <img height="10%" class="my-4 mx-4" src="assets/Line 13.png">
-    </div>
-    <div class="container text-center"> <!-- Added text-center class -->
-        <div class="row-cols-md-5">
-            <div class="col-md-9 m-auto">
-                <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators list-unstyled">
-                        <li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
-                        <li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
-                    </ol>
+                <div class="d-flex justify-content-start">
+                    <img class="position-absolute leaf" style="top: -50px; transform: rotate(300deg); left: -160px;"
+                        src="./assets/hand-drawn-leaves-illustration.png">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img height="10%" class="my-4 mx-4 lineVectors" src="assets/Line 13.png">
+                    <h1 class="">
+                        Our Testimonials
+                    </h1>
+                    <img height="10%" class="my-4 mx-4 lineVectors" src="assets/Line 13.png">
+                </div>
+                <div class="container text-center"> <!-- Added text-center class -->
+                    <div class="row-cols-md-10">
+                        <div class="col-md-9 m-auto">
+                            <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators list-unstyled">
+                                    <li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
+                                    <li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
+                                    <li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
+                                </ol>
 
-                    <!-- Wrapper for slides -->
-                    <div class="d-flex justify-content-end position-relative">
-                        <div>
-                            <img src="./assets/quote.png" style="transform: rotate(180deg);">
-                        </div>
-                        <div class="carousel-inner" style="min-height: 400px;">
-                            <!-- Item-1 -->
-                            <div class="carousel-item active">
-                                <img src="./assets/Ellipse 169.png" alt="" class="d-block mx-auto team">
-                                <h3 class="mt-2 my-2">Rajat Kumar</h3>
-                                <p class="mt-2 d-block mx-auto">The most amazing Sourdough bread in house.</p>
+                                <!-- Wrapper for slides -->
+                                <div class="d-flex justify-content-end position-relative">
+                                    <div class="col-1">
+                                        <img src="./assets/quote.png" style="transform: rotate(180deg);">
+                                    </div>
+                                    <div class="carousel-inner" style="min-height: 400px;">
+                                        <!-- Item-1 -->
+                                        <div class="carousel-item active">
+                                            <img src="./assets/Ellipse 169.png" alt="" class="d-block mx-auto team">
+                                            <h3 class="mt-2 my-2">Rajat Kumar</h3>
+                                            <p class="mt-2 d-block mx-auto">The most amazing Sourdough bread in house.
+                                            </p>
+                                        </div>
+                                        <!-- Item-2 -->
+                                        <div class="carousel-item">
+                                            <img src="./assets/Ellipse 169.png" alt="" class="d-block mx-auto team">
+                                            <h3 class="mt-2 my-2">Alamin Musa</h3>
+                                            <p class="mt-2 d-block mx-auto">One of the finest that I have eaten.</p>
+                                        </div>
+                                        <!-- Item-3 -->
+                                        <div class="carousel-item">
+                                            <img src="./assets/Ellipse 169 (1).png" alt="" class="d-block mx-auto team">
+                                            <h3 class="mt-2 my-2">Alamin Musa</h3>
+                                            <p class="mt-2 d-block mx-auto">Best in Town</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-block m-auto pl-3 mb-4 col-1">
+                                        <img src="./assets/quote.png">
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Item-2 -->
-                            <div class="carousel-item">
-                                <img src="./assets/Ellipse 169.png" alt="" class="d-block mx-auto team">
-                                <h3 class="mt-2 my-2">Alamin Musa</h3>
-                                <p class="mt-2 d-block mx-auto">One of the finest that I have eaten.</p>
-                            </div>
-                            <!-- Item-3 -->
-                            <div class="carousel-item">
-                                <img src="./assets/Ellipse 169 (1).png" alt="" class="d-block mx-auto team">
-                                <h3 class="mt-2 my-2">Alamin Musa</h3>
-                                <p class="mt-2 d-block mx-auto">Best in Town</p>
-                            </div>
-                        </div>
-                        <div class="d-block m-auto pl-3 mb-4">
-                            <img src="./assets/quote.png">
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
-            <section class="position-relative">
+            <section class="position-relative completeStuff">
                 <div class="stuff d-flex justify-content-center">
 
                     <div class="stuff_box">
@@ -381,17 +360,17 @@
                             <p>The most amazing Sordough bread in house.</p>
                         </div>
                     </div>
-                    <div class="vertical-line my-5"><img src="./assets/Line 15.png"></div>
+                    <div class="lineVectors vertical-line my-5"><img src="./assets/Line 15.png"></div>
                     <div class="stuff_box position-relative">
                         <img class=" mb-lg-3 mx-5" src="./assets/fresh (1) 1.png">
-                        <div class="my-5">  
+                        <div class="my-5">
                             <h2>100% Freshly Baked</h2>
                             <p> The most amazing Sordough bread in house.</p>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <img class="position-absolute " style=" top: 10px; z-index: -3; right: -120px;"
+                    <img class="position-absolute leaf" style=" top: 10px; z-index: -3; right: -120px;"
                         src="./assets/hand-drawn-leaves-illustration.png">
                 </div>
             </section>

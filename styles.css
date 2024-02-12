@@ -2,6 +2,10 @@
     margin-top: 20vh;
 }
 
+.home h1 {
+    font-size: 50px;
+}
+
 h1 {
     color: #343434;
     font-family: "League Spartan";
@@ -11,6 +15,7 @@ h1 {
     line-height: normal;
 }
 
+
 body {
     display: grid;
     justify-content: center;
@@ -19,11 +24,82 @@ body {
     overflow-x: hidden;
 }
 
+/* Adjust carousel height */
+.carousel-inner {
+    max-height: 400px; /* Adjust the value as needed */
+}
+
+/* Center-align text in carousel items */
+.carousel-item {
+    text-align: center;
+}
+
+/* Make Group 45 image responsive */
+/* Custom CSS for Why Us section */
+.WhyMagic .carousel-item img {
+    max-width: 100%; /* Ensure images are responsive and don't go beyond screen width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.WhyMagic .col-md-0 img {
+    max-width: 100%; /* Ensure images are responsive and don't go beyond screen width */
+    height: auto; /* Maintain aspect ratio */
+}
+
 @media (max-width: 768px) {
+    .navbar{
+        max-width: 100%;
+    }
+    /* Adjust the margin for favorites items in mobile view */
+    .favorites {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%; /* Adjust the value as needed */
+    }
+
+
+    .buttons{
+        display: none;
+    }
+    .home .landingPage{
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: fit-content;
+    }
+    .favorites{
+        max-width: fit-content;
+    }
+    .customers_favorite .favorites .buttons{
+        display: inline;
+        margin-top: 20px;
+    }
+
+    section{
+        max-width: fit-content;
+    }
+    .home .landingImg{
+
+        max-width: fit-content  ;
+    }
+    .WhyMagic{
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: fit-content;
+    }
     body {
         padding: 0 5vw;
     }
-
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .whyus .img{
+        max-width: fit-content;
+        max-height: 200px ;
+    }
+    .testimonials .container{
+        max-width: fit-content;
+    }
     .favorites {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -48,8 +124,37 @@ body {
         list-style-type: none;
         padding: 0;
     }
+    .BigText {
+        display: none;
+    }
+    .lineVectors{
+        display: none;
+    }
+    .card_footer {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .leaf{
+        display: none;
+    }
+    .completeStuff{
+        display: none;
+    }
 }
 
+
+.BigText {
+    font-family: League Spartan;
+    color: #ACACAC;
+    opacity: 0.2;
+    font-size: 150px;
+    font-weight: 500;
+    line-height: 138px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
 
 section {
     padding-top: 3vh;
