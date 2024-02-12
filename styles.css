@@ -157,10 +157,10 @@ body {
 
 }
 .customers_favorite .BigText{
-    position: absolute;
+    position: relative;
     right: 6%;
+    top: 45px;
     z-index: -1;
-    top: 57%;
 }
 
 section {
