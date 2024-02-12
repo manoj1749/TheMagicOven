@@ -80,7 +80,6 @@ body {
         max-width: fit-content;
     }
     .home .landingImg{
-
         max-width: fit-content  ;
     }
     .WhyMagic{
@@ -144,6 +143,7 @@ body {
         display: none;
     }
 }
+
 
 
 .BigText {
@@ -287,11 +287,16 @@ section {
     filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
 }
 
+.landingPage {
+    height: 400px;
+}
 
 .landingImg {
-    max-width: fit-content;
-    padding-left: 0;
+    height: 100%; /* Use 100% height to fill the container */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    object-position: left; /* Optional: Adjust the horizontal position of the image */
 }
+
 
 .favorites_imgBox {
     margin-top: 10px;
@@ -340,6 +345,10 @@ section {
     border: 1px solid #FFFFFF;
     width: 53px;
 
+}
+
+.socials {
+    margin-bottom: 30px;
 }
 
 .mrp {
