@@ -157,6 +157,10 @@ body {
     text-align: left;
 
 }
+
+.customers_favorite{
+    padding-top: 0;
+}
 .customers_favorite .BigText{
     position: relative;
     top: 45px;
@@ -383,7 +387,6 @@ section {
 
 .recipe {
     text-align: start;
-    margin: 20px;
     display: inline-grid;
     font-family: League Spartan;
     width: 380px;
