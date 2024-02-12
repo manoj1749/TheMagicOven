@@ -15,48 +15,53 @@ h1 {
     line-height: normal;
 }
 
+html body{
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0;
+}
 
 body {
     display: grid;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    padding-left: 4rem;
-    padding-right: 4rem;
 }
 
-
-/* Adjust carousel height */
 .carousel-inner {
-    max-height: 400px; /* Adjust the value as needed */
+    max-height: 400px; 
 }
 
-/* Center-align text in carousel items */
+
 .carousel-item {
     text-align: center;
 }
 
-/* Make Group 45 image responsive */
-/* Custom CSS for Why Us section */
+
 .WhyMagic .carousel-item img {
-    max-width: 100%; /* Ensure images are responsive and don't go beyond screen width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto;
 }
 
 .WhyMagic .col-md-0 img {
-    max-width: 100%; /* Ensure images are responsive and don't go beyond screen width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto; 
 }
 
 @media (max-width: 768px) {
     .navbar{
         max-width: 100%;
     }
-    /* Adjust the margin for favorites items in mobile view */
+
     .favorites {
         margin-right: auto;
         margin-left: auto;
-        max-width: 80%; /* Adjust the value as needed */
+        max-width: 80%;
     }
 
 
@@ -285,7 +290,7 @@ section {
     justify-content: center;
     align-items: center;
     background-color: #DD7E1A;
-    height: 385px;
+    height: 395px;
     max-width: 285px;
     border-radius: 19px;
     filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
@@ -296,10 +301,9 @@ section {
 }
 
 .landingImg {
-    height: 100%; /* Use 100% height to fill the container */
-    object-fit: cover; /* Ensure the image covers the entire container */
-    object-position: left; /* Optional: Adjust the horizontal position of the image */
-}
+    height: 100%;
+    object-fit: cover; 
+    object-position: left;}
 
 
 .favorites_imgBox {
@@ -308,11 +312,20 @@ section {
     justify-content: center;
     align-items: center;
     background-color: #E1DDD2;
-    height: 195px;
-    max-width: 260px;
+    height: 198px;
+    max-width: 263px;
     border-radius: 19px 19px 0 0
 }
 
+
+.favorites:hover .arrow{
+    transition: transform 0.3s ease-in-out; /* Add smooth transition */
+    transform: translate(-5px, 5px) scale(1.5);
+}
+
+.favorites:hover .buttons{
+    background-color: #008F85;
+}
 
 .favorites_img {
     height: 100%;
@@ -324,6 +337,10 @@ section {
     border-radius: 19px 19px 0 0;
 }
 
+.favorites .buttons{
+    margin-top: 21px;
+}
+
 .favorites_text {
     color: #FFF;
     text-align: center;
@@ -332,6 +349,8 @@ section {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 5px;
+
 }
 
 .favorites_desc {
@@ -342,6 +361,7 @@ section {
     line-height: 18.75px;
     font-style: normal;
     font-weight: 400;
+    margin-bottom: 23px;
 }
 
 
@@ -387,7 +407,6 @@ section {
 
 .recipe {
     text-align: start;
-    display: inline-grid;
     font-family: League Spartan;
     width: 380px;
     height: 391px;
@@ -410,12 +429,15 @@ section {
 }
 
 .rounded-image {
+    margin-bottom: 20px;
     border-radius: 18px;
-    width: 100%;
+    width: 379px;
 }
 
 
 .recipes {
+    margin-top: 75px;
+    margin-bottom: 75px;
     align-items: center;
 }
 
@@ -648,6 +670,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .footer_right p {
