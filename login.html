@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html style="padding: 0; margin: 0;">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Magic Oven</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+        <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
+            <a class="navbar-brand" href="#">
+                <img class="logo" style="padding-left: 5rem;" src="./assets/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-lg-end align-items-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="/about-us">About Us</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="/our-products">Our Products</a>
+                    </li>
+                    <li class="nav-item mr-3 dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="loginSignUpDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Login/Sign Up
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdown">
+                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="./checkout/cart">
+                            <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body style="background-color: #E1DDD2;margin: 0; padding: 0; width: 100%;">
+        
+        <section style="margin-top: 140px; margin-bottom: 220px;">
+            <div class="Login row d-flex  justify-content-start align-items-center">
+                <div class="col">
+
+                    <div style="margin-bottom: 30px;">
+                        <h1 style="font-size: 35px;">Login</h1>
+                        <p style="font-family: Roboto;font-size: 20px;font-weight: 400;line-height: 23px;letter-spacing: 0em;text-align: left;">Don't have an account?<a href="signup.html" style="color: #DD7E1A; text-decoration: none;"> SignUp</a></p>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="form-group text-start" style="margin-bottom: 30px;">
+                                <label for="InputMobile" class="formHeader">Mobile Number</label>
+                                <input type="email" class="form-control formInputs" id="InputMobile"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted"><img src="./assets/Info.png"> We'll
+                                    never
+                                    share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="InputPassword" class="formHeader">Password</label>
+                                <input type="password" class="form-control formInputs" id="InputPassword"
+                                    placeholder="Password">
+                            </div>
+                            <button type="submit" class="buttons">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./assets/339383-PASNLK.png">
+                </div>
+            </div>
+        </section>
+
+       
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+            <script>
+
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 0) {
+                        $('.navbar').addClass('navbar-shadow');
+                    } else {
+                        $('.navbar').removeClass('navbar-shadow');
+                    }
+                });
+            </script>
+    </body>
+    <footer class=".card-footer" style="padding-top: 80px; width: 100%; background-color: #D2CEC2;">
+        <div class="container">
+            <div class="row ">
+                <div class="col ">
+                    <div class="footer_left">
+                        <div class="">
+                            <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
+                            <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
+                            <div class="d-flex">
+                                <ul class="list-inline pt-2">
+                                    <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
+                                    <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
+                                    <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard">
+                                    </li>
+                                    <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
+                                    <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_right container">
+                        <div class="row ">
+                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
+                                <p>Helpful Links</p>
+                                <ul class="list-inline">
+                                    <li class="list-item p-2">FAQ</li>
+                                    <li class="list-item p-2">Terms of Service</li>
+                                    <li class="list-item p-2">Privacy & Cookie Policy</li>
+                                    <li class="list-item p-2">Refund Policy</li>
+                                    <li class="list-item p-2">Shopping Policy</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
+                                <p>Other Pages</p>
+                                <ul class="list-inline">
+                                    <li class="list-item p-2">Home</li>
+                                    <li class="list-item p-2">About Us</li>
+                                    <li class="list-item p-2">Our Products</li>
+                                    <li class="list-item p-2">Login/Signup</li>
+                                    <li class="list-item p-2">Shopping Cart</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 my-auto">
+                                <ul class="list-group">
+                                    <li class="list-inline-item m-2"><img src="/assets/Instagram.png" alt="UPI">
+                                    </li>
+                                    <li class="list-inline-item m-2"><img src="/assets/Facebook.png" alt="PayPal">
+                                    </li>
+                                    <li class="list-inline-item m-2"><img src="/assets/WhatsApp.png" alt="PayPal">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

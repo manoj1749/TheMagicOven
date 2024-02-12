@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html style="padding: 0; margin: 0;">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Magic Oven</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+        <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
+            <a class="navbar-brand" href="#">
+                <img class="logo" style="padding-left: 5rem;" src="./assets/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-lg-end align-items-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="/about-us">About Us</a>
+                    </li>
+                    <li class="nav-item mr-3 active">
+                        <a class="nav-link " href="ourproducts.html">Our Products</a>
+                    </li>
+                    <li class="nav-item mr-3 dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="loginSignUpDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Login/Sign Up
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdown">
+                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="./checkout/cart">
+                            <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body style="background-color: #E1DDD2;margin: 0; padding: 0; width: 100%;">
+
+        <section style="margin-top: 140px; margin-bottom: 220px;">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-md-3">
+
+                        <div class="card" style="margin-top: 50px;">
+                            <article class="filter-group">
+                                <header class="card-header mb-2">
+                                    <form class="">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search Products">
+                                            <div class="input-group-append">
+                                                <button class="search" type="button"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                                    </svg></button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </header>
+                                <div>
+                                    <hr>
+                                </div>
+                                <div class="filter-content collapse show mt-2" id="collapse_1">
+                                    <div class="card-body ">
+                                        <h1
+                                            style="font-size: 30px; font-weight: 600; color: #343434; margin-top: 20px; margin-bottom: 10px;">
+                                            Our Products</h1>
+
+                                        <ul class="list-menu list-unstyled" style="color: #1E1E1E;">
+                                            <li><a href="#" class="text-decoration-none">Vegan Sourdough Bread
+                                                    <span><img src="./assets/Sign_in_circle_duotone.png" </span></a>
+                                            </li>
+                                            <li><a href="#" class="text-decoration-none">Vegan Sourdough Bread
+                                                    <span><img src="./assets/Sign_in_circle_duotone.png" </span></a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </aside>
+                    <main class="col-md-9">
+
+                        <div class="row mt-5 mx-3 my-auto">
+                            <div class="favorites col-lg-6 row-cols-sm-12 ">
+                                <div>
+                                    <img class="arrow" style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
+                                        src="./assets/Vector 9.svg">
+
+                                    <div class="favorites_imgBox position-relative "><img class="favorites_img"
+                                            src="./assets/cranberryWalnut.png"></div>
+                                    <div class="pt-4 favorites_text">Cranberry Wallnut</div>
+                                    <p class="favorites_desc">Delight in Cranberry Harmony</p>
+
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <hr class="line ">
+                                </div>
+
+                                <div class="d-flex justify-content-center align-content-start">
+                                    <span class="mrp mx-3">&#8377;200</span>
+                                    <span class="selling-price">&#8377;175</span>
+                                </div>
+                                <div class="position-relative ">
+                                    <button class=" buttons">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="favorites col-lg-6 row-cols-sm-12">
+                                <div>
+                                    <img class="arrow" style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
+                                        src="./assets/Vector 9.svg">
+
+                                    <div class="favorites_imgBox position-relative "><img class="favorites_img"
+                                            src="./assets/multiSeeded.png"></div>
+                                    <div class="pt-4 favorites_text">Multi-seeded</div>
+                                    <p class="favorites_desc">Flaxseed Infusion Nutty richness</p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <hr class="line ">
+                                </div>
+                                <div class="d-flex justify-content-center align-content-start">
+                                    <span class="mrp mx-3">&#8377;200</span>
+                                    <span class="selling-price">&#8377;175</span>
+                                </div>
+                                <div class="position-relative ">
+                                    <button class=" buttons">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="favorites col-lg-6 row-cols-sm-12">
+                                <div>
+                                    <img class="arrow" style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
+                                        src="./assets/Vector 9.svg">
+
+                                    <div class="favorites_imgBox position-relative ">
+                                        <img class="favorites_img"
+                                            src="./assets/fresh-whole-grain-sourdough-bread-with-flax-seeds-oatmeal-sesame-seeds-colored-background_141549-1523-removebg-preview 2.png">
+                                    </div>
+                                    <div class="pt-4 favorites_text">Flaxseed</div>
+                                    <p class="favorites_desc">Flaxseed Infusion Nutty richness</p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <hr class="line ">
+                                </div>
+                                <div class="d-flex justify-content-center align-content-start">
+                                    <span class="mrp mx-3">&#8377;200</span>
+                                    <span class="selling-price">&#8377;175</span>
+                                </div>
+                                <div class="position-relative">
+                                    <button class="buttons">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="row mt-5 mx-3 my-auto">
+                                <div class="favorites col-lg-6 mt-5">
+                                    <div>
+                                        <img class="arrow"
+                                            style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
+                                            src="./assets/Vector 9.svg">
+                                        <div class="favorites_imgBox position-relative "><img class="favorites_img"
+                                                src="./assets/classicCountry.png"></div>
+                                        <div class="pt-4 favorites_text">Classic Country</div>
+                                        <p class="favorites_desc">Delight in soft-crusted sourdough</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <hr class="line ">
+                                    </div>
+                                    <div class="d-flex justify-content-center align-content-start">
+                                        <span class="mrp mx-3">&#8377;200</span>
+                                        <span class="selling-price">&#8377;175</span>
+                                    </div>
+
+                                    <div class="position-relative">
+                                        <button class=" buttons">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- <nav class="mt-4" aria-label="Page navigation sample">
+              <ul class="pagination">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav> -->
+
+                    </main>
+                </div>
+            </div>
+        </section>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <script>
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.navbar').addClass('navbar-shadow');
+                } else {
+                    $('.navbar').removeClass('navbar-shadow');
+                }
+            });
+        </script>
+    </body>
+    <footer class=".card-footer" style="padding-top: 80px; width: 100%; background-color: #D2CEC2;">
+        <div class="container">
+            <div class="row ">
+                <div class="col ">
+                    <div class="footer_left">
+                        <div class="">
+                            <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
+                            <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
+                            <div class="d-flex">
+                                <ul class="list-inline pt-2">
+                                    <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
+                                    <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
+                                    <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard">
+                                    </li>
+                                    <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
+                                    <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_right container">
+                        <div class="row ">
+                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
+                                <p>Helpful Links</p>
+                                <ul class="list-inline">
+                                    <li class="list-item p-2">FAQ</li>
+                                    <li class="list-item p-2">Terms of Service</li>
+                                    <li class="list-item p-2">Privacy & Cookie Policy</li>
+                                    <li class="list-item p-2">Refund Policy</li>
+                                    <li class="list-item p-2">Shopping Policy</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
+                                <p>Other Pages</p>
+                                <ul class="list-inline">
+                                    <li class="list-item p-2">Home</li>
+                                    <li class="list-item p-2">About Us</li>
+                                    <li class="list-item p-2">Our Products</li>
+                                    <li class="list-item p-2">Login/Signup</li>
+                                    <li class="list-item p-2">Shopping Cart</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 my-auto">
+                                <ul class="list-group">
+                                    <li class="list-inline-item m-2"><img src="/assets/Instagram.png" alt="UPI">
+                                    </li>
+                                    <li class="list-inline-item m-2"><img src="/assets/Facebook.png" alt="PayPal">
+                                    </li>
+                                    <li class="list-inline-item m-2"><img src="/assets/WhatsApp.png" alt="PayPal">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

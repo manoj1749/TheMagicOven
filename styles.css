@@ -15,7 +15,7 @@ h1 {
     line-height: normal;
 }
 
-html body{
+html body {
     scroll-behavior: smooth;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .carousel-inner {
-    max-height: 400px; 
+    max-height: 400px;
 }
 
 
@@ -44,17 +44,17 @@ body {
 
 
 .WhyMagic .carousel-item img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
 }
 
 .WhyMagic .col-md-0 img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 @media (max-width: 768px) {
-    .navbar{
+    .navbar {
         max-width: 100%;
     }
 
@@ -65,47 +65,57 @@ body {
     }
 
 
-    .buttons{
+    .buttons {
         display: none;
     }
-    .home .landingPage{
+
+    .home .landingPage {
         display: flex;
         flex-direction: column-reverse;
         max-width: fit-content;
     }
-    .favorites{
+
+    .favorites {
         max-width: fit-content;
     }
-    .customers_favorite .favorites .buttons{
+
+    .customers_favorite .favorites .buttons {
         display: inline;
         margin-top: 20px;
     }
 
-    section{
+    section {
         max-width: fit-content;
     }
-    .home .landingImg{
-        max-width: fit-content  ;
+
+    .home .landingImg {
+        max-width: fit-content;
     }
-    .WhyMagic{
+
+    .WhyMagic {
         display: flex;
         flex-direction: column-reverse;
         max-width: fit-content;
     }
+
     body {
         padding: 0 5vw;
     }
-    h1{
+
+    h1 {
         text-align: center;
         font-size: 30px;
     }
-    .whyus .img{
+
+    .whyus .img {
         max-width: fit-content;
-        max-height: 200px ;
+        max-height: 200px;
     }
-    .testimonials .container{
+
+    .testimonials .container {
         max-width: fit-content;
     }
+
     .favorites {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -130,21 +140,26 @@ body {
         list-style-type: none;
         padding: 0;
     }
+
     .BigText {
         display: none;
     }
-    .lineVectors{
+
+    .lineVectors {
         display: none;
     }
+
     .card_footer {
         display: flex;
         flex-direction: column;
 
     }
-    .leaf{
+
+    .leaf {
         display: none;
     }
-    .completeStuff{
+
+    .completeStuff {
         display: none;
     }
 }
@@ -163,10 +178,11 @@ body {
 
 }
 
-.customers_favorite{
+.customers_favorite {
     padding-top: 0;
 }
-.customers_favorite .BigText{
+
+.customers_favorite .BigText {
     position: relative;
     top: 45px;
     padding-right: 2rem;
@@ -302,8 +318,9 @@ section {
 
 .landingImg {
     height: 100%;
-    object-fit: cover; 
-    object-position: left;}
+    object-fit: cover;
+    object-position: left;
+}
 
 
 .favorites_imgBox {
@@ -318,12 +335,13 @@ section {
 }
 
 
-.favorites:hover .arrow{
-    transition: transform 0.3s ease-in-out; /* Add smooth transition */
+.favorites:hover .arrow {
+    transition: transform 0.3s ease-in-out;
+    /* Add smooth transition */
     transform: translate(-5px, 5px) scale(1.5);
 }
 
-.favorites:hover .buttons{
+.favorites:hover .buttons {
     background-color: #008F85;
 }
 
@@ -337,7 +355,7 @@ section {
     border-radius: 19px 19px 0 0;
 }
 
-.favorites .buttons{
+.favorites .buttons {
     margin-top: 21px;
 }
 
@@ -689,4 +707,224 @@ section {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
+}
+
+.formHeader {
+    font-family: League Spartan;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #174542;
+}
+
+.formInputs {
+    width: 460px;
+    height: 66.86px;
+    top: 420.2px;
+    left: 85px;
+    border-radius: 33.43px;
+    border: 2px;
+    background-color: transparent;
+    border: 2px solid #174542;
+    outline: 0;
+    margin: 20px;
+    margin-left: 0;
+
+
+}
+
+::placeholder {
+    color: #454442;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+}
+
+input[type="checkbox"]:checked+label::before {
+    content: "\2713";
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+
+input[type="checkbox"]+label::after {
+    content: attr(data-text);
+    /* Use this to display text next to the checkbox */
+    margin-left: 10px;
+    /* Adjust as needed for your design */
+}
+
+.product {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #DD7E1A;
+    height: 395px;
+    max-width: 285px;
+    border-radius: 19px;
+    filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
+}
+
+.product_imgBox {
+    margin-top: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1DDD2;
+    height: 198px;
+    max-width: 263px;
+    border-radius: 19px 19px 0 0
+}
+
+
+.product:hover .arrow {
+    transition: transform 0.3s ease-in-out;
+    /* Add smooth transition */
+    transform: translate(-5px, 5px) scale(1.5);
+}
+
+.product:hover .buttons {
+    background-color: #008F85;
+}
+
+.product_img {
+    height: 100%;
+    width: 100%;
+    max-width: 140px;
+    max-height: 140px;
+    object-fit: cover;
+    background-color: transparent;
+    border-radius: 19px 19px 0 0;
+}
+
+.product .buttons {
+    margin-top: 21px;
+}
+
+.product_text {
+    color: #FFF;
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 5px;
+
+}
+
+.product_desc {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+
+.product .line {
+    border: 1px solid #FFFFFF;
+    width: 53px;
+
+}
+
+.card {
+    background-color: transparent;
+    border: 0;
+    width: 341px;
+    height: 64px;
+}
+
+.card .card-header {
+    background-color: #D2CEC2;
+
+    border-radius: 18px;
+    align-items: center;
+}
+
+.card input {
+    background-color: transparent;
+    border: transparent;
+}
+
+
+
+.card .search {
+    background-color: transparent;
+    border: 0;
+}
+
+.card-body {
+    background-color: #D2CEC2;
+    border-radius: 18px;
+    align-items: center;
+}
+
+.card-body li {
+    color: #D2CEC2;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(52, 52, 52, 0.2);;
+    border-bottom: 1px solid rgba(52, 52, 52, 0.2);;
+    padding-top:10px;
+    padding-bottom:10px;
+
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.card-body a{
+    color: #343434;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+.products {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #DD7E1A;
+    height: 395px;
+    max-width: 285px;
+    border-radius: 19px;
+    filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
 }
