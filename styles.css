@@ -1174,17 +1174,43 @@ input {
     height: auto;
 }
 
-.carousel-dark .carousel-indicators li {
+.carousel-dark .carousel-indicators button {
     background-color: #174542;
     height: 14px;
     width: 14px;
     border-radius: 100%;
-    opacity: 0.6;
-    /* transition: opacity 0.5s; */
+    opacity: 0.2;
 }
+
+
 
 #carouselExampleDark .carousel-indicators .active {
     opacity: 1;
+    height: 16px;
+    background-color: #174542;
+
+    width: 16px;
+}
+
+.carousel{
+    margin-left: 60px;
+}
+
+#carouselExampleDark .carousel-control-prev{
+    border: 1px solid;
+    height: 50px;    
+    width: 50px;
+    background-color: #C1C1C1;
+    border-radius: 50%;
+}
+#carouselExampleDark .carousel-control-next{
+    border: 1px solid;
+    height: 50px;    
+    width: 50px;
+    background-color: #C1C1C1;
+    border-radius: 50%;
+}
+.carousel-control-next-icon{
 }
 
 
