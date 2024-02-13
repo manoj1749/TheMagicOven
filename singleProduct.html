@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html style="padding: 0; margin: 0;">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Magic Oven</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+        <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
+            <a class="navbar-brand" href="#">
+                <img class="logo" style="padding-left: 5rem;" src="./assets/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-lg-end align-items-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="/about-us">About Us</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="/our-products">Our Products</a>
+                    </li>
+                    <li class="nav-item mr-3 dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="loginSignUpDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Login/Sign Up
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdown">
+                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="./checkout/cart">
+                            <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body style="background-color: #E1DDD2;margin: 0; padding: 0; width: 100%;">
+
+        <section style="margin-top: 140px; margin-bottom: 220px;">
+            <div class="row">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide col-lg-3" style="max-height: 350px;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="assets/classicCountry.png" class="d-block w-30" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="assets/classicCountry.png" class="d-block w-30" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/classicCountry.png" class="d-block w-30" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="col-lg-9">
+                    <p>
+                        Home / Our Products / Classic Country
+                    </p>
+                    <h1>Classic Country<span><img src="./assets/vegna.png" alt="" class="p-4"></span></h1>
+                    <div class="d-flex justify-content-start align-content-start">
+                        <span class="mrp mx-2   ">&#8377;200</span>
+                        <span class="selling-price">&#8377;175</span>
+                    </div>
+                    <p class="product_description">
+                        Savor the healthful crunch in every bite! Our Flaxseed Sourdough Bread combines artisanal
+                        mastery with flaxseed goodness for a deliciously nutritious experience
+                    </p>
+                    <form>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="d-grid justify-content-center">
+                                <h3>Slice Option</h3>
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="slicingOption" id="sliced">
+                                        <label class="form-check-label" for="sliced">
+                                            Sliced
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="unsliced" checked>
+                                        <label class="form-check-label" for="unsliced">
+                                            Unsliced
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                | </div>
+                            <div class="quantity">
+                                <h3>
+                                    Quantity
+                                </h3>
+                                <div class="qty">
+                                    <span class="minus bg-transparent">-</span>
+                                    <input type="number" class="count" name="qty" value="1">
+                                    <span class="plus bg-transparent">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="buttons"> Add to Cart</button>
+                        </div>
+                    </form>
+                    <hr class="line">
+                    <div class="bg-transparent">
+                        <div class="bg-transparent">
+                            <div class="product_info product_info-flush" id="myproduct_info">
+                                <div class="product_info-item">
+                                    <button class="product_info-button" type="button" data-bs-toggle="collapse" data-bs-target="#item1">
+                                        Ingredients <span class="icon"><img src="./assets/MacOS Maximize.png"></span>
+                                    </button>
+                                    <div id="item1" class="product_info-collapse collapse">
+                                        <hr class="divider">
+                                        <div class="product_info-body">
+                                            <p>Content for Section 1 goes here.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_info-item">
+                                    <button class="product_info-button" type="button" data-bs-toggle="collapse" data-bs-target="#item2">
+                                        Allergen Information <span class="icon"><img src="./assets/MacOS Maximize.png"></span>
+                                    </button>
+                                    <div id="item2" class="product_info-collapse collapse">
+                                        <hr class="divider">
+                                        <div class="product_info-body">
+                                            <p>Content for Section 2 goes here.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_info-item">
+                                    <button class="product_info-button" type="button" data-bs-toggle="collapse" data-bs-target="#item3">
+                                        Storage Instruction & Shelf Life <span class="icon"><img src="./assets/MacOS Maximize.png"></span>
+                                    </button>
+                                    <div id="item3" class="product_info-collapse collapse">
+                                        <hr class="divider">
+                                        <div class="product_info-body">
+                                            <p>Content for Section 3 goes here.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                        
+                        <script>
+                            var product_infos = document.querySelectorAll('.product_info-item');
+                        
+                            product_infos.forEach(function (product_info) {
+                                product_info.addEventListener('click', function () {
+                                    // Close all product_infos
+                                    product_infos.forEach(function (otherproduct_info) {
+                                        if (otherproduct_info !== product_info) {
+                                            otherproduct_info.classList.remove('show');
+                                        }
+                                    });
+                        
+                                    // Toggle the selected product_info
+                                    this.classList.toggle('show');
+                                });
+                            });
+                        </script>
+                        
+                        <hr class="line">
+                        <div>
+                            <main class="d-flex">
+                                <div class="row mt-5 mx-3 my-auto">
+                                    <div class="favorites ">
+                                        <div>
+                                            <img class="arrow"
+                                                style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
+                                                src="./assets/Vector 9.svg">
+                                            <div class="favorites_imgBox position-relative "><img class="favorites_img"
+                                                    src="./assets/classicCountry.png"></div>
+                                            <div class="pt-4 favorites_text">Classic Country</div>
+                                            <p class="favorites_desc">Delight in soft-crusted sourdough</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <hr class="line ">
+                                        </div>
+                                        <div class="d-flex justify-content-center align-content-start">
+                                            <span class="mrp mx-3">&#8377;200</span>
+                                            <span class="selling-price">&#8377;175</span>
+                                        </div>
+    
+                                        <div class="position-relative">
+                                        <button class="buttons"onclick="window.location.href='singleProduct.html'" >Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="row mt-5 mx-3 my-auto">
+                                        <div class="favorites ">
+                                            <div>
+                                                <img class="arrow"
+                                                    style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
+                                                    src="./assets/Vector 9.svg">
+                                                <div class="favorites_imgBox position-relative "><img class="favorites_img"
+                                                        src="./assets/classicCountry.png"></div>
+                                                <div class="pt-4 favorites_text">Classic Country</div>
+                                                <p class="favorites_desc">Delight in soft-crusted sourdough</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <hr class="line ">
+                                            </div>
+                                            <div class="d-flex justify-content-center align-content-start">
+                                                <span class="mrp mx-3">&#8377;200</span>
+                                                <span class="selling-price">&#8377;175</span>
+                                            </div>
+        
+                                            <div class="position-relative">
+                                            <button class="buttons"onclick="window.location.href='singleProduct.html'" >Order Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+        
+                                    <!-- <nav class="mt-4" aria-label="Page navigation sample">
+                      <ul class="pagination">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </nav> -->
+        
+                            </main>
+                        </div>
+                    </div>
+                    
+
+                </div>
+        </section>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <script>
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.navbar').addClass('navbar-shadow');
+                } else {
+                    $('.navbar').removeClass('navbar-shadow');
+                }
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.count').prop('disabled', true);
+                $(document).on('click', '.plus', function () {
+                    $('.count').val(parseInt($('.count').val()) + 1);
+                });
+                $(document).on('click', '.minus', function () {
+                    $('.count').val(parseInt($('.count').val()) - 1);
+                    if ($('.count').val() == 0) {
+                        $('.count').val(1);
+                    }
+                });
+            });
+        </script>
+    </body>
+    <footer class=".card-footer" style="padding-top: 80px; width: 100%; background-color: #D2CEC2;">
+        <div class="container">
+            <div class="row ">
+                <div class="col ">
+                    <div class="footer_left">
+                        <div class="">
+                            <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
+                            <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
+                            <div class="d-flex">
+                                <ul class="list-inline pt-2">
+                                    <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
+                                    <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
+                                    <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard">
+                                    </li>
+                                    <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
+                                    <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_right container">
+                        <div class="row ">
+                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
+                                <p>Helpful Links</p>
+                                <ul class="list-inline">
+                                    <li class="list-item p-2">FAQ</li>
+                                    <li class="list-item p-2">Terms of Service</li>
+                                    <li class="list-item p-2">Privacy & Cookie Policy</li>
+                                    <li class="list-item p-2">Refund Policy</li>
+                                    <li class="list-item p-2">Shopping Policy</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
+                                <p>Other Pages</p>
+                                <ul class="list-inline">
+                                    <li class="list-item p-2">Home</li>
+                                    <li class="list-item p-2">About Us</li>
+                                    <li class="list-item p-2">Our Products</li>
+                                    <li class="list-item p-2">Login/Signup</li>
+                                    <li class="list-item p-2">Shopping Cart</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 my-auto">
+                                <ul class="list-group">
+                                    <li class="list-inline-item m-2"><img src="/assets/Instagram.png" alt="UPI">
+                                    </li>
+                                    <li class="list-inline-item m-2"><img src="/assets/Facebook.png" alt="PayPal">
+                                    </li>
+                                    <li class="list-inline-item m-2"><img src="/assets/WhatsApp.png" alt="PayPal">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>
