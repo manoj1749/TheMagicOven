@@ -50,6 +50,18 @@ body {
     height: auto;
 }
 
+.dropdown-menu{
+    height: 155px;
+    width: 230px;
+}
+.navbar-toggler-icon {
+    display: none;
+}
+#loginSignUpDropdown::after {
+    display: none;
+}
+
+
 @media (max-width: 768px) {
     .navbar {
         max-width: 100%;
