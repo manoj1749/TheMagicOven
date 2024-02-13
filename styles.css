@@ -781,6 +781,10 @@ input[type="checkbox"]+label::after {
     /* Adjust as needed for your design */
 }
 
+.form-check {
+    margin-right: 50px;
+}
+
 .product {
     margin: auto;
     text-align: center;
@@ -943,40 +947,53 @@ input[type="checkbox"]+label::after {
     color: #454442;
 }
 
+.qty {
+    display: flex;
+    align-items: center;
+}
+
 .qty .count {
     color: #000;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 25px;
     font-weight: 700;
-    line-height: 30px;
-    padding: 0 2px;
-    min-width: 35px;
     text-align: center;
     background-color: transparent;
+    border: 1px solid #1E1E1E;
+    width: 39px;
+    height: 39px;
+    border-radius: 11px;
 }
 
-.qty .plus {
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: top;
-    color: #174542;
-    width: 30px;
-    height: 30px;
-    font: 30px/1 Arial, sans-serif;
-    text-align: center;
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    border-color: #174542;
+    background-color: transparent;
+
 }
 
+.form-check-input:checked {
+    background-color: #174542;
+    border-color: #174542;
+    color: #fff;
+}
+
+#carouselExampleDark {
+    position: relative;
+    height: 250px;
+    width: 200px;
+}
+
+
+.qty .plus,
 .qty .minus {
     cursor: pointer;
-    display: inline-block;
-    vertical-align: top;
     color: #174542;
     width: 30px;
     height: 30px;
-    font: 30px/1 Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
     text-align: center;
-    background-clip: padding-box;
 }
 
 .quantity div {
@@ -988,12 +1005,12 @@ input[type="checkbox"]+label::after {
 }
 
 .plus:hover {
-    background-color: #717fe0 !important;
+    border: 1px solid #174542 !important;
 }
 
 input {
     border: 0;
-    width: 2%;
+    width: 50px;
 }
 
 .product_info button {
@@ -1081,6 +1098,7 @@ input {
     /* Adjust color as needed */
 }
 
+
 .product_info .product_info-body p {
     font-size: 1rem;
     font-weight: 300;
@@ -1099,6 +1117,19 @@ input {
     background-color: #D2CEC2;
 }
 
+#carouselExampleDark .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#carouselExampleDark .carousel-item {
+    text-align: center;
+    width: 100%;
+    
+}
+
 
 .cart-card-imgbox {
     display: flex;
@@ -1108,19 +1139,20 @@ input {
     width: 147px;
     height: 133px;
     border-radius: 18px;
-    overflow: hidden; /* Add this line */
+    overflow: hidden;
+    /* Add this line */
 }
 
 
-.cart-card .qty{
+.cart-card .qty {
     display: flex;
     position: relative;
 }
 
-.summary hr{
-color: #343434;
+.summary hr {
+    color: #343434;
 }
 
-.summary p{
+.summary p {
     padding: 2px;
 }

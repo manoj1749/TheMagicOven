@@ -99,7 +99,14 @@
                     </p>
                     <h1>Classic Country<span><img src="./assets/vegna.png" alt="" class="p-4"></span></h1>
                     <div class="d-flex justify-content-start align-content-start">
-                        <span class="mrp mx-2   ">&#8377;200</span>
+                        <span class="mx-2" style="font-family: Poppins;
+                        font-size: 18px;
+                        font-weight: 500;
+                        padding-top: 2px;
+                        line-height: 27px;
+                        text-align: center;
+                        text-decoration: line-through;
+                        ">&#8377;200</span>
                         <span class="selling-price">&#8377;175</span>
                     </div>
                     <p class="product_description">
@@ -108,39 +115,39 @@
                     </p>
                     <form>
                         <div class="d-flex justify-content-between align-content-center">
-                            <div class="d-grid justify-content-center">
-                                <h3>Slice Option</h3>
-                                <div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="slicingOption" id="sliced">
-                                        <label class="form-check-label" for="sliced">
-                                            Sliced
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="unsliced" checked>
-                                        <label class="form-check-label" for="unsliced">
-                                            Unsliced
-                                        </label>
+                            <div class="d-grid justify-content-center row">
+                                <div class="col-lg-5 w-100">
+                                    <h3 class="w-100">Slice Option</h3>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="slicingOption" id="sliced" onclick="toggleRadio('sliced')">
+                                            <label class="form-check-label" for="sliced">
+                                                Sliced
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="slicingOption" id="unsliced" onclick="toggleRadio('unsliced')">
+                                            <label class="form-check-label" for="unsliced">
+                                                Unsliced
+                                            </label>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                | </div>
-                            <div class="quantity">
-                                <h3>
-                                    Quantity
-                                </h3>
+                            <div class="mx-4 col-lg-2"><img src="./assets/Line 16.png"></div>
+                            <div class="quantity col-lg-5">
+                                <h3>Quantity</h3>
                                 <div class="qty">
-                                    <span class="minus bg-transparent">-</span>
-                                    <input type="number" class="count" name="qty" value="1">
                                     <span class="plus bg-transparent">+</span>
+                                    <input type="number" class="count" name="qty" value="1" >
+                                    <span class="minus bg-transparent"><img src="./assets/Line 19.png"></span>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <button type="submit" class="buttons"> Add to Cart</button>
+
+                        <div style="margin-top: 40px;">
+                            <button type="submit" class="buttons">Add to Cart</button>
                         </div>
                     </form>
                     <hr class="line">
@@ -148,7 +155,8 @@
                         <div class="bg-transparent">
                             <div class="product_info product_info-flush" id="myproduct_info">
                                 <div class="product_info-item">
-                                    <button class="product_info-button" type="button" data-bs-toggle="collapse" data-bs-target="#item1">
+                                    <button class="product_info-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#item1">
                                         Ingredients <span class="icon"><img src="./assets/MacOS Maximize.png"></span>
                                     </button>
                                     <div id="item1" class="product_info-collapse collapse">
@@ -159,8 +167,10 @@
                                     </div>
                                 </div>
                                 <div class="product_info-item">
-                                    <button class="product_info-button" type="button" data-bs-toggle="collapse" data-bs-target="#item2">
-                                        Allergen Information <span class="icon"><img src="./assets/MacOS Maximize.png"></span>
+                                    <button class="product_info-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#item2">
+                                        Allergen Information <span class="icon"><img
+                                                src="./assets/MacOS Maximize.png"></span>
                                     </button>
                                     <div id="item2" class="product_info-collapse collapse">
                                         <hr class="divider">
@@ -170,8 +180,10 @@
                                     </div>
                                 </div>
                                 <div class="product_info-item">
-                                    <button class="product_info-button" type="button" data-bs-toggle="collapse" data-bs-target="#item3">
-                                        Storage Instruction & Shelf Life <span class="icon"><img src="./assets/MacOS Maximize.png"></span>
+                                    <button class="product_info-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#item3">
+                                        Storage Instruction & Shelf Life <span class="icon"><img
+                                                src="./assets/MacOS Maximize.png"></span>
                                     </button>
                                     <div id="item3" class="product_info-collapse collapse">
                                         <hr class="divider">
@@ -182,83 +194,85 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
-                    
-                        
-                        <script>
-                            var product_infos = document.querySelectorAll('.product_info-item');
-                        
-                            product_infos.forEach(function (product_info) {
-                                product_info.addEventListener('click', function () {
-                                    // Close all product_infos
-                                    product_infos.forEach(function (otherproduct_info) {
-                                        if (otherproduct_info !== product_info) {
-                                            otherproduct_info.classList.remove('show');
-                                        }
-                                    });
-                        
-                                    // Toggle the selected product_info
-                                    this.classList.toggle('show');
+
+
+                    <script>
+                        var product_infos = document.querySelectorAll('.product_info-item');
+
+                        product_infos.forEach(function (product_info) {
+                            product_info.addEventListener('click', function () {
+                                // Close all product_infos
+                                product_infos.forEach(function (otherproduct_info) {
+                                    if (otherproduct_info !== product_info) {
+                                        otherproduct_info.classList.remove('show');
+                                    }
                                 });
+
+                                // Toggle the selected product_info
+                                this.classList.toggle('show');
                             });
-                        </script>
-                        
-                        <hr class="line">
-                        <div>
-                            <main class="d-flex">
-                                <div class="row mt-5 mx-3 my-auto">
-                                    <div class="favorites ">
-                                        <div>
-                                            <img class="arrow"
-                                                style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
-                                                src="./assets/Vector 9.svg">
-                                            <div class="favorites_imgBox position-relative "><img class="favorites_img"
-                                                    src="./assets/classicCountry.png"></div>
-                                            <div class="pt-4 favorites_text">Classic Country</div>
-                                            <p class="favorites_desc">Delight in soft-crusted sourdough</p>
-                                        </div>
-                                        <div class="d-flex justify-content-center">
-                                            <hr class="line ">
-                                        </div>
-                                        <div class="d-flex justify-content-center align-content-start">
-                                            <span class="mrp mx-3">&#8377;200</span>
-                                            <span class="selling-price">&#8377;175</span>
-                                        </div>
-    
-                                        <div class="position-relative">
-                                        <button class="buttons"onclick="window.location.href='singleProduct.html'" >Order Now</button>
-                                        </div>
+                        });
+                    </script>
+
+                    <hr class="line">
+                    <div>
+                        <main class="d-flex">
+                            <div class="row mt-5 mx-3 my-auto">
+                                <div class="favorites ">
+                                    <div>
+                                        <img class="arrow"
+                                            style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
+                                            src="./assets/Vector 9.svg">
+                                        <div class="favorites_imgBox position-relative "><img class="favorites_img"
+                                                src="./assets/classicCountry.png"></div>
+                                        <div class="pt-4 favorites_text">Classic Country</div>
+                                        <p class="favorites_desc">Delight in soft-crusted sourdough</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <hr class="line ">
+                                    </div>
+                                    <div class="d-flex justify-content-center align-content-start">
+                                        <span class="mrp mx-3">&#8377;200</span>
+                                        <span class="selling-price">&#8377;175</span>
+                                    </div>
+
+                                    <div class="position-relative">
+                                        <button class="buttons"
+                                            onclick="window.location.href='singleProduct.html'">Order Now</button>
                                     </div>
                                 </div>
-                                    <div class="row mt-5 mx-3 my-auto">
-                                        <div class="favorites ">
-                                            <div>
-                                                <img class="arrow"
-                                                    style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
-                                                    src="./assets/Vector 9.svg">
-                                                <div class="favorites_imgBox position-relative "><img class="favorites_img"
-                                                        src="./assets/classicCountry.png"></div>
-                                                <div class="pt-4 favorites_text">Classic Country</div>
-                                                <p class="favorites_desc">Delight in soft-crusted sourdough</p>
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <hr class="line ">
-                                            </div>
-                                            <div class="d-flex justify-content-center align-content-start">
-                                                <span class="mrp mx-3">&#8377;200</span>
-                                                <span class="selling-price">&#8377;175</span>
-                                            </div>
-        
-                                            <div class="position-relative">
-                                            <button class="buttons"onclick="window.location.href='singleProduct.html'" >Order Now</button>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="row mt-5 mx-3 my-auto">
+                                <div class="favorites ">
+                                    <div>
+                                        <img class="arrow"
+                                            style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
+                                            src="./assets/Vector 9.svg">
+                                        <div class="favorites_imgBox position-relative "><img class="favorites_img"
+                                                src="./assets/classicCountry.png"></div>
+                                        <div class="pt-4 favorites_text">Classic Country</div>
+                                        <p class="favorites_desc">Delight in soft-crusted sourdough</p>
                                     </div>
-        
-        
-        
-                                    <!-- <nav class="mt-4" aria-label="Page navigation sample">
+                                    <div class="d-flex justify-content-center">
+                                        <hr class="line ">
+                                    </div>
+                                    <div class="d-flex justify-content-center align-content-start">
+                                        <span class="mrp mx-3">&#8377;200</span>
+                                        <span class="selling-price">&#8377;175</span>
+                                    </div>
+
+                                    <div class="position-relative">
+                                        <button class="buttons"
+                                            onclick="window.location.href='singleProduct.html'">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- <nav class="mt-4" aria-label="Page navigation sample">
                       <ul class="pagination">
                         <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -267,13 +281,13 @@
                         <li class="page-item"><a class="page-link" href="#">Next</a></li>
                       </ul>
                     </nav> -->
-        
-                            </main>
-                        </div>
-                    </div>
-                    
 
+                        </main>
+                    </div>
                 </div>
+
+
+            </div>
         </section>
 
 
