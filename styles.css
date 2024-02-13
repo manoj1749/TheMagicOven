@@ -17,9 +17,8 @@ h1 {
 
 html body {
     scroll-behavior: smooth;
-    margin-left: 2rem;
+    margin-left: 3rem;
     margin-right: 2rem;
-    padding: 0;
 }
 
 
@@ -290,7 +289,13 @@ section {
     align-items: center;
 }
 
-
+.Login{
+    width: 1400px;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .logo {
     justify-items: center;
@@ -311,11 +316,11 @@ section {
 }
 
 .landingPage {
-    height: 400px;
+    height: 320px;
 }
 
 .landingImg {
-    height: 100%;
+    height: 120%;
     object-fit: cover;
     object-position: left;
 }
@@ -431,7 +436,7 @@ section {
 }
 
 .recipe span {
-
+    letter-spacing: 1.2px;
     font-weight: 600;
     font-size: 25px;
     line-height: 23px;
@@ -718,8 +723,8 @@ section {
 }
 
 .formInputs {
-    width: 460px;
-    height: 66.86px;
+    width: 405px;
+    height: 51px;
     top: 420.2px;
     left: 85px;
     border-radius: 33.43px;
@@ -1001,18 +1006,23 @@ input[type="checkbox"]+label::after {
 }
 
 .minus:hover {
-    border: 1px solid #174542 !important;
+    transform: translateX(+5px);
+    box-shadow: 0 0 5px rgba(23, 69, 66, 0.8) !important;
+    border-radius: 30%;
 }
 
+
 .plus:hover {
-    border: 1px solid #174542 !important;
+    transform: translateX(-5px);
+    border-radius: 30%;
+
+    box-shadow: 0 0 5px rgba(23, 69, 66, 0.8) !important;
 }
 
 input {
     border: 0;
     width: 50px;
 }
-
 .product_info button {
     text-align: left;
     width: 100%;
@@ -1028,6 +1038,23 @@ input {
     margin-bottom: 13px;
 }
 
+.product_info button.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.product_info button.active .icon::before {
+    transform: rotate(45deg);
+}
+
+.product_info button.active + .product_info-collapse .divider {
+    margin-top: 10px; /* Adjust margin to overlap with the paragraph */
+}
+
+.product_info button.active + .product_info-collapse .product_info-body p {
+    margin-top: 10px; /* Adjust margin to overlap with the divider */
+}
+
 .product_info-button {
     position: relative;
 }
@@ -1036,19 +1063,8 @@ input {
     position: absolute;
     top: 50%;
     right: 10px;
-    /* Adjust the right distance as needed */
     transform: translateY(-50%);
 }
-
-/* Style the '+' icon */
-.product_info-button .icon::before {
-    content: '+';
-    font-size: 18px;
-    /* Adjust the font size as needed */
-    color: #174542;
-    /* Adjust the color as needed */
-}
-
 
 .product_info button:hover,
 .product_info button:focus {
@@ -1056,32 +1072,10 @@ input {
     color: #174542;
 }
 
-
 .product_info .product_info-title {
     padding: 1em 1.5em 1em 0;
 }
 
-.product_info .icon::before {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 9px;
-    left: 15px;
-    width: 10px;
-    height: 2px;
-    background: transparent;
-}
-
-.product_info .icon::after {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 5px;
-    left: 9px;
-    width: 2px;
-    height: 10px;
-    background: transparent;
-}
 
 .product_info .product_info-content {
     opacity: 0;
@@ -1093,17 +1087,15 @@ input {
 
 .product_info .divider {
     margin: 10px 0;
-    /* Adjust margin as needed */
     border-color: #174542;
-    /* Adjust color as needed */
 }
-
 
 .product_info .product_info-body p {
     font-size: 1rem;
     font-weight: 300;
-    margin: 1em 0;
+    margin-right: 2em;
 }
+
 
 .summary {
     width: 396px;
@@ -1116,10 +1108,8 @@ input {
 .cart-card {
     background-color: #D2CEC2;
 }
-
 #carouselExampleDark .carousel-inner {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100%;
 }
@@ -1127,7 +1117,28 @@ input {
 #carouselExampleDark .carousel-item {
     text-align: center;
     width: 100%;
-    
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.carousel-dark .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+.carousel-dark .carousel-indicators li {
+    background-color: #174542;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%; 
+    opacity: 0.6;
+    /* transition: opacity 0.5s; */
+}
+
+#carouselExampleDark .carousel-indicators .active {
+    opacity: 1; 
 }
 
 
@@ -1139,7 +1150,7 @@ input {
     width: 147px;
     height: 133px;
     border-radius: 18px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* Add this line */
 }
 
