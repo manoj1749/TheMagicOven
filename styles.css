@@ -61,6 +61,24 @@ body {
     display: none;
 }
 
+.product-type{
+    font-family: Roboto;
+font-size: 20px;
+font-weight: 600;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.product-name{
+    font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+
+}
 
 @media (max-width: 768px) {
     .navbar {
@@ -429,6 +447,10 @@ section {
     line-height: normal;
 }
 
+/* .cart-card .cart-card-content{
+    padding-top: 30px;
+} */
+
 .whyus {
     margin-top: 15vh;
 }
@@ -466,7 +488,6 @@ section {
     border-radius: 18px;
     width: 379px;
 }
-
 
 .recipes {
     margin-top: 75px;
@@ -1119,6 +1140,11 @@ input {
 
 .cart-card {
     background-color: #D2CEC2;
+    border-radius: 18px;
+}
+
+.trash{
+    padding-right: 20px;
 }
 #carouselExampleDark .carousel-inner {
     display: flex;
