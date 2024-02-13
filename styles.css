@@ -570,6 +570,8 @@ section {
 /* .testimonials .carousel-indicators {
 } */
 
+
+
 .testimonials .carousel-indicators li {
     background-color: #174542;
     border-radius: 100%;
@@ -1080,13 +1082,12 @@ input {
     border-bottom-right-radius: 0;
 }
 
-.product_info button.active .icon::before {
-    transform: rotate(45deg);
-}
+
+
+
 
 .product_info button.active+.product_info-collapse .divider {
     margin-top: 10px;
-    /* Adjust margin to overlap with the paragraph */
 }
 
 .product_info button.active+.product_info-collapse .product_info-body p {
@@ -1103,7 +1104,10 @@ input {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
+
 }
+
+
 
 .product_info button:hover,
 .product_info button:focus {
@@ -1192,7 +1196,7 @@ input {
     width: 16px;
 }
 
-.carousel{
+#carouselExampleDark{
     margin-left: 60px;
 }
 
