@@ -33,7 +33,7 @@ body {
 .testimonials .carousel-inner {
     max-height: 400px;
     max-width: 600px;
-    
+
 }
 
 
@@ -85,7 +85,21 @@ body {
 
 }
 
+
 @media (max-width: 768px) {
+
+    h1,
+    p,
+    h2,
+    h3,
+    h4 {
+        font-size: 70%;
+    }
+
+    .health-benefit-card {
+        display: none;
+    }
+
     .navbar {
         max-width: 100%;
     }
@@ -118,6 +132,8 @@ body {
 
     section {
         max-width: fit-content;
+        display: flex;
+        flex-direction: column;
     }
 
     .home .landingImg {
@@ -470,7 +486,7 @@ section {
     margin-right: 5px;
 }
 
-.singleProduct .favorites .selling-price{
+.singleProduct .favorites .selling-price {
     color: #174542;
     text-align: center;
     font-family: Poppins;
@@ -498,7 +514,7 @@ section {
 .recipe {
     text-align: start;
     font-family: League Spartan;
-    width: 380px!important;
+    width: 380px !important;
     height: 391px;
     background-color: #D2CEC2;
     border-radius: 18px;
@@ -506,7 +522,7 @@ section {
 
 .filter-group .input-group input:focus {
     background-color: transparent;
-    outline: none!important;
+    outline: none !important;
     z-index: 0;
 }
 
@@ -599,10 +615,11 @@ section {
     line-height: normal;
 }
 
-.testimonials .carousel-inner{
+.testimonials .carousel-inner {
     height: 450px;
     width: 600px;
 }
+
 /* .testimonials .carousel{
     height: 450px;
     width: 100%;
@@ -617,9 +634,9 @@ section {
 
 .testimonials .carousel-indicators {
     bottom: 25%;
-} 
+}
 
-.testimonials{
+.testimonials {
     height: 450px;
 }
 
@@ -872,6 +889,10 @@ input[type="checkbox"]+label::after {
 
 .form-check {
     margin-right: 50px;
+}
+
+.form-check label{
+    margin-left: 8px;
 }
 
 .product {
@@ -1245,26 +1266,27 @@ input {
     width: 16px;
 }
 
-#carouselExampleDark{
+#carouselExampleDark {
     margin-left: 60px;
 }
 
-#carouselExampleDark .carousel-control-prev{
+#carouselExampleDark .carousel-control-prev {
     /* border: 1px solid; */
-    height: 48px;    
-    width: 48px;
-    /* background-color: #C1C1C1; */
-    border-radius: 50%;
-}
-#carouselExampleDark .carousel-control-next{
-    /* border: 1px solid; */
-    height: 48px;    
+    height: 48px;
     width: 48px;
     /* background-color: #C1C1C1; */
     border-radius: 50%;
 }
 
-#carouselExampleDark .carousel-indicators{
+#carouselExampleDark .carousel-control-next {
+    /* border: 1px solid; */
+    height: 48px;
+    width: 48px;
+    /* background-color: #C1C1C1; */
+    border-radius: 50%;
+}
+
+#carouselExampleDark .carousel-indicators {
     /* position: relative; */
     top: 120px;
 }
@@ -1289,38 +1311,38 @@ input {
 
 .summary hr {
     color: #343434;
-    
+
 }
 
 .summary p {
     padding: 2px;
 }
 
-.summary{
+.summary {
     color: #1E1E1E;
     font-family: Roboto;
-font-size: 20px;
-font-weight: 600;
-line-height: 23px;
-text-align: left;
-border-radius: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: left;
+    border-radius: 18px;
 
 }
 
-.coupon-code-input{
+.coupon-code-input {
     font-family: Roboto;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 0em;
-text-align: left;
-width: 100%;
-border-radius: 18px;
-height: 53px;
-text-indent: 10px;
-background-color: #E1DDD2;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    border-radius: 18px;
+    height: 53px;
+    text-indent: 10px;
+    background-color: #E1DDD2;
 }
 
-.coupon-code-input:focus{
+.coupon-code-input:focus {
     outline: none;
 }
 
@@ -1329,7 +1351,7 @@ background-color: #E1DDD2;
     float: left;
 }
 
-.singleProduct .singlePagePrices span.mrp{
+.singleProduct .singlePagePrices span.mrp {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
@@ -1337,21 +1359,21 @@ background-color: #E1DDD2;
 
 }
 
-.singlePagePrices{
+.singlePagePrices {
     display: flex;
     justify-content: start;
     align-items: center;
     height: 60px;
 }
 
-.singleProduct .selling-price{
+.singleProduct .selling-price {
     font-family: Poppins;
     font-size: 25px;
     font-weight: 600;
     line-height: 38px;
     letter-spacing: 0em;
     text-align: center;
-    
+
 
 }
 
@@ -1370,14 +1392,14 @@ background-color: #E1DDD2;
 
 }
 
-.Recipe_img img{
+.Recipe_img img {
     min-width: 404px;
     min-height: 388px;
     max-width: 100%;
     max-height: 100%;
 }
 
-.Recipe_Main{
+.Recipe_Main {
     padding-left: 90px;
 }
 
@@ -1391,6 +1413,7 @@ background-color: #E1DDD2;
 
 
 }
+
 .Recipe_Main p {
     font-family: Roboto;
     font-size: 18px;
@@ -1404,12 +1427,12 @@ background-color: #E1DDD2;
 
 
 
-.Recipe_Page{
+.Recipe_Page {
     padding: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .Recipe_Desc {
@@ -1424,7 +1447,7 @@ background-color: #E1DDD2;
 }
 
 
-.checkout{
+.checkout {
     margin-top: 30px;
 }
 
@@ -1435,23 +1458,69 @@ background-color: #E1DDD2;
     font-weight: 600;
     line-height: 23px;
     letter-spacing: 0em;
-    
+
     background-color: #DD7E1A;
     width: 396px;
     height: 76px;
     border: none;
 }
 
-.health-benefit-card{
-
-    text-emphasis: none;
+.health-benefit-card {
     position: absolute;
     z-index: 1;
     background-color: #DD7E1A;
     width: 328px;
-height: 111px;
-top: 444px;
-left: 1101px;
-border-radius: 13px;
-
+    height: 111px;
+    top: 344px;
+    left: 78%;
+    border-radius: 13px;
 }
+
+.address-form-row2{
+    padding-left: 40px;
+}
+
+.address-form-row2 input {
+    background-color: #E1DDD2;
+    width: 240px;
+}
+.address-form-row2 input:focus {
+    background-color: #E1DDD2;
+    width: 240px;
+}
+
+.address-form-row1 input {
+    background-color: #E1DDD2;
+}
+.address-form-row1 input:focus {
+    background-color: #E1DDD2;
+}
+
+
+
+.address-form-row2 label {
+    font-size: 22px;
+}
+
+.address-form-row1 label {
+    font-size: 22px;
+}
+
+.shipping-address-box{
+    width: 712px;
+height: 227px;
+
+background-color: #D2CEC2;
+border-radius: 18px;
+padding: 37px;
+}
+
+.Payment-method {
+    background-color: #D2CEC2   ;
+    border-radius: 18px;
+    padding: 1  em;
+    width: 45%;
+    margin: auto;
+    padding: 30px;
+}
+
