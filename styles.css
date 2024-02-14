@@ -1441,3 +1441,17 @@ background-color: #E1DDD2;
     height: 76px;
     border: none;
 }
+
+.health-benefit-card{
+
+    text-emphasis: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #DD7E1A;
+    width: 328px;
+height: 111px;
+top: 444px;
+left: 1101px;
+border-radius: 13px;
+
+}
