@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
             <a class="navbar-brand" href="#">
-                <img class="logo" style="padding-left: 3rem;" src="./assets/logo.png" alt="Logo">
+                <img class="logo" style="padding-left: 4rem;" src="./assets/logo.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-label="Toggle navigation">
@@ -106,7 +106,7 @@
     <body style="background-color: #E1DDD2; width: 100%;">
 
         <section
-            style="display: flex; flex-direction: column; padding-left: 60px; margin-top: 120px;text-align: start; width: 100%;">
+            style="display: flex; flex-direction: column; padding-left: 60px; margin-top: 120px;text-align: start; width: 100%; margin-bottom: 100px;">
             <div>
                 <h1>Shopping Cart</h1>
                 <p>You have 4 items in your cart</p>
@@ -116,14 +116,20 @@
                 <div class="col-7">
                     <hr class="line">
                     <div class="">
-                        <div class="d-flex justify-content-between cart-header mb-4">
-                            <div class="">
-                                Products
+                        <div class="d-flex justify-content-between cart-header mb-4" style="font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 19px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        ">
+                            <div class="" style="padding-left: 14px;">
+                                Product
                             </div>
-                            <div style="padding-left: 14rem;">
+                            <div style="padding-left: 15rem;">
                                 Quantity
                             </div>
-                            <div style="padding-left: 6rem;">
+                            <div style="padding-left: 5rem;">
                                 Price
                             </div>
                             <div>
@@ -172,7 +178,9 @@
                             <p>Shipping</p>
                             <p>Free</p>
                         </div>
-                        <p class="coupon">Apply a coupon code?</p>
+                        <div class="input-group">
+                            <input type="text"   class="coupon-code-input" placeholder="Add A Coupon Code">
+                            </div>
                         <hr class="line">
                         <div class="d-flex justify-content-between">
                             <p>Total</p>
@@ -213,67 +221,68 @@
                 }
             });
         </script>
+            <footer class=".card-footer" style="padding-top: 80px; width: 100%; background-color: #D2CEC2;">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col ">
+                            <div class="footer_left">
+                                <div class="">
+                                    <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
+                                    <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
+                                    <div class="d-flex">
+                                        <ul class="list-inline pt-2">
+                                            <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
+                                            <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
+                                            <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard">
+                                            </li>
+                                            <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
+                                            <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_right container">
+                                <div class="row ">
+                                    <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
+                                        <p>Helpful Links</p>
+                                        <ul class="list-inline">
+                                            <li class="list-item p-2">FAQ</li>
+                                            <li class="list-item p-2">Terms of Service</li>
+                                            <li class="list-item p-2">Privacy & Cookie Policy</li>
+                                            <li class="list-item p-2">Refund Policy</li>
+                                            <li class="list-item p-2">Shopping Policy</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
+                                        <p>Other Pages</p>
+                                        <ul class="list-inline">
+                                            <li class="list-item p-2">Home</li>
+                                            <li class="list-item p-2">About Us</li>
+                                            <li class="list-item p-2">Our Products</li>
+                                            <li class="list-item p-2">Login/Signup</li>
+                                            <li class="list-item p-2">Shopping Cart</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 my-auto">
+                                        <ul class="list-group">
+                                            <li class="list-inline-item m-2"><img src="/assets/Instagram.png" alt="UPI">
+                                            </li>
+                                            <li class="list-inline-item m-2"><img src="/assets/Facebook.png" alt="PayPal">
+                                            </li>
+                                            <li class="list-inline-item m-2"><img src="/assets/WhatsApp.png" alt="PayPal">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </body>
-    <footer class="card-footer" style="padding-top: 80px; margin-top: 120px; width: 100%; background-color: #D2CEC2;">
-        <div class="container-fluid">
-            <div class="row ">
-                <div class="col ">
-                    <div class="footer_left">
-                        <div class="">
-                            <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
-                            <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
-                            <div class="d-flex">
-                                <ul class="list-inline pt-2">
-                                    <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
-                                    <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
-                                    <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard">
-                                    </li>
-                                    <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
-                                    <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="footer_right container-fluid">
-                        <div class="row ">
-                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
-                                <p>Helpful Links</p>
-                                <ul class="list-inline">
-                                    <li class="list-item p-2">FAQ</li>
-                                    <li class="list-item p-2">Terms of Service</li>
-                                    <li class="list-item p-2">Privacy & Cookie Policy</li>
-                                    <li class="list-item p-2">Refund Policy</li>
-                                    <li class="list-item p-2">Shopping Policy</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
-                                <p>Other Pages</p>
-                                <ul class="list-inline">
-                                    <li class="list-item p-2">Home</li>
-                                    <li class="list-item p-2">About Us</li>
-                                    <li class="list-item p-2">Our Products</li>
-                                    <li class="list-item p-2">Login/Signup</li>
-                                    <li class="list-item p-2">Shopping Cart</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 my-auto">
-                                <ul class="list-group">
-                                    <li class="list-inline-item m-2"><img src="/assets/Instagram.png" alt="UPI">
-                                    </li>
-                                    <li class="list-inline-item m-2"><img src="/assets/Facebook.png" alt="PayPal">
-                                    </li>
-                                    <li class="list-inline-item m-2"><img src="/assets/WhatsApp.png" alt="PayPal">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
 
 </html>

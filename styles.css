@@ -1042,15 +1042,17 @@ input[type="checkbox"]+label::after {
 }
 
 .qty .count {
+
     color: #000;
     font-weight: 700;
-    text-align: center;
+    text-align: right;
     background-color: transparent;
-    border: 1px solid #1E1E1E;
-    width: 39px;
-    height: 39px;
+    border: 1px solid #174542;
+    width: 36px;
+    height: 36px;
     border-radius: 11px;
 }
+
 
 .form-check-input {
     width: 20px;
@@ -1194,6 +1196,8 @@ input {
 
 }
 
+
+
 .cart-card {
     background-color: #D2CEC2;
     border-radius: 18px;
@@ -1298,21 +1302,28 @@ input {
 font-size: 20px;
 font-weight: 600;
 line-height: 23px;
-letter-spacing: 0em;
 text-align: left;
+border-radius: 18px;
 
 }
 
-.coupon{
-    color: #DD7E1A;
+.coupon-code-input{
     font-family: Roboto;
 font-size: 18px;
-font-weight: 600;
 line-height: 21px;
 letter-spacing: 0em;
 text-align: left;
-
+width: 100%;
+border-radius: 18px;
+height: 53px;
+text-indent: 10px;
+background-color: #E1DDD2;
 }
+
+.coupon-code-input:focus{
+    outline: none;
+}
+
 
 .recipe-blog img {
     float: left;
@@ -1343,7 +1354,7 @@ text-align: left;
     
 
 }
-/* 
+
 .blog-location {
     font-family: Roboto;
     font-size: 20px;
@@ -1357,7 +1368,7 @@ text-align: left;
 .blog-location span {
     color: #DD7E1A;
 
-} */
+}
 
 .Recipe_img img{
     min-width: 404px;
