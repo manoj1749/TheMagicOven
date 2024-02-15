@@ -1,0 +1,611 @@
+@media (max-width: 768px) {
+
+    h1,
+    p,
+    h2,
+    h3,
+    h4 {
+        font-size: 70%;
+    }
+
+    .health-benefit-card {
+        display: none;
+    }
+
+    .navbar {
+        max-width: 100%;
+    }
+
+    .favorites {
+        margin: 0 !important;
+    }
+
+
+    .buttons {
+        display: none;
+    }
+
+    .home .landingPage {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: fit-content;
+    }
+
+    .favorites {
+        max-width: fit-content;
+    }
+
+    .customers_favorite .favorites .buttons {
+        display: inline;
+        margin-top: 20px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+    }
+
+    .home .landingImg {
+        max-width: fit-content;
+    }
+
+    .WhyMagic {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: fit-content;
+    }
+
+    body {
+        padding: 0 5vw;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .whyus {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .why-header {
+        justify-content: center;
+    }
+
+    .testimonials .container {
+        max-width: fit-content;
+    }
+
+    .favorites {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .recipe,
+    .favorites_imgBox {
+        width: 100%;
+        max-width: none;
+    }
+
+    .navbar {
+        max-height: none;
+    }
+
+    .footer_right {
+        text-align: center;
+    }
+
+    .footer_right ul {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .BigText {
+        display: none;
+    }
+
+    .lineVectors {
+        display: none;
+    }
+
+    .card_footer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .leaf {
+        display: none;
+    }
+
+    .completeStuff {
+        display: none;
+    }
+
+    .recipe-card {
+        width: 343px;
+        height: 350px;
+        margin: 45px auto;
+        /* Center the recipe card horizontally */
+    }
+
+
+}
+
+
+
+@media (max-width: 556px) {
+
+    .landingPage {
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        width: screen;
+    }
+
+    .home {
+        margin-top: 200px;
+        margin-bottom: 240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home h1 {
+        font-family: League Spartan;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 37px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: auto;
+        max-width: 90% !important;
+
+    }
+
+    .home p {
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        justify-self: center;
+
+    }
+
+    .customers-header {
+        padding-left: 30px;
+
+    }
+
+    .home .socials {
+        padding-top: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .fav-card-container {
+        justify-content: center;
+    }
+
+    .recipes {
+        margin-top: 0;
+    }
+
+    .WhyMagic {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 120px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .WhyMagic .carousel-indicators {
+        justify-content: center;
+        margin-bottom: 60px;
+        bottom: -160px;
+    }
+
+    .WhyMagic .carousel-inner {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-why {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .health-benefit-card {
+        display: none;
+    }
+
+    .navbar {
+        max-width: 100%;
+    }
+
+    .favorites {
+        width: 300px;
+
+
+    }
+
+    .whyus .carousel-inner .carousel-item {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .whyus .carousel-inner .carousel-item h3 {
+        /* align-items: center;
+            justify-content: center;
+            width: 100%; */
+        text-align: center;
+    }
+
+    .WhyMagic .carousel-item.active {
+        width: 100%;
+        /* padding-right: 40px; */
+        height: 140%;
+    }
+
+    .WhyMagic .carousel-item img {
+        padding-bottom: 25px;
+        margin: auto;
+    }
+
+    .why-img {
+        padding-top: 80px;
+    }
+
+    .WhyMagic .carousel-item.active img {
+        padding-bottom: 25px;
+        margin: auto;
+    }
+
+    .WhyMagic .carousel-item h3 {
+        padding-bottom: 25px;
+
+        text-align: center;
+        margin: auto;
+    }
+
+    .WhyMagic .carousel-item.active h3 {
+        padding-bottom: 25px;
+
+        text-align: center;
+        margin: auto;
+    }
+
+    .WhyMagic .carousel-item p {
+        text-align: center;
+        padding: 1em;
+        margin: auto;
+    }
+
+    footer .socials {
+        display: none;
+    }
+
+    footer {
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer .footer_logo {
+        width: 100%;
+        justify-items: center;
+    }
+
+    footer .helpful-links {
+        width: 100% !important;
+    }
+
+    footer .other-pages {
+        width: 100% !important;
+        justify-items: start !important;
+    }
+
+
+    footer .helpful-links p {
+        margin-left: 30px;
+        width: 100% !important;
+        text-align: left;
+    }
+
+    footer .other-pages p {
+        margin-left: 30px;
+
+        width: 100% !important;
+        text-align: left;
+    }
+
+    footer .helpful-links li {
+        margin-left: 30px;
+        padding-left: 0 !important;
+        width: 100% !important;
+        text-align: left;
+    }
+
+    footer .other-pages li {
+        margin-left: 30px;
+        padding-left: 0 !important;
+        width: 100% !important;
+        text-align: left;
+    }
+
+    .footer_logo .d-flex {
+        justify-content: center;
+    }
+
+    .WhyMagic .carousel-item.active p {
+        text-align: left;
+        padding: 1em;
+        /* margin: auto; */
+    }
+
+
+
+    .buttons {
+        display: none;
+    }
+
+    .nav-item {
+        margin-right: 0px;
+        font-family: League Spartan;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .navbar-brand img {
+        padding-left: 0 !important;
+        height: 60px;
+    }
+
+    .navbar {
+        max-width: 100vw;
+    }
+
+    .navbar .logo {
+        height: 100px;
+    }
+
+    .favorites {
+        max-width: fit-content;
+    }
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .customers_favorite .favorites .buttons {
+        display: inline;
+        margin-top: 20px;
+    }
+
+    /* .cart h1{
+        text-align: left;
+    } */
+    .cart {
+        padding-left: 0px !important;
+    }
+
+    .cart-card {
+        height: 88px;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        align-items: center;
+    }
+
+    .cart-card-imgbox {
+        width: 69.34px;
+        height: 62.54px;
+        border-radius: 18px;
+
+    }
+
+    .cart-card-content p {
+        font-size: 16px;
+        margin: 0 0;
+    }
+
+    .cart-card-imgbox img {
+        overflow: hidden;
+
+    }
+
+    .cart .text-start {
+        font-family: Poppins;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 53px;
+
+
+    }
+
+    .cart-card-content .line{
+        margin: 2.5px;
+    } 
+
+    .product_info{
+        padding-left: 20px ;
+    }
+
+    .cart .items-in-cart {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .cart .line {
+        display: ;
+    }
+
+    .summary {
+        max-width: 100% !important;
+        max-height: 325px;
+
+    }
+
+    .checkout button {
+        max-width: 100% !important;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+    }
+
+    .home .landingImg {
+        max-width: 350px;
+        max-height: 200px;
+    }
+
+    .trash {
+        display: none;
+    }
+
+    .WhyMagic {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: fit-content;
+    }
+
+    body {
+        padding: 0 5vw;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .whyus .img {
+        max-width: fit-content;
+        max-height: 200px;
+    }
+
+    .testimonials .container {
+        max-width: screen;
+    }
+
+    .testimonials p {
+        font-family: League Spartan;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 75%;
+    }
+
+    .testimonials .carousel-item.active {
+        max-width: screen;
+    }
+
+    .testimonials .carousel-indicators {
+        justify-content: center;
+        bottom: 50px;
+        padding: auto;
+    }
+
+    .testimonials .carousel {
+        height: 400px;
+    }
+
+    .WhyMagic li {
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+    }
+
+
+    .testimonials .quote2 {
+        right: 300px;
+        left: 140px;
+        bottom: 180px;
+    }
+
+    .testimonials .quote1 {
+        top: 150px;
+        right: 135px;
+        bottom: 180px;
+    }
+
+    .testimonials .quote2 img {
+        height: 20px;
+    }
+
+    .testimonials .quote1 img {
+        height: 20px;
+    }
+
+    .testimonials .carousel-container {
+        width: 300px;
+    }
+
+    .favorites {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+
+    .recipe,
+    .favorites_imgBox {
+        width: 100%;
+        max-width: none;
+    }
+
+    .navbar {
+        max-height: none;
+    }
+
+    .footer_right {
+        text-align: center;
+    }
+
+    .footer_right ul {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .BigText {
+        display: none;
+    }
+
+    .lineVectors {
+        display: none;
+    }
+
+    .card_footer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .leaf {
+        display: none;
+    }
+
+    .completeStuff {
+        display: none;
+    }
+}

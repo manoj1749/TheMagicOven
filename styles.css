@@ -29,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    width: 100%; 
+    width: 100%;
     max-width: screen;
 
 }
@@ -89,139 +89,21 @@ body {
 
 }
 
-.container-lg{
-    max-width: 1540px;
-}   
-
-
-@media (max-width: 768px) {
-
-    h1,
-    p,
-    h2,
-    h3,
-    h4 {
-        font-size: 70%;
-    }
-
-    .health-benefit-card {
-        display: none;
-    }
-
-    .navbar {
-        max-width: 100%;
-    }
-
-    .favorites {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 80%;
-    }
-
-
-    .buttons {
-        display: none;
-    }
-
-    .home .landingPage {
-        display: flex;
-        flex-direction: column-reverse;
-        max-width: fit-content;
-    }
-
-    .favorites {
-        max-width: fit-content;
-    }
-
-    .customers_favorite .favorites .buttons {
-        display: inline;
-        margin-top: 20px;
-    }
-
-    section {
-        max-width: fit-content;
-        display: flex;
-        flex-direction: column;
-        max-width: 1440px;
-    }
-
-    .home .landingImg {
-        max-width: fit-content;
-    }
-
-    .WhyMagic {
-        display: flex;
-        flex-direction: column-reverse;
-        max-width: fit-content;
-    }
-
-    body {
-        padding: 0 5vw;
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .whyus .img {
-        max-width: fit-content;
-        max-height: 200px;
-    }
-
-    .testimonials .container {
-        max-width: fit-content;
-    }
-
-    .favorites {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-
-    .recipe,
-    .favorites_imgBox {
-        width: 100%;
-        max-width: none;
-    }
-
-    .navbar {
-        max-height: none;
-    }
-
-    .footer_right {
-        text-align: center;
-    }
-
-    .footer_right ul {
-        text-align: center;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .BigText {
-        display: none;
-    }
-
-    .lineVectors {
-        display: none;
-    }
-
-    .card_footer {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .leaf {
-        display: none;
-    }
-
-    .completeStuff {
-        display: none;
-    }
+.quote1 {
+    position: relative;
+    right: 350px;
+    top: 80px;
 }
 
+.quote2 {
+    position: relative;
+    left: 350px;
+    bottom: 200px;
+}
 
+.container-lg {
+    max-width: 1540px;
+}
 
 .BigText {
     font-family: League Spartan;
@@ -354,7 +236,7 @@ body {
 
 .Login {
     width: 1400px;
-    text-align: start   ;
+    text-align: start;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,15 +408,15 @@ body {
     padding-left: 1rem;
 }
 
-.recipies{
-        margin-left: 90px;
-        margin-right: 90px;
+.recipies {
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 .recipe {
     text-align: start;
     font-family: League Spartan;
-    width: 380px !important;
+    width: 380px;
     height: 391px;
     background-color: #D2CEC2;
     border-radius: 18px;
@@ -564,7 +446,7 @@ body {
 .rounded-image {
     margin-bottom: 20px;
     border-radius: 18px;
-    width: 379px;
+    width: 100%;
 }
 
 .recipes {
@@ -1557,11 +1439,11 @@ input {
     padding: 1em;
 }
 
-.benefits-col-2{
+.benefits-col-2 {
     padding-left: 200px;
 }
 
-.benefits-card .line{
+.benefits-card .line {
     width: 92%;
     margin-left: 10px;
     border-width: 1px;

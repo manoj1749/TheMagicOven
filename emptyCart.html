@@ -14,50 +14,97 @@
         <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="smallerscreens.css">
+
 
     </head>
     <header>
         <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
-            <a class="navbar-brand" href="#">
-                <img class="logo" style="padding-left: 5rem;" src="./assets/logo.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="container"> <!-- Add a container for max-width -->
+                <a class="navbar-brand" href="#">
+                    <img class="logo" style="padding-left: 5rem;" src="./assets/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class=""><img src="./assets/Group 91.png"></span>
+                </button>
+        
+                <div class="navbar-collapse justify-content-lg-end align-items-center collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="/about-us">About Us</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="./ourproducts.html">Our Products</a>
+                        </li>
+                        <li class="nav-item mr-3 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="loginSignUpDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Login/Sign Up
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdown">
+                                <div class="d-flex justify-content-center">
 
-            <div class="collapse navbar-collapse justify-content-lg-end align-items-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="/about-us">About Us</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="/our-products">Our Products</a>
-                    </li>
-                    <li class="nav-item mr-3 dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" id="loginSignUpDropdown"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Login/Sign Up
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdown">
-                            <li><a class="dropdown-item" href="./login.html">Login</a></li>
-                            <li><a class="dropdown-item" href="./signup.html">Sign Up</a></li>
-                        </ul>
-                    </li>
+                                    <div class="wrapper">
+                                        <div style="font-family: Roboto;
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        line-height: 21px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        " class="d-flex fs-md">
+                                            <span>Hi,</span>
+                                            <span class="fw-md ms-1 text-black">Guest!</span>
+                                        </div>
+                                        <div class="mb-3 mt-2" style="font-family: Roboto;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 16px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        ">
+                                            Login to manage your account
+                                        </div>
+
+                                        <div>
+
+                                            <button type="button"
+                                                class="d-block w-100 btn btn-primary buttons fw-md rounded-2"
+                                                data-bs-toggle="modal" data-bs-target="#pop_login">
+                                                Login
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex mt-3 ">
+                                            <span style="font-family: Roboto;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            line-height: 16px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            ">New customer?</span>
+                                            <a href="/signup" style="color: #174542; text-decoration: none;"
+                                                class="fw-md ms-auto">Sign up</a>
+                                        </div>
+
+                                    </div>
 
 
-                    <li class="nav-item position-relative">
-                        <a class="nav-link" href="./checkout/cart">
-                            <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png">
-                        </a>
-                    </li>
-                </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="./checkout/cart">
+                                <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-    </header>
+</header>        
 
     <body style="background-color: #E1DDD2; width: 100%; margin: 0;">
         
