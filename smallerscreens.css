@@ -16,9 +16,7 @@
         max-width: 100%;
     }
 
-    .favorites {
-        margin: 0 !important;
-    }
+
 
 
     /* .buttons {
@@ -32,7 +30,7 @@
     }
 
     .favorites {
-        max-width: fit-content;
+        max-width: 100%;
     }
 
     .customers_favorite .favorites .buttons {
@@ -78,10 +76,6 @@
         max-width: fit-content;
     }
 
-    .favorites {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
 
     .recipe,
     .favorites_imgBox {
@@ -285,6 +279,12 @@
         text-align: center;
         margin: auto;
     }
+
+    .all-products{
+        margin-top:300px;
+    }
+
+    .favorites
     .carousel-dark .carousel-item img{
         margin-top: 40px;
         width: 250px;
@@ -648,11 +648,6 @@
 
     .testimonials .carousel-container {
         width: 300px;
-    }
-
-    .favorites {
-        margin-left: 5vw;
-        margin-right: 5vw;
     }
 
 

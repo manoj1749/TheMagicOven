@@ -14,6 +14,8 @@
         <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="smallerscreens.css">
+
     </head>
 
 
@@ -110,7 +112,7 @@
         <section style="margin-top: 140px; margin-bottom: 220px;">
             <div class="container">
                 <div class="row">
-                    <aside class="col-md-3">
+                    <aside class="col-md-3 col-12">
 
                         <div class="card" style="margin-top: 50px;">
                             <article class="filter-group">
@@ -155,10 +157,10 @@
                         </div>
 
                     </aside>
-                    <main class="col-md-9">
+                    <main class="col-md-9 col-12 all-products">
 
-                        <div class="row mt-5 mx-3 my-auto">
-                            <div class="favorites col-lg-7 row-cols-sm-12 " style="margin-left: 30px;">
+                        <div class="row mt-5 mx-md-3 mx-auto gap-3">
+                            <div class="favorites col-mad-7 col-12 " style="margin-left: 30px;">
                                 <div>
                                     <img class="arrow" style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
                                         src="./assets/Vector 9.svg">
@@ -199,7 +201,7 @@
                                     <span class="selling-price">&#8377;175</span>
                                 </div>
                                 <div class="position-relative ">
-                                    <button class="buttons"onclick="window.location.href='singleProduct.html'" >Order Now</button>
+                                    <button class="buttons"onclick="orderNow()" >Order Now</button>
                                 </div>
                             </div>
                             <div class="favorites col-lg-7 row-cols-sm-12">
@@ -268,7 +270,20 @@
         </section>
 
 
-
+        <script>
+            function orderNow() {
+                // Check if the user is logged in (You may need to implement your logic here)
+                var isLoggedIn = false;  // Set to true if the user is logged in
+        
+                if (!isLoggedIn) {
+                    // Show Bootstrap modal if the user is not logged in
+                    $('#loginModal').modal('show');
+                } else {
+                    // Redirect to the order page or perform any other action
+                    window.location.href = 'singleProduct.html';
+                }
+            }
+        </script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -289,6 +304,23 @@
                 }
             });
         </script>
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Please Login to add product to cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                    </div>
+                    <!-- <div class="modal-body">
+                        <p>Please log in to place an order.</p>
+                    </div> -->
+                    <div class="modal-footer justify-content-center ">
+                        <button class="buttons"onclick="window.location.href='login.html'" >Login?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
     <footer class=".card-footer" style="padding-top: 80px; width: 100%; background-color: #D2CEC2;">
         <div class="container">
