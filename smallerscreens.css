@@ -21,9 +21,9 @@
     }
 
 
-    .buttons {
+    /* .buttons {
         display: none;
-    }
+    } */
 
     .home .landingPage {
         display: flex;
@@ -285,6 +285,12 @@
         text-align: center;
         margin: auto;
     }
+    .carousel-dark .carousel-item img{
+        margin-top: 40px;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+    }
 
     .WhyMagic .carousel-item p {
         text-align: center;
@@ -354,10 +360,10 @@
     }
 
 
-
+/* 
     .buttons {
         display: none;
-    }
+    } */
 
     .nav-item {
         margin-right: 0px;
@@ -398,6 +404,11 @@
     /* .cart h1{
         text-align: left;
     } */
+    .Payment-method {
+        border-radius: 0;
+        width: 100%;
+    }
+
     .cart {
         padding-left: 0px !important;
     }
@@ -436,12 +447,8 @@
 
     }
 
-    .cart-card-content .line{
+    .cart-card-content .line {
         margin: 2.5px;
-    } 
-
-    .product_info{
-        padding-left: 20px ;
     }
 
     .cart .items-in-cart {
@@ -454,18 +461,100 @@
 
     }
 
-    .cart .line {
+    /* .cart .line {
         display: ;
+    } */
+
+
+    .Payment-method {
+        width: 100%;
+        padding: 25px;
     }
 
+    .product-page{
+    padding-top: 220px;
+    }
+    #carouselExampleDark {
+        width: 337px;
+        overflow: hidden;
+        height: 310px;
+        margin: auto;
+    }
+    /* .product-page{
+        padding: 10px;
+    } */
+
+    .singleProduct .product-page h1{
+        font-size: 40px;
+        width: 100%;
+        
+    }
+
+    .blog-location{ 
+        position: absolute;
+        top:20%;
+    }
     .summary {
-        max-width: 100% !important;
+        width: 100% !important;
         max-height: 325px;
 
     }
 
+
+    .payment-page {
+        width: 100%;
+    }
+
+    .payment-page .summary {
+        width: 100%;
+    }
+
+    .shipping-address-box {
+        padding: 20px;
+        height: fit-content;
+    }
+
+    .checkout-address-confirm {
+        padding: 10px !important;
+
+    }
+
+    .checkout-address-confirm h1 {
+        text-align: left;
+        font-size: 50px;
+    }
+
+    .checkout-address-confirm a p {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .checkout-address-confirm * {
+        border-radius: 0;
+    }
+
+    .formInputs {
+        width: 100%;
+    }
+
+    .address-form-row2 {
+        padding: 10px !important;
+    }
+
+    .address-form-row2 input {
+        width: 100%;
+    }
+
+    .checkout-address {
+        padding: 10px !important;
+    }
+
+    .checkout-address h1 {
+        text-align: start;
+    }
+
     .checkout button {
-        max-width: 100% !important;
+        width: 100% !important;
     }
 
     section {
