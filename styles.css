@@ -977,6 +977,7 @@ input[type="checkbox"]+label::after {
 }
 
 
+
 .form-check-input {
     width: 20px;
     height: 20px;
@@ -991,6 +992,8 @@ input[type="checkbox"]+label::after {
     border-color: #174542;
     color: #fff;
 }
+
+
 
 #carouselExampleDark {
     position: relative;

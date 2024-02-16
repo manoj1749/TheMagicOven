@@ -110,13 +110,13 @@
         
         <section style="margin-top: 100px; margin-bottom: 80px; display: flex; flex-direction: column; align-items: center; text-align: center;">
             <img style="max-width: 360px; max-height: 360px;" src="./assets/flat-shopping-cart-cartoon-wallpaper-modern-flat-design-for-shopping-online-website-layout-design-png 1.png">
-            <h1>Your Shopping Cart is Empty</h1>
+            <h1 style="font-size: 35px; font-weight: 700;">Your Shopping Cart is Empty</h1>
             <p style="font-family: Roboto;
             font-size: 20px;
             font-weight: 400;
             line-height: 23px;
             letter-spacing: 0em;
-            text-align: left;
+            text-align: center;
             ">Add products to your cart to view products.</p>
             <button class="buttons" style="margin-top: 50px;">View Products</button>
         </section>
@@ -145,66 +145,78 @@
                 });
             </script>
     </body>
-    <footer class=".card-footer" style="width: 120%; position: relative; bottom: 0; padding-top: 80px; background-color: #D2CEC2;">
-        <div class="container">
-            <div class="row ">
-                <div class="col ">
-                    <div class="footer_left">
-                        <div class="">
-                            <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
-                            <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
-                            <div class="d-flex">
-                                <ul class="list-inline pt-2">
-                                    <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
-                                    <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
-                                    <li class="list-inline-item"><img src="/assets/mastercard.png"
-                                            alt="Mastercard"></li>
-                                    <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
-                                    <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal">
-                                    </li>
-                                </ul>
-                            </div>
+    <footer class=".card-footer"
+    style="width: 120%; position: relative; bottom: 0; padding-top: 80px; background-color: #D2CEC2;">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 order-md-0 order-1">
+                <div class="footer_left">
+                    <div class="footer_logo">
+                        <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
+                        <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
+                        <div class="d-flex">
+                            <ul class="list-inline pt-2">
+                                <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
+                                <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
+                                <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard">
+                                </li>
+                                <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
+                                <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal">
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="footer_right container">
-                        <div class="row ">
-                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
-                                <p>Helpful Links</p>
-                                <ul class="list-inline">
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">FAQ</a></li>
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">Terms of Service</a></li>
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">Privacy & Cookie Policy</a></li>
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">Refund Policy</a></li>
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">Shipping Policy</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 my-auto mx-2" style="width: fit-content;">
-                                <p>Other Pages</p>
-                                <ul class="list-inline">
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">Home</a></li>
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">About Us</a></li>
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">Our Products</a></li>
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">Login / Signup</a></li>
-                                    <li class="list-item p-2"><a href="#" style="text-decoration: none; color: inherit;">Shopping cart</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 my-auto">
-                                <ul class="list-group">
-                                    <li class="list-inline-item m-2"><img src="/assets/Instagram.png" alt="UPI">
-                                    </li>
-                                    <li class="list-inline-item m-2"><img src="/assets/Facebook.png"
-                                            alt="PayPal"></li>
-                                    <li class="list-inline-item m-2"><img src="/assets/WhatsApp.png"
-                                            alt="PayPal"></li>
-                                </ul>
-                            </div>
+            </div>
+            <div class="col-md-6 order-md-1 order-0">
+                <div class="footer_right container">
+                    <div class="row ">
+                        <div class="col-md-3 my-auto mx-2 helpful-links" style="width: fit-content;">
+                            <p>Helpful Links</p>
+                            <ul class="list-inline">
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">FAQ</a></li>
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">Terms of Service</a></li>
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">Privacy & Cookie
+                                        Policy</a></li>
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">Refund Policy</a></li>
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">Shipping Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 my-auto mx-2 other-pages" style="width: fit-content;">
+                            <p>Other Pages</p>
+                            <ul class="list-inline">
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">Home</a></li>
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">About Us</a></li>
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">Our Products</a></li>
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">Login / Signup</a></li>
+                                <li class="list-item p-2"><a href="#"
+                                        style="text-decoration: none; color: inherit;">Shopping cart</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 my-auto ">
+                            <ul class="list-group socials">
+                                <li class="list-inline-item m-2"><img src="/assets/Instagram.png" alt="UPI">
+                                </li>
+                                <li class="list-inline-item m-2"><img src="/assets/Facebook.png" alt="PayPal">
+                                </li>
+                                <li class="list-inline-item m-2"><img src="/assets/WhatsApp.png" alt="PayPal">
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 </html> 

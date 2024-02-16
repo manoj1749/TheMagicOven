@@ -44,9 +44,9 @@
         max-width: 1440px;
     }
 
-    .home .landingImg {
+    /* .home .landingImg {
         max-width: fit-content;
-    }
+    } */
 
     .WhyMagic {
         display: flex;
@@ -76,6 +76,59 @@
         max-width: fit-content;
     }
 
+    .buttons{
+        display: none;
+    }
+
+    .buttons-mob {
+        color: #FFF;
+        font-family: "League Spartan";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 178px;
+        height: 43px;
+        flex-shrink: 0;
+        border-radius: 43px;
+        background: #174542;
+        border-color: transparent;
+    
+        &:hover {
+            background: #008F85;
+            border-color: transparent;
+    
+        }
+    }
+
+    .Recipe_img{
+        padding: 25px;
+        }
+        .Recipe_img img{
+            border-radius: 20px;
+        }
+
+    .Recipe_Desc p{
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 90%;
+    }
+
+    .Recipe_Desc{
+        margin-top: 15px;
+
+        padding-left: 16px;
+        padding-right: 0px!important;
+
+    }
+    .Recipe_Main{
+        padding-left: 25px!important;
+    }
 
     .recipe,
     .favorites_imgBox {
@@ -152,7 +205,7 @@
         font-size: 40px;
         font-weight: 600;
         line-height: 37px;
-        letter-spacing: 0em;
+        letter-spacing: 1px;
         text-align: center;
         margin: auto;
         max-width: 90% !important;
@@ -163,6 +216,7 @@
         text-align: center;
         font-family: Roboto;
         font-size: 16px;
+        margin: auto;
         font-weight: 500;
         line-height: 19px;
         letter-spacing: 0em;
@@ -365,6 +419,11 @@
         display: none;
     } */
 
+    .navbar-nav{
+        height: fit-content;
+        gap: 20px;
+        padding-bottom: 10px;
+    }
     .nav-item {
         margin-right: 0px;
         font-family: League Spartan;
@@ -566,6 +625,7 @@
     .home .landingImg {
         max-width: 350px;
         max-height: 200px;
+        margin-left: 40px;
     }
 
     .trash {

@@ -38,10 +38,14 @@
                             <a class="nav-link" href="./ourproducts.html">Our Products</a>
                         </li>
                         <li class="nav-item mr-3 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" id="loginSignUpDropdown"
+                            <a class="nav-link dropdown-toggle d-md-block d-none" href="#" role="button" id="loginSignUpDropdown"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Login/Sign Up
                             </a>
+                            <a class="nav-link d-md-none d-block" href="#" role="button" id="loginSignUpDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Your Orders
+                        </a>
                             <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdown">
                                 <div class="d-flex justify-content-center">
 
@@ -94,8 +98,9 @@
                             </ul>
                         </li>
                         <li class="nav-item position-relative">
-                            <a class="nav-link" href="./checkout/cart">
-                                <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png">
+                            <a class="nav-link" href="cart.html">
+                                <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png" class="d-none d-md-block">
+                                Cart
                             </a>
                         </li>
                     </ul>
@@ -111,7 +116,7 @@
         <section class="home">
             <div class="health-benefit-card">
                 <a class="d-flex justify-content-between align-items-center text-decoration-none" style="color:#FFFFFF"
-                    href="#">
+                    href="aboutus.html">
                     <img class="mx-auto" src="./assets/care 1.png">
                     <p class="w-100 my-auto mx-auto" style="font-family: Roboto;
                         font-size: 18px;
@@ -125,7 +130,7 @@
             </div>
         
             <div class="row landingPage d-md-flex d-block">
-                <div class="col-md-7 col-sm-12 landingImg order-sm-last image-fluid">
+                <div class="col-md-7 col-sm-12 landingImg order-sm-last ">
                     <img src="./assets/Group 101 1.png" class="img-fluid">
                 </div>
         
@@ -139,13 +144,14 @@
                     </div>
                     <div>
                         <h1 style="margin-bottom: 20px; max-width: 80%;">Discover the Art of Sourdough Mastery</h1>
-                        <p style="margin-bottom: 30px; max-width: 95%;">
+                        <p style="margin-bottom: 30px; max-width: 95%;" class="px-md-0 px-2">
                             Journey into Flavorful Delight with Magic Oven's Signature Sourdough Creations
                         </p>
                         <button class="buttons"> Shop Now</button>
                     </div>
                 </div>
             </div>
+            <div class=""><button class="buttons-mob d-md-none d-block mx-auto"  style="position: relative;top: 140px;" > Shop Now</button></div>
         </section>
         
         <section class="customers_favorite ">
@@ -158,6 +164,8 @@
                 <span class="lineVectors"><img src="./assets/Line 2.png" width="100%" alt=""></span>
                 <span><button class="buttons">View All</button></span>
             </div>
+            <hr class="line d-md-none d-block">
+
 
             <div class="container-fluid" style="padding-top: 3rem;">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gap-5 fav-card-container">
@@ -253,7 +261,10 @@
                     </div>
 
                 </div>
+                <div class=""><button class="buttons-mob d-md-none d-block mx-auto" onclick="window.location.href='ourproducts.html'" style="position: relative;top: 60px;" >View All</button></div>
+
             </div>
+            
 
         </section>
 
@@ -263,6 +274,8 @@
                 <span class="lineVectors"><img src="./assets/Line 2.png" width="100%" alt=""></span>
                 <span><button class="buttons">Read More</button></span>
             </div>
+            <hr class="line d-md-none d-block">
+
             <div class="">
                 <div class="row WhyMagic gap-5">
                     <div class="col order-lg-0 order-1 carousl-why">
@@ -300,6 +313,8 @@
                                 </div>
                             </div>
                         </div>
+                        <div class=""><button class="buttons-mob d-md-none d-block mx-auto" onclick="window.location.href='ourproducts.html'" style="position: relative;top: 360px;" >View All</button></div>
+
                     </div>
                     <div class="col col-md-0 order-lg-1 order-0 why-img">
                         <img class="" src="./assets/Group 45.svg" alt="">
@@ -318,6 +333,7 @@
                 <span class="lineVectors"><img src="./assets/Line 10.png" width="100%" alt=""></span>
                 <span><button style="position: relative;" class="buttons">View All</button></span>
             </div>
+            <hr class="line d-md-none d-block">
             <div class="recipes row row-cols-lg-3">
                 <div class="d-grid justify-content-center recipe-card">
                     <div class="recipe col-lg-6 col-md-12">
@@ -355,6 +371,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="d-grid justify-content-center recipe-card">
                     <div class="recipe col-lg-6 col-md-12">
                         <img src="./assets/Kimchi-Toast-Healthy-ish-recipe.png" class="rounded-image">
@@ -374,6 +392,7 @@
                     </div>
                 </div>
             </div>
+            <div class=""><button class="buttons-mob d-md-none d-block mx-auto" onclick="window.location.href='recipe.html'" style="position: relative; bottom: 40px;" >View All</button></div>
 
         </section>
         <section class="testimonials position-relative">
@@ -388,6 +407,7 @@
                 </h1>
                 <img height="10%" class="my-4 mx-4 lineVectors" src="assets/Line 13.png">
             </div>
+            <hr class="line d-md-none d-block w-100">
             <div class="container text-center"> <!-- Added text-center class -->
                 <div class="row-cols-md-10">
                     <div class="col-md-9 m-auto">
