@@ -18,14 +18,20 @@
     </head>
     <header>
         <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
+            
             <div class="container"> <!-- Add a container for max-width -->
                 <a class="navbar-brand" href="#">
                     <img class="logo" style="" src="./assets/logo.png" alt="Logo">
                 </a>
+                <button style="background-color: transparent; border: 0;" class="d-md-none d-block nav-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                    </svg>
+                </button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation" aria-expanded="false">
                     <span class=""><img src="./assets/Group 91.png"></span>
                 </button>
-        
+
                 <div class="navbar-collapse justify-content-lg-end align-items-center collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item mr-3">
@@ -100,12 +106,18 @@
                         <li class="nav-item position-relative">
                             <a class="nav-link" href="cart.html">
                                 <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png" class="d-none d-md-block">
-                                Cart
+                                <p class="d-block d-md-none font-inherit" style="font-size: inherit;">Cart</p>
                             </a>
                         </li>
                     </ul>
                 </div>
+                <a href="#searchModal" id="openModalButton" class="d-md-block d-none nav-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                    </svg>
+                </a>
             </div>
+
         </nav>
 </header>        
 
@@ -147,7 +159,7 @@
                         <p style="margin-bottom: 30px; max-width: 95%;" class="px-md-0 px-2">
                             Journey into Flavorful Delight with Magic Oven's Signature Sourdough Creations
                         </p>
-                        <button class="buttons"> Shop Now</button>
+                        <button class="buttons d-md-block d-none"> Shop Now</button>
                     </div>
                 </div>
             </div>
@@ -162,7 +174,7 @@
             <div class="d-flex align-items-center mb-xl-3">
                 <h1 class="mr-3 customers-header" style="min-width: fit-content; padding-right: 8px;">Customers Favorite </h1>
                 <span class="lineVectors"><img src="./assets/Line 2.png" width="100%" alt=""></span>
-                <span><button class="buttons">View All</button></span>
+                <span><button class="buttons d-md-block d-none">View All</button></span>
             </div>
             <hr class="line d-md-none d-block">
 
@@ -272,7 +284,7 @@
             <div class="d-flex align-items-center why-header">
                 <h1 class="mr-3" style="min-width: fit-content;">Why Magic Oven? </h1>
                 <span class="lineVectors"><img src="./assets/Line 2.png" width="100%" alt=""></span>
-                <span><button class="buttons">Read More</button></span>
+                <span><button class="buttons d-md-block d-none">Read More</button></span>
             </div>
             <hr class="line d-md-none d-block">
 
@@ -331,11 +343,11 @@
             <div class="d-flex align-items-center mb-3" style="max-width: inherit;">
                 <h1 class="mr-3" style="min-width: fit-content;">Explore Sourdough Recipes </h1>
                 <span class="lineVectors"><img src="./assets/Line 10.png" width="100%" alt=""></span>
-                <span><button style="position: relative;" class="buttons">View All</button></span>
+                <span><button style="position: relative;" class="buttons d-md-block d-none">View All</button></span>
             </div>
             <hr class="line d-md-none d-block">
             <div class="recipes row row-cols-lg-3">
-                <div class="d-grid justify-content-center recipe-card">
+                <div class="d-grid justify-content-center recipe-card p-0">
                     <div class="recipe col-lg-6 col-md-12">
                         <img src="./assets/Kimchi-Toast-Healthy-ish-recipe.png" class="rounded-image">
                         <div class="recipe_desc">
@@ -353,12 +365,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-grid justify-content-center recipe-card">
+                <div class="d-grid justify-content-center recipe-card p-0">
                     <div class="recipe col-lg-6 col-md-12">
                         <img src="./assets/Kimchi-Toast-Healthy-ish-recipe.png" class="rounded-image">
                         <div class="recipe_desc">
                             <div class="recipe_name d-flex justify-content-between align-items-center">
-                                <span>Kimchi Toast</span>
+                                <span>Mango Toast With Hazelnut-Pepita Butter </span>
                                 <img src="./assets/Sign_in_circle_duotone.png" alt="icon">
                             </div>
 
@@ -373,12 +385,12 @@
                 </div>
 
 
-                <div class="d-grid justify-content-center recipe-card">
+                <div class="d-grid justify-content-center recipe-card p-0">
                     <div class="recipe col-lg-6 col-md-12">
                         <img src="./assets/Kimchi-Toast-Healthy-ish-recipe.png" class="rounded-image">
                         <div class="recipe_desc">
                             <div class="recipe_name d-flex justify-content-between align-items-center">
-                                <span>Kimchi Toast</span>
+                                <span>Mango Toast With Hazelnut-Pepita Butter</span>
                                 <img src="./assets/Sign_in_circle_duotone.png" alt="icon">
                             </div>
 

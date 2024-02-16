@@ -17,11 +17,15 @@ h1 {
 }
 
 html body {
+    overflow-x: hidden;
     scroll-behavior: smooth;
     margin-left: 3rem;
     margin-right: 2rem;
 }
 
+.WhyMagic .carousel-item p{
+    text-align: left;
+}
 
 body {
     display: flex;
@@ -33,7 +37,15 @@ body {
     max-width: screen;
 
 }
+.recipe_desc p{
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
 
+}
 .testimonials .carousel-inner {
     max-height: 400px;
     max-width: 600px;
@@ -104,6 +116,7 @@ body {
 .container-lg {
     max-width: 1540px;
 }
+
 
 .BigText {
     font-family: League Spartan;
@@ -293,15 +306,20 @@ body {
     background-color: #008F85;
 }
 
-.favorites_img {
-    height: 100%;
-    width: 100%;
-    max-width: 140px;
-    max-height: 140px;
-    object-fit: cover;
+.favorites_img{
+    max-height: 190px;
+    width: 10       0%;
+    aspect-ratio: 4/4;
+    object-fit: contain;
     background-color: transparent;
     border-radius: 19px 19px 0 0;
+    
 }
+/* .nav-search
+{
+    width: 25%;
+} */
+
 
 .favorites .buttons {
     margin-top: 21px;
@@ -391,7 +409,14 @@ body {
     margin-left: 5px;
     margin-right: 10px;
 }
+.singleProduct .carousel-item {
+    position: relative;
+    z-index: 1;
+}
 
+.singleProduct .carousel-item.active {
+    z-index: 2;
+}
 /* .cart-card .cart-card-content{
     padding-top: 30px;
 } */
@@ -536,6 +561,7 @@ body {
 
 .testimonials .carousel-indicators {
     bottom: 25%;
+    z-index: top;
 }
 
 .testimonials {
@@ -1058,8 +1084,6 @@ input {
 
 
 
-
-
 .product_info button.active+.product_info-collapse .divider {
     margin-top: 10px;
 }
@@ -1140,18 +1164,32 @@ input {
 }
 
 #carouselExampleDark .carousel-item {
+    display: none;
+    transition: 500ms ease-in-out      ;
+}
+#carouselExampleDark .carousel-item.active{
+    aspect-ratio: 4/4;
     text-align: center;
     width: 100%;
+    height: 300px; 
     display: flex;
-    height: 100%;
     justify-content: center;
+    overflow: hidden;
 }
 
 .carousel-dark .carousel-item img {
-    max-width: 100%;
-    max-height: 100%;
+
     width: auto;
-    height: auto;
+    height: auto; 
+    object-position: center;
+}
+.carousel-dark .carousel-item.active img {
+    width: 300px;
+    height: 300px; 
+    background: clip;
+    aspect-ratio: 4/4;
+    object-fit: cover;
+    object-position: center;
 }
 
 .carousel-dark .carousel-indicators button {
@@ -1161,8 +1199,6 @@ input {
     border-radius: 100%;
     opacity: 0.2;
 }
-
-
 
 #carouselExampleDark .carousel-indicators .active {
     opacity: 1;
@@ -1175,26 +1211,18 @@ input {
     margin-left: 60px;
 }
 
-#carouselExampleDark .carousel-control-prev {
-    /* border: 1px solid; */
-    height: 48px;
-    width: 48px;
-    /* background-color: #C1C1C1; */
-    border-radius: 50%;
-}
-
+#carouselExampleDark .carousel-control-prev,
 #carouselExampleDark .carousel-control-next {
-    /* border: 1px solid; */
+    z-index: 5;
     height: 48px;
     width: 48px;
-    /* background-color: #C1C1C1; */
     border-radius: 50%;
 }
 
 #carouselExampleDark .carousel-indicators {
-    /* position: relative; */
     top: 120px;
 }
+
 
 .cart-card-imgbox {
     display: flex;
@@ -1431,6 +1459,8 @@ input {
     padding: 30px;
 }
 
+
+
 .benefits-card {
     width: 380px;
     height: 165px;
@@ -1449,7 +1479,12 @@ input {
 .benefits-card .line {
     width: 92%;
     margin-left: 10px;
+    height: 1px;
     border-width: 1px;
     border-color: #FFF;
     background-color: #FFF;
+}
+
+.benefits{
+    margin-left: 100px;
 }

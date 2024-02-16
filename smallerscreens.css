@@ -76,10 +76,35 @@
         max-width: fit-content;
     }
 
-    .buttons{
+    /* .buttons {
         display: none;
+    } */
+    .our-products .list-menu li span{
+        padding-left: 70px!important;
+    }
+    .our-products .card{
+        width: 100%;
+    }
+    .carousel-dark .carousel-item.active img {
+        scale: 1.5;
     }
 
+    #carouselExampleDark .carousel-item img{
+        /* overflow: visible; */
+        transform: scale(0.5);
+    }
+    .our-products .card-body{
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-indent: 10px;
+    }
+    .our-products .card-header{
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-indent: 10px;
+    }
     .buttons-mob {
         color: #FFF;
         font-family: "League Spartan";
@@ -93,22 +118,23 @@
         border-radius: 43px;
         background: #174542;
         border-color: transparent;
-    
+
         &:hover {
             background: #008F85;
             border-color: transparent;
-    
+
         }
     }
 
-    .Recipe_img{
+    .Recipe_img {
         padding: 25px;
-        }
-        .Recipe_img img{
-            border-radius: 20px;
-        }
+    }
 
-    .Recipe_Desc p{
+    .Recipe_img img {
+        border-radius: 20px;
+    }
+
+    .Recipe_Desc p {
         font-family: Roboto;
         font-size: 18px;
         font-weight: 500;
@@ -119,15 +145,16 @@
         width: 90%;
     }
 
-    .Recipe_Desc{
+    .Recipe_Desc {
         margin-top: 15px;
 
         padding-left: 16px;
-        padding-right: 0px!important;
+        padding-right: 0px !important;
 
     }
-    .Recipe_Main{
-        padding-left: 25px!important;
+
+    .Recipe_Main {
+        padding-left: 25px !important;
     }
 
     .recipe,
@@ -212,18 +239,30 @@
 
     }
 
-    .our-products .favorites{
-        margin: auto!important;
+    .our-products .favorites {
+        margin: auto !important;
         width: 283px;
     }
-    html{
+
+    html {
         overflow-x: hidden;
     }
 
-    .our-products article{
+    .WhyMagic .carousel-inner .carousel-item h3 {
+        width: 60%;
+        text-align: center;
+    }
+
+    .WhyMagic .carousel-inner .carousel-item.active p {
+        text-align: center;
+    }
+
+
+    .our-products article {
         justify-content: center;
         width: 100%;
     }
+
     .home p {
         text-align: center;
         font-family: Roboto;
@@ -332,26 +371,34 @@
         margin: auto;
     }
 
-    .WhyMagic .carousel-item h3 {
-        padding-bottom: 25px;
+    .recipe-card{
+        width: 343px;
+    }
+    .recipe span{
+        font-family: League Spartan;
+font-size: 20px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
 
+    }
+    .WhyMagic .carousel-item h3 {
         text-align: center;
         margin: auto;
     }
 
     .WhyMagic .carousel-item.active h3 {
-        padding-bottom: 25px;
 
         text-align: center;
         margin: auto;
     }
 
-    .all-products{
-        margin-top:300px;
+    .all-products {
+        margin-top: 300px;
     }
 
-    .favorites
-    .carousel-dark .carousel-item img{
+    .favorites .carousel-dark .carousel-item img {
         margin-top: 40px;
         width: 250px;
         height: 250px;
@@ -426,16 +473,17 @@
     }
 
 
-/* 
+    /* 
     .buttons {
         display: none;
     } */
 
-    .navbar-nav{
+    .navbar-nav {
         height: fit-content;
         gap: 20px;
         padding-bottom: 10px;
     }
+
     .nav-item {
         margin-right: 0px;
         font-family: League Spartan;
@@ -459,7 +507,7 @@
         height: 100px;
     }
 
-    .favorites {
+    .home .favorites {
         max-width: fit-content;
     }
 
@@ -542,29 +590,34 @@
         padding: 25px;
     }
 
-    .product-page{
-    padding-top: 220px;
+    .product-page {
+        padding-top: 220px;
     }
+
     #carouselExampleDark {
         width: 337px;
         overflow: hidden;
         height: 310px;
         margin: auto;
     }
+
     /* .product-page{
         padding: 10px;
     } */
 
-    .singleProduct .product-page h1{
+    .singleProduct .product-page h1 {
         font-size: 40px;
         width: 100%;
-        
+
     }
 
-    .blog-location{ 
+    .blog-location {
         position: absolute;
-        top:20%;
+        left: 9%;
+        margin-bottom: 40px;
+        overflow: hidden;
     }
+
     .summary {
         width: 100% !important;
         max-height: 325px;
@@ -644,6 +697,20 @@
         display: none;
     }
 
+    .nav-search{
+        position: relative;
+        left: 50px;
+    }
+
+    .benefits{
+        margin-left: 0px!important;
+    }
+    .benefits-col-2{
+        padding-left: 0px!important;
+    }
+    .about-us .line{
+        margin: 2px;
+    }
     .WhyMagic {
         display: flex;
         flex-direction: column-reverse;
