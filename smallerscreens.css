@@ -212,6 +212,18 @@
 
     }
 
+    .our-products .favorites{
+        margin: auto!important;
+        width: 283px;
+    }
+    html{
+        overflow-x: hidden;
+    }
+
+    .our-products article{
+        justify-content: center;
+        width: 100%;
+    }
     .home p {
         text-align: center;
         font-family: Roboto;
