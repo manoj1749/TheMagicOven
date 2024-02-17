@@ -17,18 +17,23 @@
 
     </head>
     <header>
+
         <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
-            
+
             <div class="container"> <!-- Add a container for max-width -->
                 <a class="navbar-brand" href="#">
                     <img class="logo" style="" src="./assets/logo.png" alt="Logo">
                 </a>
                 <button style="background-color: transparent; border: 0;" class="d-md-none d-block nav-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                        </path>
                     </svg>
                 </button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation" aria-expanded="false">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-label="Toggle navigation" aria-expanded="false">
                     <span class=""><img src="./assets/Group 91.png"></span>
                 </button>
 
@@ -44,14 +49,14 @@
                             <a class="nav-link" href="./ourproducts.html">Our Products</a>
                         </li>
                         <li class="nav-item mr-3 dropdown">
-                            <a class="nav-link dropdown-toggle d-md-block d-none" href="#" role="button" id="loginSignUpDropdown"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle d-md-block d-none" href="#" role="button"
+                                id="loginSignUpDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                 Login/Sign Up
                             </a>
                             <a class="nav-link d-md-none d-block" href="#" role="button" id="loginSignUpDropdown"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Your Orders
-                        </a>
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Your Orders
+                            </a>
                             <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdown">
                                 <div class="d-flex justify-content-center">
 
@@ -78,9 +83,8 @@
 
                                         <div>
 
-                                            <button type="button"
-                                                class="d-block w-100 btn btn-primary buttons fw-md rounded-2"
-                                                data-bs-toggle="modal" data-bs-target="#pop_login">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#pop_modal">
                                                 Login
                                             </button>
                                         </div>
@@ -105,25 +109,112 @@
                         </li>
                         <li class="nav-item position-relative">
                             <a class="nav-link" href="cart.html">
-                                <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png" class="d-none d-md-block">
+                                <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png"
+                                    class="d-none d-md-block">
                                 <p class="d-block d-md-none font-inherit" style="font-size: inherit;">Cart</p>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <a href="#searchModal" id="openModalButton" class="d-md-block d-none nav-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                        </path>
                     </svg>
                 </a>
             </div>
 
         </nav>
-</header>        
+    </header>
+    <div class="modal fade" id="pop_modal" tabindex="-1" aria-labelledby="pop_modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-lg" style="background-color: #E1DDD2;">
+                <form id="login_form" action="/" style="width: 100%; max-width: 500px;">
+                    <input type="hidden" id="auth_code" value="XW654SHvcf">
+                    <div class="modal-header position-relative z-0">
+                        <div class="bg-wall center-center size-fit-auto position-absolute z-n1 mt-3"
+                            data-bgimg="/assets/img/store/icons/login.png"
+                            style="background-image: url(&quot;/assets/img/store/icons/login.png&quot;);">
+                        </div>
+                        <button type="button" class="btn-close -btn-close-white m-0 mt-4 align-self-end" data-bs-dismis
+                            s="modal" aria-label="Close"></button>
+                        <h3 class="modal-title m-auto">Login</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-danger d-none" role="alert">
+                        </div>
+                        <div class="d-flex flex-column mb-3">
+                            <div class="flax-input-group">
+                                <div class="flax-input-group-prepend">
+                                    <div class="flax-icon ">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                            class="css-i6dzq1">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <input type="text" name="login_id" id="login_id" class="flax-input" required=""
+                                    placeholder="Enter Mobile no. (without ISD code)"
+                                    data-flax-required-msg="Login id is required" style="padding-left: 35px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mb-3">
+                            <div class="flax-input-group">
+                                <div class="flax-input-group-prepend">
+                                    <div class="flax-icon">
+                                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                            class="css-i6dzq1">
+                                            <path
+                                                d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <input type="password" name="password" id="password" class="flax-input" required=""
+                                    placeholder="Enter password" data-flax-required-msg="Password is required"
+                                    style="padding-left: 35px;">
+                            </div>
+                        </div>
+                        <a href="/forgot-pw">Forgot Password?</a>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex flex-column m-0 me-auto">
+                            <span class="-text-muted">
+                                Don't have an account?
+                            </span>
+                            <a href="/signup" target="_blank" class="fw-md">Signup</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-login px-4 py-2 m-0">
+                            Login
+                        </button>
+                    </div>
+                </form>
+                <div class="login_success" style="border-radius: inherit; display: none;">
+                    <div class="d-flex justify-content-center pt-4">
+                        <img src="/assets/img/global/msgbox-success.svg" class="image-size-h64"
+                            alt="Successfully logged in">
+                    </div>
+
+                    <div class="modal-body d-flex align-items-center justify-content-center text-black"
+                        style="gap:10px">
+                        <i class="fas fa-spinner fa-spin d-block"></i>
+                        <span>Wait while we setup your account</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <body class="d-flex flex-column justify-content-center align-items-center"
         style="background-color: #E1DDD2;margin: 0; padding: 0; width: 100%; max-width: screen;">
-  
+
 
         <section class="home">
             <div class="health-benefit-card">
@@ -140,12 +231,12 @@
                     <img class="" style=" margin-right: 34px; margin-left: 30px;" src="./assets/Arrow 1.png">
                 </a>
             </div>
-        
+
             <div class="row landingPage d-md-flex d-block">
                 <div class="col-md-7 col-sm-12 landingImg order-sm-last ">
                     <img src="./assets/Group 101 1.png" class="img-fluid">
                 </div>
-        
+
                 <div class="col-md-5  m-auto">
                     <div class="socials">
                         <ul class="list-inline">
@@ -163,16 +254,18 @@
                     </div>
                 </div>
             </div>
-            <div class=""><button class="buttons-mob d-md-none d-block mx-auto"  style="position: relative;top: 140px;" > Shop Now</button></div>
+            <div class=""><button class="buttons-mob d-md-none d-block mx-auto" style="position: relative;top: 140px;">
+                    Shop Now</button></div>
         </section>
-        
+
         <section class="customers_favorite ">
             <div class="d-flex justify-content-end align-items-baseline" style="margin: 0;">
                 <h2 class="BigText">Bakery</h2>
             </div>
 
             <div class="d-flex align-items-center mb-xl-3">
-                <h1 class="mr-3 customers-header" style="min-width: fit-content; padding-right: 8px;">Customers Favorite </h1>
+                <h1 class="mr-3 customers-header" style="min-width: fit-content; padding-right: 8px;">Customers Favorite
+                </h1>
                 <span class="lineVectors"><img src="./assets/Line 2.png" width="100%" alt=""></span>
                 <span><button class="buttons d-md-block d-none">View All</button></span>
             </div>
@@ -273,10 +366,12 @@
                     </div>
 
                 </div>
-                <div class=""><button class="buttons-mob d-md-none d-block mx-auto" onclick="window.location.href='ourproducts.html'" style="position: relative;top: 60px;" >View All</button></div>
+                <div class=""><button class="buttons-mob d-md-none d-block mx-auto"
+                        onclick="window.location.href='ourproducts.html'" style="position: relative;top: 60px;">View
+                        All</button></div>
 
             </div>
-            
+
 
         </section>
 
@@ -325,7 +420,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=""><button class="buttons-mob d-md-none d-block mx-auto" onclick="window.location.href='ourproducts.html'" style="position: relative;top: 360px;" >View All</button></div>
+                        <div class=""><button class="buttons-mob d-md-none d-block mx-auto"
+                                onclick="window.location.href='ourproducts.html'"
+                                style="position: relative;top: 360px;">View All</button></div>
 
                     </div>
                     <div class="col col-md-0 order-lg-1 order-0 why-img">
@@ -404,7 +501,9 @@
                     </div>
                 </div>
             </div>
-            <div class=""><button class="buttons-mob d-md-none d-block mx-auto" onclick="window.location.href='recipe.html'" style="position: relative; bottom: 40px;" >View All</button></div>
+            <div class=""><button class="buttons-mob d-md-none d-block mx-auto"
+                    onclick="window.location.href='recipe.html'" style="position: relative; bottom: 40px;">View
+                    All</button></div>
 
         </section>
         <section class="testimonials position-relative">

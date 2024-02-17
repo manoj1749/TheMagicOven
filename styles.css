@@ -16,6 +16,55 @@ h1 {
     line-height: normal;
 }
 
+
+.flax-input-group.flax-has-error .flax-input:not(:focus), .flax-input.flax-has-error:not(:focus) {
+    border-color: var(--bs-danger);
+    background-color: var(--text-danger-bg);
+}
+.flax-input-group-append, .flax-input-group-between, .flax-input-group-prepend {
+    position: absolute;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.flax-input-group .flax-input:last-child {
+    padding-right: var(--input-padding-horizontal);
+    border: 1px solid #000;
+}
+.modal{
+    padding-top: 15%;
+}
+.modal h3{
+    font-size: 30px;
+}
+.flax-input {
+    --input-height: 45px;
+    --input-padding-vertical: 10px;
+    --input-padding-horizontal: 19px;
+    --input-height-sm: 30px;
+    --input-padding-vertical-sm: 6px;
+    --input-padding-horizontal-sm: 7px;
+    display: block;
+    width: 100%;
+    padding-left: 50px;
+    border: 1px solid var(--input-group-border-color);
+    border-radius: 0.5rem;
+    color: #303030;
+    background-color: var(--input-group-bg-color);
+    background-image: none;
+    background-clip: padding-box;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    overflow: visible;
+    margin: 0;
+    min-height: var(--input-height);
+    height: var(--input-height);
+    line-height: 1;
+    padding: var(--input-padding-vertical) var(--input-padding-horizontal);
+}
 html body {
     overflow-x: hidden;
     scroll-behavior: smooth;
