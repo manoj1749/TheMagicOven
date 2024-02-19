@@ -282,7 +282,7 @@ text-align: left;
 }
 
 .nav-item {
-    margin-right: 50px;
+    margin-right: 35px;
     font-family: League Spartan;
     font-size: 20px;
     font-weight: 600;
@@ -291,6 +291,26 @@ text-align: left;
     text-align: left;
 
 }
+
+.home .search-bar input{
+    font-family: League Spartan;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.home .search-bar
+{
+
+
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+}
+
+
 
 .navbar-nav {
     align-items: center;
@@ -364,10 +384,7 @@ text-align: left;
     border-radius: 19px 19px 0 0;
     
 }
-/* .nav-search
-{
-    width: 25%;
-} */
+
 
 
 .favorites .buttons {

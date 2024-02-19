@@ -14,24 +14,17 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="smallerscreens.css">
-
+        <script src="script.js"></script>
     </head>
     <header>
 
         <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
 
-            <div class="container"> <!-- Add a container for max-width -->
+            <div class="container px-md-0 px-4 "> <!-- Add a container for max-width -->
                 <a class="navbar-brand" href="#">
                     <img class="logo" style="" src="./assets/logo.png" alt="Logo">
                 </a>
-                <button style="background-color: transparent; border: 0;" class="d-md-none d-block nav-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-search" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
-                        </path>
-                    </svg>
-                </button>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-label="Toggle navigation" aria-expanded="false">
                     <span class=""><img src="./assets/Group 91.png"></span>
@@ -48,14 +41,13 @@
                         <li class="nav-item mr-3">
                             <a class="nav-link" href="./ourproducts.html">Our Products</a>
                         </li>
-                        <li class="nav-item mr-3 dropdown">
-                            <a class="nav-link dropdown-toggle d-md-block d-none" href="#" role="button"
-                                id="loginSignUpDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                Login/Sign Up
-                            </a>
-                            <a class="nav-link d-md-none d-block" href="#" role="button" id="loginSignUpDropdown"
+                        <li class="nav-item mr-3 d-md-none d-block">
+                            <a class="nav-link" href="./ourproducts.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item mr-3 dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="loginSignUpDropdown"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Your Orders
+                                Login/Sign Up
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdown">
                                 <div class="d-flex justify-content-center">
@@ -83,7 +75,7 @@
 
                                         <div>
 
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            <button type="button" class="btn buttons btn-primary" data-bs-toggle="modal"
                                                 data-bs-target="#pop_modal">
                                                 Login
                                             </button>
@@ -107,56 +99,139 @@
                                 </div>
                             </ul>
                         </li>
-                        <li class="nav-item position-relative">
-                            <a class="nav-link" href="cart.html">
-                                <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png"
-                                    class="d-none d-md-block">
-                                <p class="d-block d-md-none font-inherit" style="font-size: inherit;">Cart</p>
+                        <div style="display: flex; position: relative; left:-20px">
+
+                            <li class="nav-item position-relative d-none d-md-block my-auto">
+                                <a class="nav-link" href="cart.html" id="cart-icon">
+                                    <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png">
+                                </a>
+                            </li>
+                            <li class="nav-item position-relative d-none d-md-block my-auto m-0">
+                                <a class="nav-link" href="profile.html" id="profile-icon">
+                                    <img style="max-height: 37px; max-width: 37px;" src="./assets/Vector.png">
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="d-flex">
+
+                    <form class="search-bar ">
+                        <div class="input-group ">
+                            <input type="text"
+                                style="width: 229px; background-color: #D2CEC2;border-radius: 20px; height: 47px;"
+                                class="form-control border-0" placeholder="Search Products">
+                            <div class="input-group-append ">
+                                <button class="search bg-transparent border-0" type="button"
+                                    style="position: absolute; top: 8px; right: 5px; z-index: 5;"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="d-flex gap-2 p-auto m-auto">
+                        <li class="nav-item position-relative d-md-none d-block px-2 py-auto">
+                            <a class="nav-link" href="cart.html" id="cart-icon-mobile">
+                                <img style="max-height: 37px; max-width: 37px;" src="./assets/Shopping Cart.png">
                             </a>
+                        </li>
+                        <li class="nav-item position-relative d-block d-md-none px-2 py-auto">
+                            <a class="nav-link" href="profile.html" id="profile-icon-mobile">
+                                <img style="max-height: 37px; max-width: 37px;" src="./assets/Vector.png">
+                            </a>
+                        </li>
+                        <li class="nav-item mr-3 dropdown d-block d-md-none">
+                            <a class="nav-link dropdown-toggle no-caret" href="#" role="button" id="loginSignUpDropdownMobile"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="
+                            position: relative;
+                            left: -30px;
+                        ">
+                                Login
+                            </a>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdownMobile">
+                                <div class="d-flex justify-content-center">
+
+                                    <div class="wrapper">
+                                        <div style="font-family: Roboto;
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        line-height: 21px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        " class="d-flex fs-md">
+                                            <span>Hi,</span>
+                                            <span class="fw-md ms-1 text-black">Guest!</span>
+                                        </div>
+                                        <div class="mb-3 mt-2" style="font-family: Roboto;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 16px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        ">
+                                            Login to manage your account
+                                        </div>
+
+                                        <div>
+
+                                            <button type="button" class="btn buttons btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#pop_modal">
+                                                Login
+                                            </button>
+                                        </div>
+
+                                        <div class="d-flex mt-3 ">
+                                            <span style="font-family: Roboto;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            line-height: 16px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            ">New customer?</span>
+                                            <a href="/signup" style="color: #174542; text-decoration: none;"
+                                                class="fw-md ms-auto">Sign up</a>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </ul>
                         </li>
                     </ul>
                 </div>
-                <a href="#searchModal" id="openModalButton" class="d-md-block d-none nav-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-search" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
-                        </path>
-                    </svg>
-                </a>
             </div>
 
         </nav>
-    </header>
     <div class="modal fade" id="pop_modal" tabindex="-1" aria-labelledby="pop_modalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content rounded-lg" style="background-color: #E1DDD2;">
+            <div class="modal-content rounded-lg d-flex flex-column justify-content-center align-items-center" style="background-color: #FFFFFF;">
+                <img src="./assets/Featured icon.png" height="48" width="48" class="justify-self-center">
                 <form id="login_form" action="/" style="width: 100%; max-width: 500px;">
                     <input type="hidden" id="auth_code" value="XW654SHvcf">
-                    <div class="modal-header position-relative z-0">
-                        <div class="bg-wall center-center size-fit-auto position-absolute z-n1 mt-3"
-                            data-bgimg="/assets/img/store/icons/login.png"
-                            style="background-image: url(&quot;/assets/img/store/icons/login.png&quot;);">
-                        </div>
-                        <button type="button" class="btn-close -btn-close-white m-0 mt-4 align-self-end" data-bs-dismis
-                            s="modal" aria-label="Close"></button>
-                        <h3 class="modal-title m-auto">Login</h3>
+                    <div class="modal-header position-relative z-0 d-flex flex-column">
+                        <h4 style="font-family: League Spartan;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        " class="modal-title m-auto">Log in to your account</h4>
+                        <p>
+                            Welcome back! Please enter your details.
+                        </p>
                     </div>
+
                     <div class="modal-body">
                         <div class="alert alert-danger d-none" role="alert">
                         </div>
                         <div class="d-flex flex-column mb-3">
                             <div class="flax-input-group">
-                                <div class="flax-input-group-prepend">
-                                    <div class="flax-icon ">
-                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
-                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                            class="css-i6dzq1">
-                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                            <circle cx="12" cy="7" r="4"></circle>
-                                        </svg>
-                                    </div>
-                                </div>
+                                <label for="login_id">Email</label>
                                 <input type="text" name="login_id" id="login_id" class="flax-input" required=""
                                     placeholder="Enter Mobile no. (without ISD code)"
                                     data-flax-required-msg="Login id is required" style="padding-left: 35px;">
@@ -164,23 +239,18 @@
                         </div>
                         <div class="d-flex flex-column mb-3">
                             <div class="flax-input-group">
-                                <div class="flax-input-group-prepend">
-                                    <div class="flax-icon">
-                                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
-                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                            class="css-i6dzq1">
-                                            <path
-                                                d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
+                                <label for="login_id">Password</label>
+
                                 <input type="password" name="password" id="password" class="flax-input" required=""
                                     placeholder="Enter password" data-flax-required-msg="Password is required"
                                     style="padding-left: 35px;">
                             </div>
                         </div>
-                        <a href="/forgot-pw">Forgot Password?</a>
+                        <div style="display: flex; justify-content: space-between;">
+                            <input type="checkbox" id="rememberCheckbox">
+        <label for="rememberCheckbox" class="remember-text">Remember for 30 days</label>
+                            <a href="/forgot-pw">Forgot Password?</a>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <div class="d-flex flex-column m-0 me-auto">
@@ -190,7 +260,7 @@
                             <a href="/signup" target="_blank" class="fw-md">Signup</a>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-login px-4 py-2 m-0">
+                        <button type="submit" class="btn btn-primary btn-login buttons px-4 py-2 m-0">
                             Login
                         </button>
                     </div>
@@ -210,6 +280,7 @@
             </div>
         </div>
     </div>
+</header>
 
 
     <body class="d-flex flex-column justify-content-center align-items-center"

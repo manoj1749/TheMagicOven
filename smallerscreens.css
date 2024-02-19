@@ -23,7 +23,10 @@
     .modal h3{
         font-size: 30px;
     }
-
+    .modal-content{
+        max-width: 400px;
+        height: 521px;
+    }
     /* .buttons {
         display: none;
     } */
@@ -419,6 +422,11 @@ text-align: left;
     footer .socials {
         display: none;
     }
+    .no-caret::after {
+        display: none !important;
+        
+    }
+    
 
     footer {
         justify-content: center;
@@ -427,7 +435,7 @@ text-align: left;
 
     footer .footer_logo {
         width: 100%;
-        justify-items: center;
+        justify-items: start;
     }
 
     footer .helpful-links {
@@ -441,34 +449,34 @@ text-align: left;
 
 
     footer .helpful-links p {
-        margin-left: 30px;
+        margin-left: 50px;
         width: 100% !important;
         text-align: left;
     }
 
     footer .other-pages p {
-        margin-left: 30px;
+        margin-left: 50px;
 
         width: 100% !important;
         text-align: left;
     }
 
     footer .helpful-links li {
-        margin-left: 30px;
+        margin-left: 50px;
         padding-left: 0 !important;
         width: 100% !important;
         text-align: left;
     }
 
     footer .other-pages li {
-        margin-left: 30px;
+        margin-left: 50px;
         padding-left: 0 !important;
         width: 100% !important;
         text-align: left;
     }
 
     .footer_logo .d-flex {
-        justify-content: center;
+        justify-content: start;
     }
 
     .WhyMagic .carousel-item.active p {
@@ -478,15 +486,13 @@ text-align: left;
     }
 
 
-    /* 
-    .buttons {
-        display: none;
-    } */
 
     .navbar-nav {
         height: fit-content;
         gap: 20px;
         padding-bottom: 10px;
+        align-items: end;
+        padding-right: 50px;
     }
 
     .nav-item {
@@ -518,6 +524,8 @@ text-align: left;
 
     .navbar-toggler {
         border: 0;
+        margin-right: auto;
+        margin-left: 30%;
     }
 
     .customers_favorite .favorites .buttons {
