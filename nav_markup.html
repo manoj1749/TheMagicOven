@@ -1,0 +1,133 @@
+<div id="sitenav" class="navbar row flex-wrap align-items-stretch">
+    <div class="col-lg-8 logo py-2 py-md-0">
+        <div class="d-flex align-items-center">
+            <a href="/" class="d-flex align-items-center" style="flex: 0 0 120px;">
+                <img src="/assets/img/logo.png" data-style="max-height: 90px; max-width: 90px;" class="img-fluid"
+                    alt="">
+            </a>
+
+            <a class="d-lg-none px-3 ms-auto" href="javascript:;"
+                onclick="javascript:$(this).closest('header').toggleClass('nav-visible');">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+                        fill="currentColor" />
+                    <path
+                        d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+                        fill="currentColor" />
+                    <path
+                        d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+                        fill="currentColor" />
+                </svg>
+            </a>
+
+            <nav>
+                <div class="nav_start d-lg-none">
+
+                    <a href="/">
+                        <img src="/assets/img/logo.png" style="max-height: 50px; max-width: 130px;" alt="">
+                    </a>
+
+                    <a href="javascript:;" class="nav_close"
+                        onclick="javascript:$(this).closest('header').toggleClass('nav-visible');">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                            fill="currentColor">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="nav_body">
+                    <div class="wrapper hover-scroll-overlay-y">
+                        <ul>
+                            <li><a href="about-us">About Us</a></li>
+                            <li><a href="javascript:;">Shop</a>
+                                <ul>
+                                    <li><a href="javascript:;">Breads</a>
+                                        <ul>
+                                            <li><a href="sourdough-bread-T789891">Sourdough Bread</a></li>
+                                            <li><a href="javascript:;">Sandwich Bread</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="munchies-T6742052">Munchies</a></li>
+                                    <li><a href="spreads">Spreads</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog">Blog</a></li>
+                            <li><a href="javascript:;">Help</a>
+                                <ul>
+                                    <li><a href="support">Contact Us</a></li>
+                                    <li><a href="refund-policy">Cancellation and Refund Policy</a></li>
+                                    <li><a href="shipping-policy">Shipping Policy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <ul class="static d-lg-none">
+                            <li>
+                                <a href="javascript:;">Blog</a>
+                            </li>
+                        </ul>
+                    </div> <!-- menu wrapper -->
+                </div> <!---->
+
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="col-lg-4 d-flex align-items-stretch py-md-3" style="gap:10px">
+        <div class="searchbar -d-flex flex-grow-1 align-self-center position-relative h-100" style="max-height: 45px;">
+            <div class="d-flex align-items-center flex-grow-1">
+                <form class="frm_store_search w-100" action="/">
+                    <input type="text" id="search_query" name="search_query" class="w-100 pe-0"
+                        placeholder="Search products" autocomplete="off">
+                </form>
+            </div>
+            <!---->
+            <a href="javascript:;" class="icon" onclick="jQuery(this).closest('.searchbar').find('form').submit()">
+            </a>
+        </div>
+
+        <div class="user-nav user-menu ms-2 ms-md-0 align-self-center h-100" style="max-height: 45px;">
+            <div class="h-100 d-flex align-items-center">
+                <a href="javascript:;" class="hn-trigger btn btn-primary d-flex align-items-center h-100 px-4">
+                    <span class="-ms-1">Login</span>
+                </a>
+
+
+            </div>
+            <div class="hn-dropdown">
+
+                <div class="wrapper">
+                    <div class="d-flex fs-md">
+                        <span>Hi,</span>
+                        <span class="fw-md ms-1 text-black">Guest!</span>
+                    </div>
+                    <div class="mb-3 mt-2">
+                        Login to manage your account
+                    </div>
+
+                    <div>
+                        <!---->
+
+                        <button type="button" class="d-block w-100 btn btn-primary fw-md" data-bs-toggle="modal"
+                            data-bs-target="#pop_login">
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="d-flex mt-3">
+                        <span>New customer?</span>
+                        <a href="/signup" class="text-primary fw-md ms-auto">Sign up</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

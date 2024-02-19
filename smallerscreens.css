@@ -8,6 +8,14 @@
         font-size: 70%;
     }
 
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        max-width: screen;
+    }
+
     .health-benefit-card {
         display: none;
     }
@@ -16,29 +24,64 @@
         max-width: 100%;
     }
 
+    .our-products .favorites {
+        min-width: 294px;
+    }
 
-    .modal{
+    .Login {
+        text-align: start;
+        margin-top: 100px;
+        width: auto;
+        padding-left: 0px;
+    }
+
+    .modal {
         padding-top: 55%;
     }
-    .modal h3{
+
+    .modal h3 {
         font-size: 30px;
     }
-    .modal-content{
+
+    .modal-content {
         max-width: 400px;
         height: 521px;
+
+
     }
-    /* .buttons {
-        display: none;
+
+    /* .home{
+        margin-left: 50px;
+    }
+
+    .customers_favorite{
+        margin-left: 50px;
+    }
+    .whyus{
+        margin-left: 50px;
+
+    }
+    .recipies{
+        margin-left: 50px;
+
+    }
+    .testimonials{
+        margin-left: 50px;
+
     } */
 
     .home .landingPage {
-        display: flex;
-        flex-direction: column-reverse;
-        max-width: fit-content;
+
+        text-align: start;
+        margin-top: 100px;
+    }
+
+    .home .landingPage h1 {
+        text-align: start;
     }
 
     .favorites {
-        max-width: 100%;
+        max-width: 40%;
     }
 
     .customers_favorite .favorites .buttons {
@@ -87,32 +130,37 @@
     /* .buttons {
         display: none;
     } */
-    .our-products .list-menu li span{
-        padding-left: 70px!important;
+    .our-products .list-menu li span {
+        padding-left: 70px !important;
     }
-    .our-products .card{
+
+    .our-products .card {
         width: 100%;
     }
+
     .carousel-dark .carousel-item.active img {
         scale: 1.5;
     }
 
-    #carouselExampleDark .carousel-item img{
+    #carouselExampleDark .carousel-item img {
         /* overflow: visible; */
         transform: scale(0.5);
     }
-    .our-products .card-body{
+
+    .our-products .card-body {
         max-width: 100%;
         padding-left: 0px;
         padding-right: 0px;
         text-indent: 10px;
     }
-    .our-products .card-header{
+
+    .our-products .card-header {
         max-width: 100%;
         padding-left: 0px;
         padding-right: 0px;
         text-indent: 10px;
     }
+
     .buttons-mob {
         color: #FFF;
         font-family: "League Spartan";
@@ -186,11 +234,18 @@
     }
 
     .BigText {
-        display: none;
+        display: block;
+        font-family: League Spartan;
+        font-size: 100px;
+        font-weight: 500;
+        line-height: 92px;
+        letter-spacing: 0em;
+        text-align: left;
+
     }
 
     .lineVectors {
-        display: none;
+        display: block;
     }
 
     .card_footer {
@@ -214,12 +269,43 @@
         /* Center the recipe card horizontally */
     }
 
+    .testimonials .lineVectors {
+        display: none;
+    }
 
+    footer .socials {
+        display: none;
+    }
+
+    .footer_left {
+        /* text-align: start; */
+    }
+
+    .footer_right div {
+        width: 100%;
+    }
+
+    .quote1 {
+        right: 305px;
+    }
+
+    .quote2 {
+        left: 305px;
+    }
+
+    .testimonials p {
+        width: auto;
+    }
 }
 
 
 
 @media (max-width: 556px) {
+    .dropdown-menu[data-bs-popper] {
+        top: 100%;
+        left: -180px;
+        margin-top: var(--bs-dropdown-spacer);
+    }
 
     .landingPage {
         flex-direction: column;
@@ -241,7 +327,7 @@
         font-weight: 600;
         line-height: 37px;
         letter-spacing: 1px;
-        text-align: center;
+        text-align: center !important;
         margin: auto;
         max-width: 90% !important;
 
@@ -340,10 +426,12 @@
     }
 
     .favorites {
-        width: 300px;
+        min-width: 300px;
 
 
     }
+
+
 
     .whyus .carousel-inner .carousel-item {
         align-items: center;
@@ -379,18 +467,20 @@
         margin: auto;
     }
 
-    .recipe-card{
+    .recipe-card {
         width: 343px;
     }
-    .recipe span{
+
+    .recipe span {
         font-family: League Spartan;
-font-size: 20px;
-font-weight: 600;
-line-height: 18px;
-letter-spacing: 0em;
-text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
 
     }
+
     .WhyMagic .carousel-item h3 {
         text-align: center;
         margin: auto;
@@ -422,15 +512,20 @@ text-align: left;
     footer .socials {
         display: none;
     }
+
     .no-caret::after {
         display: none !important;
-        
+
     }
-    
+
+    .footer_left {
+        justify-content: center;
+    }
 
     footer {
         justify-content: center;
         text-align: center;
+        /* margin-bottom: 80px;     */
     }
 
     footer .footer_logo {
@@ -491,7 +586,7 @@ text-align: left;
         height: fit-content;
         gap: 20px;
         padding-bottom: 10px;
-        align-items: end;
+        align-items: center;
         padding-right: 50px;
     }
 
@@ -710,20 +805,23 @@ text-align: left;
         display: none;
     }
 
-    .nav-search{
+    .nav-search {
         position: relative;
         left: 50px;
     }
 
-    .benefits{
-        margin-left: 0px!important;
+    .benefits {
+        margin-left: 0px !important;
     }
-    .benefits-col-2{
-        padding-left: 0px!important;
+
+    .benefits-col-2 {
+        padding-left: 0px !important;
     }
-    .about-us .line{
+
+    .about-us .line {
         margin: 2px;
     }
+
     .WhyMagic {
         display: flex;
         flex-direction: column-reverse;
@@ -764,7 +862,7 @@ text-align: left;
 
     .testimonials .carousel-indicators {
         justify-content: center;
-        bottom: 50px;
+        bottom: -10px;
         padding: auto;
     }
 
@@ -781,11 +879,11 @@ text-align: left;
     .testimonials .quote2 {
         right: 300px;
         left: 140px;
-        bottom: 180px;
+        bottom: 100px;
     }
 
     .testimonials .quote1 {
-        top: 150px;
+        top: 180px;
         right: 135px;
         bottom: 180px;
     }

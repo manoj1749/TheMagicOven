@@ -15,21 +15,24 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="smallerscreens.css">
+        <script src="script.js"></script>
 
     </head>
 
 
-    <body class="d-flex flex-column justify-content-center align-items-center" style="background-color: #E1DDD2;margin: 0; padding: 0; width: 100%; max-width: screen;">
+    <body class="d-flex flex-column justify-content-center align-items-center"
+        style="background-color: #E1DDD2;margin: 0; padding: 0; width: 100%; max-width: screen;">
         <header>
-            <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
+            <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100" id="navbar">
                 <div class="container"> <!-- Add a container for max-width -->
                     <a class="navbar-brand" href="#">
                         <img class="logo" style="" src="./assets/logo.png" alt="Logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation" aria-expanded="false">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-label="Toggle navigation" aria-expanded="false">
                         <span class=""><img src="./assets/Group 91.png"></span>
                     </button>
-            
+
                     <div class="navbar-collapse justify-content-lg-end align-items-center collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item mr-3">
@@ -48,7 +51,7 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="loginSignUpDropdown">
                                     <div class="d-flex justify-content-center">
-    
+
                                         <div class="wrapper">
                                             <div style="font-family: Roboto;
                                             font-size: 18px;
@@ -69,16 +72,16 @@
                                             ">
                                                 Login to manage your account
                                             </div>
-    
+
                                             <div>
-    
+
                                                 <button type="button"
                                                     class="d-block w-100 btn btn-primary buttons fw-md rounded-2"
                                                     data-bs-toggle="modal" data-bs-target="#pop_login">
                                                     Login
                                                 </button>
                                             </div>
-    
+
                                             <div class="d-flex mt-3 ">
                                                 <span style="font-family: Roboto;
                                                 font-size: 14px;
@@ -90,10 +93,10 @@
                                                 <a href="/signup" style="color: #174542; text-decoration: none;"
                                                     class="fw-md ms-auto">Sign up</a>
                                             </div>
-    
+
                                         </div>
-    
-    
+
+
                                     </div>
                                 </ul>
                             </li>
@@ -106,13 +109,14 @@
                     </div>
                 </div>
             </nav>
-    </header>        
-   
+        </header>
+
         <section class="singleProduct" style="margin-top: 140px; margin-bottom: 220px; width: 100%;">
             <p class="blog-location d-md-none d-block">Home / Our Products / <span>Classic Country</span></p>
 
             <div class="row">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide col-md-6 col-12" style="max-height: 550px; ">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide col-md-6 col-12"
+                    style="max-height: 550px; ">
                     <div class="carousel-indicators" style="padding-top: 140px;">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -134,7 +138,8 @@
                     </div>
                     <button class="carousel-control-prev my-auto" type="button" data-bs-target="#carouselExampleDark"
                         data-bs-slide="prev">
-                        <span class="" aria-hidden="true"><img src="./assets/Group 96.png" style="transform: rotate(180deg);"></span>
+                        <span class="" aria-hidden="true"><img src="./assets/Group 96.png"
+                                style="transform: rotate(180deg);"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next my-auto" type="button" data-bs-target="#carouselExampleDark"
@@ -143,13 +148,13 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="col-md-6 col-12 product-page p-md-0 p-5" >
+                <div class="col-md-6 col-12 product-page p-md-0 p-5">
                     <p class="blog-location d-md-block d-none">Home / Our Products / <span>Classic Country</span></p>
 
-                    <h1 style="font-weight: 700; margin: 0;">Classic Country<span class="px-2"><img src="./assets/vegna.png" alt="" class="p-auto"
-                                style=""></span></h1>
+                    <h1 style="font-weight: 700; margin: 0;">Classic Country<span class="px-2"><img
+                                src="./assets/vegna.png" alt="" class="p-auto" style=""></span></h1>
                     <div class="singlePagePrices">
-                        <span class="mrp" style="color: #454442;" >&#8377;200</span>
+                        <span class="mrp" style="color: #454442;">&#8377;200</span>
                         <span class=" selling-price">&#8377;175</span>
                     </div>
                     <p class="product_description">
@@ -181,7 +186,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mx-4 col-lg-2 d-md-block d-none  "><img src="./assets/Line 16.png" style="height: 100%;"></div>
+                            <div class="mx-4 col-lg-2 d-md-block d-none  "><img src="./assets/Line 16.png"
+                                    style="height: 100%;"></div>
                             <div class="d-md-none d-block  my-3">
                                 <hr class="line">
                             </div>
@@ -196,7 +202,7 @@
                         </div>
 
                         <div class="my-5">
-                            <a href="cart.html"><button type="submit" class="buttons">Add to Cart</button></a>
+                            <button class="buttons" onclick="addToCart()">Add to Cart</button>
                         </div>
                     </form>
                     <hr class="line w-75">
@@ -250,21 +256,7 @@
 
 
                     <script>
-                        var product_infos = document.querySelectorAll('.product_info-item');
 
-                        product_infos.forEach(function (product_info) {
-                            product_info.addEventListener('click', function () {
-                                // Close all product_infos
-                                product_infos.forEach(function (otherproduct_info) {
-                                    if (otherproduct_info !== product_info) {
-                                        otherproduct_info.classList.remove('show');
-                                    }
-                                });
-
-                                // Toggle the selected product_info
-                                this.classList.toggle('show');
-                            });
-                        });
                     </script>
 
                     <hr class="line w-75">
@@ -328,6 +320,34 @@
 
 
             </div>
+            <div class="modal fade" id="notLoggedIn" tabindex="-1" role="dialog" aria-labelledby="notLoggedInLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="notLoggedInLabel"><span><img src="./assets/Cancel.png"
+                                        height="49" width="49"></span> Please Login to add product to cart</h5>
+                            <div class="green-line"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="LoggedIn" tabindex="-1" role="dialog" aria-labelledby="LoggedInLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="LoggedInLabel"><span><img src="./assets/Tick.png" height="49"
+                                        width="49"></span> Please Login to add product to cart</h5>
+                            <div class="green-line"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -342,102 +362,80 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"></script>
-        <script>
-
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 0) {
-                    $('.navbar').addClass('navbar-shadow');
-                } else {
-                    $('.navbar').removeClass('navbar-shadow');
-                }
-            });
-        </script>
-        <script>
-            $(document).ready(function () {
-                $('.count').prop('disabled', true);
-                $(document).on('click', '.plus', function () {
-                    $('.count').val(parseInt($('.count').val()) + 1);
-                });
-                $(document).on('click', '.minus', function () {
-                    $('.count').val(parseInt($('.count').val()) - 1);
-                    if ($('.count').val() == 0) {
-                        $('.count').val(1);
-                    }
-                });
-            });
-        </script>
     </body>
+
     <footer class=".card-footer"
-    style="width: 120%; position: relative; bottom: 0; padding-top: 80px; background-color: #D2CEC2;">
-    <div class="container">
-        <div class="row ">
-            <div class="col-md-6 order-md-0 order-1">
-                <div class="footer_left">
-                    <div class="footer_logo">
-                        <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
-                        <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
-                        <div class="d-flex">
-                            <ul class="list-inline pt-2">
-                                <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
-                                <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
-                                <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard">
-                                </li>
-                                <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
-                                <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal">
-                                </li>
-                            </ul>
+        style="width: 120%; position: relative; bottom: 0; padding-top: 80px; background-color: #D2CEC2;">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 order-md-0 order-1">
+                    <div class="footer_left">
+                        <div class="footer_logo">
+                            <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
+                            <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
+                            <div class="d-flex">
+                                <ul class="list-inline pt-2">
+                                    <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
+                                    <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
+                                    <li class="list-inline-item"><img src="/assets/mastercard.png" alt="Mastercard">
+                                    </li>
+                                    <li class="list-inline-item"><img src="/assets/visa.png" alt="Visa"></li>
+                                    <li class="list-inline-item"><img src="/assets/paypal.png" alt="PayPal">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 order-md-1 order-0">
-                <div class="footer_right container">
-                    <div class="row ">
-                        <div class="col-md-3 my-auto mx-2 helpful-links" style="width: fit-content;">
-                            <p>Helpful Links</p>
-                            <ul class="list-inline">
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">FAQ</a></li>
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">Terms of Service</a></li>
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">Privacy & Cookie
-                                        Policy</a></li>
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">Refund Policy</a></li>
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">Shipping Policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 my-auto mx-2 other-pages" style="width: fit-content;">
-                            <p>Other Pages</p>
-                            <ul class="list-inline">
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">Home</a></li>
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">About Us</a></li>
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">Our Products</a></li>
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">Login / Signup</a></li>
-                                <li class="list-item p-2"><a href="#"
-                                        style="text-decoration: none; color: inherit;">Shopping cart</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 my-auto ">
-                            <ul class="list-group socials">
-                                <li class="list-inline-item m-2"><img src="/assets/Instagram.png" alt="UPI">
-                                </li>
-                                <li class="list-inline-item m-2"><img src="/assets/Facebook.png" alt="PayPal">
-                                </li>
-                                <li class="list-inline-item m-2"><img src="/assets/WhatsApp.png" alt="PayPal">
-                                </li>
-                            </ul>
+                <div class="col-md-6 order-md-1 order-0">
+                    <div class="footer_right container">
+                        <div class="row ">
+                            <div class="col-md-3 my-auto mx-2 helpful-links" style="width: fit-content;">
+                                <p>Helpful Links</p>
+                                <ul class="list-inline">
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">FAQ</a></li>
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">Terms of Service</a></li>
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">Privacy & Cookie
+                                            Policy</a></li>
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">Refund Policy</a></li>
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">Shipping Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 my-auto mx-2 other-pages" style="width: fit-content;">
+                                <p>Other Pages</p>
+                                <ul class="list-inline">
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">Home</a></li>
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">About Us</a></li>
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">Our Products</a></li>
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">Login / Signup</a></li>
+                                    <li class="list-item p-2"><a href="#"
+                                            style="text-decoration: none; color: inherit;">Shopping cart</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 my-auto ">
+                                <ul class="list-group socials">
+                                    <li class="list-inline-item m-2"><img src="/assets/Instagram.png" alt="UPI">
+                                    </li>
+                                    <li class="list-inline-item m-2"><img src="/assets/Facebook.png" alt="PayPal">
+                                    </li>
+                                    <li class="list-inline-item m-2"><img src="/assets/WhatsApp.png" alt="PayPal">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
 </html>

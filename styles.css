@@ -17,27 +17,213 @@ h1 {
 }
 
 
-.flax-input-group.flax-has-error .flax-input:not(:focus), .flax-input.flax-has-error:not(:focus) {
+.flax-input-group.flax-has-error .flax-input:not(:focus),
+.flax-input.flax-has-error:not(:focus) {
     border-color: var(--bs-danger);
     background-color: var(--text-danger-bg);
 }
-.flax-input-group-append, .flax-input-group-between, .flax-input-group-prepend {
+
+.flax-input-group-append,
+.flax-input-group-between,
+.flax-input-group-prepend {
     position: absolute;
     height: 25%;
     display: flex;
     align-items: center;
-    padding-left: 10px;
 }
+
 .flax-input-group .flax-input:last-child {
     padding-right: var(--input-padding-horizontal);
     border: 1px solid #000;
 }
-.modal{
+
+.modal {
     padding-top: 15%;
 }
-.modal h3{
+
+.modal h3 {
     font-size: 30px;
 }
+
+.modal-body input {
+    height: 44px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.modal-body input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px;
+
+}
+
+.modal-dialog {
+    width: 400px;
+}
+
+.flax-input::placeholder {
+    color: #667085;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.remember-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-footer button {
+    width: 352px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px;
+
+}
+
+.our-products .modal-dialog {
+    width: 472px;
+    height: 83px;
+    border-radius: 4px;
+    border: 1px;
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    background-color: #D2CEC2;
+}
+
+.our-products .modal-title {
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.green-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    /* Adjust the height of the line */
+    width: 10%;
+    /* Initial width of the line */
+    background-color: green;
+    animation: expandLine 3s ease-out forwards;
+    /* Animation properties */
+}
+
+@keyframes expandLine {
+    0% {
+        width: 10%;
+        /* Starting width */
+    }
+
+    100% {
+        width: 100%;
+        /* Ending width */
+    }
+}
+
+.our-products .modal-backdrop {
+    display: none;
+}
+
+.singleProduct .modal-content {
+    background-color: transparent;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+
+}
+
+
+
+.singleProduct .modal-dialog {
+    width: 472px;
+    height: 83px;
+    border-radius: 4px;
+    border: 1px;
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    background-color: #D2CEC2;
+}
+
+.singleProduct .modal-title {
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.green-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    /* Adjust the height of the line */
+    width: 10%;
+    /* Initial width of the line */
+    background-color: green;
+    animation: expandLine 3s ease-out forwards;
+    /* Animation properties */
+}
+
+@keyframes expandLine {
+    0% {
+        width: 10%;
+        /* Starting width */
+    }
+
+    100% {
+        width: 100%;
+        /* Ending width */
+    }
+}
+
+.singleProduct .modal-backdrop {
+    display: none;
+}
+
+.singleProduct .modal-content {
+    background-color: transparent;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+
+}
+
+
 .flax-input {
     --input-height: 45px;
     --input-padding-vertical: 10px;
@@ -47,7 +233,6 @@ h1 {
     --input-padding-horizontal-sm: 7px;
     display: block;
     width: 100%;
-    padding-left: 50px;
     border: 1px solid var(--input-group-border-color);
     border-radius: 0.5rem;
     color: #303030;
@@ -57,7 +242,7 @@ h1 {
     font-family: inherit;
     font-size: inherit;
     font-weight: 400;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     overflow: visible;
     margin: 0;
     min-height: var(--input-height);
@@ -65,6 +250,7 @@ h1 {
     line-height: 1;
     padding: var(--input-padding-vertical) var(--input-padding-horizontal);
 }
+
 html body {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -72,9 +258,10 @@ html body {
     margin-right: 2rem;
 }
 
-.WhyMagic .carousel-item p{
+.WhyMagic .carousel-item p {
     text-align: left;
 }
+
 
 body {
     display: flex;
@@ -86,15 +273,17 @@ body {
     max-width: screen;
 
 }
-.recipe_desc p{
+
+.recipe_desc p {
     font-family: Roboto;
-font-size: 14px;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
+
 .testimonials .carousel-inner {
     max-height: 400px;
     max-width: 600px;
@@ -292,7 +481,7 @@ text-align: left;
 
 }
 
-.home .search-bar input{
+.home .search-bar input {
     font-family: League Spartan;
     font-size: 16px;
     font-weight: 500;
@@ -301,8 +490,7 @@ text-align: left;
     text-align: left;
 }
 
-.home .search-bar
-{
+.home .search-bar {
 
 
     background-color: transparent;
@@ -375,14 +563,14 @@ text-align: left;
     background-color: #008F85;
 }
 
-.favorites_img{
+.favorites_img {
     max-height: 190px;
-    width: 10       0%;
+    width: 10 0%;
     aspect-ratio: 4/4;
     object-fit: contain;
     background-color: transparent;
     border-radius: 19px 19px 0 0;
-    
+
 }
 
 
@@ -475,6 +663,7 @@ text-align: left;
     margin-left: 5px;
     margin-right: 10px;
 }
+
 .singleProduct .carousel-item {
     position: relative;
     z-index: 1;
@@ -483,9 +672,22 @@ text-align: left;
 .singleProduct .carousel-item.active {
     z-index: 2;
 }
+
 /* .cart-card .cart-card-content{
     padding-top: 30px;
 } */
+
+.modal label {
+    color: #344054;
+    font-family: League Spartan;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
 
 .whyus {
     margin-top: 120px;
@@ -630,6 +832,10 @@ text-align: left;
     z-index: top;
 }
 
+.testimonials .carousel-inner .carousel-item p {
+    font-size: 30px;
+}
+
 .testimonials {
     height: 450px;
 }
@@ -647,6 +853,8 @@ text-align: left;
     height: 16px;
     width: 16px;
 }
+
+
 
 
 .testimonials .icon {
@@ -1231,13 +1439,14 @@ input {
 
 #carouselExampleDark .carousel-item {
     display: none;
-    transition: 500ms ease-in-out      ;
+    transition: 500ms ease-in-out;
 }
-#carouselExampleDark .carousel-item.active{
+
+#carouselExampleDark .carousel-item.active {
     aspect-ratio: 4/4;
     text-align: center;
     width: 100%;
-    height: 300px; 
+    height: 300px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -1246,12 +1455,13 @@ input {
 .carousel-dark .carousel-item img {
 
     width: auto;
-    height: auto; 
+    height: auto;
     object-position: center;
 }
+
 .carousel-dark .carousel-item.active img {
     width: 300px;
-    height: 300px; 
+    height: 300px;
     background: clip;
     aspect-ratio: 4/4;
     object-fit: cover;
@@ -1470,11 +1680,19 @@ input {
     background-color: #DD7E1A;
     width: 328px;
     height: 111px;
-    top: 344px;
-    left: 1000px;
+    top: 374px;
+    left: 75%;
     border-radius: 13px;
 }
+.search-bar input::placeholder{
+    font-family: League Spartan;
+font-size: 16px;
+font-weight: 500;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
 
+}
 .address-form-row2 {
     padding-left: 40px;
 }
@@ -1551,6 +1769,6 @@ input {
     background-color: #FFF;
 }
 
-.benefits{
+.benefits {
     margin-left: 100px;
 }
