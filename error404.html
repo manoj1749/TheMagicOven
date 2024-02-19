@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>The Magic Oven</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="./styles.css">
@@ -15,11 +15,11 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="smallerscreens.css">
+        <script src="script.js"></script>
 
     </head>
-
     <header>
-        <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
+        <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100" id="navbar">
             <div class="container"> <!-- Add a container for max-width -->
                 <a class="navbar-brand" href="#">
                     <img class="logo" style="" src="./assets/logo.png" alt="Logo">
@@ -106,119 +106,35 @@
             </div>
         </nav>
     </header>
-    <body class="d-flex flex-column about-us justify-content-center align-items-center about-us-intro"
+
+    <body class="d-flex flex-column justify-content-center align-items-center"
         style="background-color: #E1DDD2;margin: 0; padding: 0; width: 100%; max-width: screen;">
-        
-        <section style="margin-top: 200px; text-align: center; max-width: 1200px;">
-            <div class="d-grid justify-content-center align-items-center ">
-                <h1>Unveiling the Artistry Behind Magic Oven's Sourdough Mastery</h1>
-                <p>At Magic Oven, we are not just bakers; we are artisans who have mastered the enchanting dance between
-                    flour, water, and time. Our journey began with a passion for the time-honored tradition of sourdough
-                    breadmaking, but it has since evolved into a relentless pursuit of perfection. As the architects of
-                    flavor, we stand firm in our commitment to delivering an unparalleled sensory experience with every
-                    loaf we bake.</p>
-            </div>
-
-        </section>
-        <section class="w-100" style="max-width: 1440px;">
-
-            <h1 class="text-center my-5">Benefits Of Sourdough</h1>
-            <img src="./assets/1240865-removebg-preview 1.png" style="position: absolute; margin-left: 500px;"
-                class="d-md-block d-none">
-            <div class="row justify-content-end position-relative benefits">
-                <div class="col-md-6 col-12 benefits-col-1">
-                    <div class="row benefits-card">
-                        <p class="card-head">Delicious Texture</p>
-                        <hr class="line mt-0">
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.</p>
-                    </div>
-                    <div class="row benefits-card">
-                        <p class="card-head">Extended Shelf Life</p>
-                        <hr class="line mt-0">
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 benefits-col-2">
-                    <div class="row benefits-card">
-                        <p class="card-head">More Nutritious</p>
-                        <hr class="line mt-0">
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.</p>
-                    </div>
-                    <div class="row benefits-card">
-                        <p class="card-head">Easily Digested</p>
-                        <hr class="line mt-0">
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section style="margin-top: 100px;" class="making-process">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-
-                <h1>From Starter to Hearth: Crafting the Perfect Sourdough</h1>
-                <p>A Journey in Three Acts - Nurturing, Fermenting, and Baking Excellence</p>
-                <img src="./assets/Line 13 (1).png" class="d-none d-md-block" style="position: relative; top: 240px; z-index: -1;">
-                <div class="row text-center" style="margin-top: 50px;">
-                    <div class="col-md-4 col-12 process-desc">
-                        <div class="number-circle">
-
-                            <img src="./assets/Group 124.png" >
-                        </div>
-                        <br>
-                        <div style="height: 247px; align-items: center; display: grid; justify-content: center;">
-                            <img  src="./assets/whole-grains-mix-flour-500x500_1-removebg-preview 1.png">
-
-                        </div>
-                        <h3>Cultivating the Starter</h3>
-                        <p>It starts with a mixture of flour and water that captures wild yeast and bacteria from the environment to develop a robust microbial community.</p>
-                    </div>
-                    <div class="col-md-4 col-12 process-desc">
-                        <div class="number-circle">
-
-                            <img src="./assets/Group 125.png" >
-                        </div>                        <br>
-                        <div style="height: 247px; align-items: center; display: grid; justify-content: center;">
-                            <img  src="./assets/pngimg 2.png">
-
-                        </div>
-                        <h3>Fermenting the Dough</h3>
-                        <p>Then we Integrate a portion of the sourdough starter into the mix and knead the dough thoroughly. Allowing the dough to undergo a series of fermentation stages, during which it develops flavor and texture.</p>
-                    </div>
-                    <div class="col-md-4 col-12 process-desc"> 
-                        <div class="number-circle">
-
-                            <img src="./assets/Group 126.png" >
-                        </div>                        <br>
-                        <div style="height: 247px; align-items: center; display: grid; justify-content: center;">
-                            <img  src="./assets/97310312-f4a8-4c50-9dac-4949b0ad8f48_1-removebg-preview 1.png">
-
-                        </div>
-                        <h3>Shaping and Baking</h3>
-                        <p>Once the dough has fermented to perfection, carefully shape it into the desired form we Bake it until the crust achieves a golden-brown hue and the internal temperature is ideal.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="get-in-touch text-center d-flex flex-column justify-content-center align-items-center" style="margin-top: 90px;">
-            <h1>
-                Get In Touch
+        <section style="margin-top: 120px; margin-bottom: 120px;; align-items: center; text-align: center;" class="ERROR404">
+            <h1 style="font-family: Poppins;
+            font-size: 150px;
+            font-weight: 900;
+            line-height: 225px;
+            letter-spacing: 0em;
+            text-align: center;
+            ">404</h1>
+            <h1 style="font-family: Poppins;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 75px;
+            letter-spacing: 0em;
+            text-align: center;
+            ">
+                Oops! Page Not Found
             </h1>
-            <p class="w-50">Provide us your number and our team will get back to you within 24 hours.</p>
-            <form class="d-flex flex-column justify-content-center align-items-center">
-                <div class="form-group text-center" >
-                    <input type="email" class="form-control formInputs" id="InputMobile"
-                        aria-describedby="emailHelp" placeholder="Enter Your Full Name">
-                </div>
-                <div class="form-group text-center" >
-                    <input type="email" class="form-control formInputs" id="InputMobile"
-                        aria-describedby="emailHelp" placeholder="Enter Mobile Number">                </div>
-                <button type="submit" class="buttons mb-4">Send</button>
-            </form>
+            <p style="font-family: Roboto;
+            color: #454442;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            ">Sorry the page you are looking for does not exist, if you think something is broken, report a problem</p>
+            <button class="buttons">Return</button>
         </section>
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -231,26 +147,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"></script>
-        <script>
-
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 0) {
-                    $('.navbar').addClass('navbar-shadow');
-                } else {
-                    $('.navbar').removeClass('navbar-shadow');
-                }
-            });
-        </script>
         <footer class=".card-footer"
             style="width: 120%; position: relative; bottom: 0; padding-top: 80px; background-color: #D2CEC2;">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 order-md-0 order-1">
+                    <div class="col-md-6 order-md-0 order-1 my-sm-auto">
                         <div class="footer_left">
                             <div class="footer_logo">
                                 <img src="./assets/logo.png" alt="MagicOvenLogo" class="pt-4 pb-4">
                                 <p>© 2023 Classic Health Foods LLP. All rights reserved.</p>
-                                <div class="d-flex">
+                                <div class="d-md-flex">
                                     <ul class="list-inline pt-2">
                                         <li class="list-inline-item"><img src="/assets/upi.png" alt="UPI"></li>
                                         <li class="list-inline-item"><img src="/assets/rupay.png" alt="Rupay"></li>
@@ -267,7 +173,8 @@
                     <div class="col-md-6 order-md-1 order-0">
                         <div class="footer_right container">
                             <div class="row ">
-                                <div class="col-md-3 my-auto mx-2 helpful-links" style="width: fit-content;">
+                                <div class="col-md-3 my-auto mx-2 mx-sm-auto col-sm-12 helpful-links"
+                                    style="width: fit-content;">
                                     <p>Helpful Links</p>
                                     <ul class="list-inline">
                                         <li class="list-item p-2"><a href="#"
@@ -283,7 +190,8 @@
                                                 style="text-decoration: none; color: inherit;">Shipping Policy</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-3 my-auto mx-2 other-pages" style="width: fit-content;">
+                                <div class="col-md-3 my-auto mx-2 mx-sm-auto col-sm-12 other-pages"
+                                    style="width: fit-content;">
                                     <p>Other Pages</p>
                                     <ul class="list-inline">
                                         <li class="list-item p-2"><a href="#"
