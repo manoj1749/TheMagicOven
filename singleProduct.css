@@ -1,0 +1,398 @@
+.singleProduct .singlePagePrices span.mrp {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.singlePagePrices {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+}
+
+.singleProduct h1 {
+    font-size: 40px;
+    width: 100%;
+    font-weight: 700;
+    margin: 0;
+
+}
+
+.singleProduct h2 {
+    font-size: 25px;
+    text-align: start;
+    margin-top: 30px;
+}
+
+.singleProduct h3 {
+    color: #174542;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#carouselExampleDark {
+    position: relative;
+    height: 250px;
+    width: 550px;
+}
+
+
+#carouselExampleDark .carousel-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#carouselExampleDark .carousel-item {
+    display: none;
+    transition: 500ms ease-in-out;
+}
+
+#carouselExampleDark .carousel-item.active {
+    aspect-ratio: 4/4;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-dark .carousel-item img {
+
+    width: auto;
+    height: auto;
+    object-position: center;
+}
+
+.carousel-dark .carousel-item.active img {
+    width: 300px;
+    height: 300px;
+    background: clip;
+    aspect-ratio: 4/4;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-dark .carousel-indicators button {
+    background-color: #174542;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    opacity: 0.2;
+}
+
+#carouselExampleDark .carousel-indicators .active {
+    opacity: 1;
+    height: 16px;
+    background-color: #174542;
+    width: 16px;
+}
+
+#carouselExampleDark {
+    margin-left: 60px;
+}
+
+#carouselExampleDark .carousel-control-prev,
+#carouselExampleDark .carousel-control-next {
+    z-index: 5;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+#carouselExampleDark .carousel-indicators {
+    top: 120px;
+}
+
+
+.quantity div {
+    text-align: center;
+}
+
+
+
+.singleProduct .product_description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 700px;
+    color: #454442;
+}
+
+.product_info button {
+    text-align: left;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    color: #174542;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: 1px solid #174542;
+    border-radius: 11px;
+    background: transparent;
+    margin-bottom: 13px;
+}
+
+.product_info button.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+.product_info button.active+.product_info-collapse .divider {
+    margin-top: 10px;
+}
+
+.product_info button.active+.product_info-collapse .product_info-body p {
+    margin-top: 10px;
+    /* Adjust margin to overlap with the divider */
+}
+
+.product_info-button {
+    position: relative;
+}
+
+.product_info-button .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+
+}
+
+
+
+.product_info button:hover,
+.product_info button:focus {
+    cursor: pointer;
+    color: #174542;
+}
+
+.product_info .product_info-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+
+.product_info .product_info-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.product_info .divider {
+    margin: 10px 0;
+    border-color: #174542;
+}
+
+.product_info .product_info-body p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-right: 2em;
+}
+
+
+
+
+
+.product_card {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DD7E1A;
+    height: 395px;
+    max-width: 295px;
+    border-radius: 19px;
+    filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
+}
+
+
+
+.product_card_imgBox {
+    margin-top: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1DDD2;
+    height: 198px;
+    min-width: 265px;
+    border-radius: 19px 19px 0 0
+}
+
+.product_card_img {
+    max-height: 190px;
+    width: 10 0%;
+    aspect-ratio: 4/4;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 19px 19px 0 0;
+
+}
+
+.product_card:hover .buttons {
+    background-color: #008F85;
+}
+
+
+
+.product_card .buttons {
+    position: relative;
+    top: 1em;
+}
+
+.product_card_text {
+    color: #FFF;
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 5px;
+
+}
+
+.product_card_desc {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+
+.product_card .line {
+    border: 1px solid #FFFFFF;
+    width: 53px;
+
+}
+
+.card {
+    background-color: transparent;
+    border: 0;
+    width: 351px;
+    height: 64px;
+}
+
+
+
+.card .card-header {
+    background-color: #D2CEC2;
+
+    border-radius: 18px;
+    align-items: center;
+}
+
+.card-body li {
+    color: #D2CEC2;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(52, 52, 52, 0.2);
+    ;
+    border-bottom: 1px solid rgba(52, 52, 52, 0.2);
+    ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.card-body a {
+    color: #343434;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.card-body {
+    background-color: #D2CEC2;
+    border-radius: 18px;
+    align-items: center;
+}
+
+
+
+.product_card:hover .arrow {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-5px, 5px) scale(1.5);
+}
+
+
+.product_card .arrow {
+    position: absolute;
+    z-index: 2;
+    right: 10%;
+    top: 7.5%;
+}
+
+.filter-content li {
+    margin-top: 0px;
+}
+
+@media (max-width: 556px) {
+
+    .product_card .carousel-dark .carousel-item img {
+        margin-top: 40px;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .product_card_imgBox {
+        min-width: 275px !important;
+
+    }
+
+    .all-products {
+        margin-top: 16.75em;
+    }
+
+    .our-products article {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    #carouselExampleDark .carousel-item img {
+        transform: scale(0.5);
+    }
+
+    #carouselExampleDark {
+        width: 337px;
+        overflow: hidden;
+        height: 310px;
+        margin: auto;
+    }
+
+    .carousel-dark .carousel-item.active img {
+        scale: 1.5;
+    }
+
+}

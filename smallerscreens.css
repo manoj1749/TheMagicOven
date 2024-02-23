@@ -24,9 +24,7 @@
         max-width: 100%;
     }
 
-    .our-products .favorites {
-        min-width: 294px;
-    }
+
 
     .Login {
         text-align: start;
@@ -50,26 +48,6 @@
 
     }
 
-    /* .home{
-        margin-left: 50px;
-    }
-
-    .customers_favorite{
-        margin-left: 50px;
-    }
-    .whyus{
-        margin-left: 50px;
-
-    }
-    .recipies{
-        margin-left: 50px;
-
-    }
-    .testimonials{
-        margin-left: 50px;
-
-    } */
-
     .home .landingPage {
 
         text-align: start;
@@ -80,9 +58,7 @@
         text-align: start;
     }
 
-    .favorites {
-        max-width: 40%;
-    }
+
 
     .customers_favorite .favorites .buttons {
         display: inline;
@@ -95,9 +71,6 @@
         max-width: 1440px;
     }
 
-    /* .home .landingImg {
-        max-width: fit-content;
-    } */
 
     .WhyMagic {
         display: flex;
@@ -127,9 +100,6 @@
         max-width: fit-content;
     }
 
-    /* .buttons {
-        display: none;
-    } */
     .our-products .list-menu li span {
         padding-left: 70px !important;
     }
@@ -138,28 +108,10 @@
         width: 100%;
     }
 
-    .carousel-dark .carousel-item.active img {
-        scale: 1.5;
-    }
 
-    #carouselExampleDark .carousel-item img {
-        /* overflow: visible; */
-        transform: scale(0.5);
-    }
 
-    .our-products .card-body {
-        max-width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
-        text-indent: 10px;
-    }
 
-    .our-products .card-header {
-        max-width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
-        text-indent: 10px;
-    }
+
 
     .buttons-mob {
         color: #FFF;
@@ -181,38 +133,6 @@
 
         }
     }
-
-    .Recipe_img {
-        padding: 25px;
-    }
-
-    .Recipe_img img {
-        border-radius: 20px;
-    }
-
-    .Recipe_Desc p {
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 500;
-        width: 100%;
-        line-height: 21px;
-        letter-spacing: 0em;
-        text-align: left;
-        width: 90%;
-    }
-
-    .Recipe_Desc {
-        margin-top: 15px;
-
-        padding-left: 16px;
-        padding-right: 0px !important;
-
-    }
-
-    .Recipe_Main {
-        padding-left: 25px !important;
-    }
-
     .recipe,
     .favorites_imgBox {
         width: 100%;
@@ -301,6 +221,10 @@
 
 
 @media (max-width: 556px) {
+
+    html {
+        overflow-x: hidden;
+    }
     .dropdown-menu[data-bs-popper] {
         top: 100%;
         left: -180px;
@@ -333,14 +257,8 @@
 
     }
 
-    .our-products .favorites {
-        margin: auto !important;
-        width: 283px;
-    }
 
-    html {
-        overflow-x: hidden;
-    }
+
 
     .WhyMagic .carousel-inner .carousel-item h3 {
         width: 60%;
@@ -352,10 +270,7 @@
     }
 
 
-    .our-products article {
-        justify-content: center;
-        width: 100%;
-    }
+
 
     .home p {
         text-align: center;
@@ -425,11 +340,7 @@
         max-width: 100%;
     }
 
-    .favorites {
-        min-width: 300px;
 
-
-    }
 
 
 
@@ -492,16 +403,9 @@
         margin: auto;
     }
 
-    .all-products {
-        margin-top: 300px;
-    }
 
-    .favorites .carousel-dark .carousel-item img {
-        margin-top: 40px;
-        width: 250px;
-        height: 250px;
-        overflow: hidden;
-    }
+
+
 
     .WhyMagic .carousel-item p {
         text-align: center;
@@ -628,69 +532,8 @@
         margin-top: 20px;
     }
 
-    /* .cart h1{
-        text-align: left;
-    } */
-    .Payment-method {
-        border-radius: 0;
-        width: 100%;
-    }
-
-    .cart {
-        padding-left: 0px !important;
-    }
-
-    .cart-card {
-        height: 88px;
-        width: 100%;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        align-items: center;
-    }
-
-    .cart-card-imgbox {
-        width: 69.34px;
-        height: 62.54px;
-        border-radius: 18px;
-
-    }
-
-    .cart-card-content p {
-        font-size: 16px;
-        margin: 0 0;
-    }
-
-    .cart-card-imgbox img {
-        overflow: hidden;
-
-    }
-
-    .cart .text-start {
-        font-family: Poppins;
-        font-size: 35px;
-        font-weight: 700;
-        line-height: 53px;
 
 
-    }
-
-    .cart-card-content .line {
-        margin: 2.5px;
-    }
-
-    .cart .items-in-cart {
-        font-family: Roboto;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 23px;
-        letter-spacing: 0em;
-        text-align: left;
-
-    }
-
-    /* .cart .line {
-        display: ;
-    } */
 
 
     .Payment-method {
@@ -698,96 +541,14 @@
         padding: 25px;
     }
 
-    .product-page {
-        padding-top: 220px;
-    }
 
-    #carouselExampleDark {
-        width: 337px;
-        overflow: hidden;
-        height: 310px;
-        margin: auto;
-    }
 
-    /* .product-page{
-        padding: 10px;
-    } */
-
-    .singleProduct .product-page h1 {
-        font-size: 40px;
-        width: 100%;
-
-    }
 
     .blog-location {
         position: absolute;
         left: 9%;
         margin-bottom: 40px;
         overflow: hidden;
-    }
-
-    .summary {
-        width: 100% !important;
-        max-height: 325px;
-
-    }
-
-
-
-    .payment-page {
-        width: 100%;
-    }
-
-    .payment-page .summary {
-        width: 100%;
-    }
-
-    .shipping-address-box {
-        padding: 20px;
-        height: fit-content;
-    }
-
-    .checkout-address-confirm {
-        padding: 10px !important;
-
-    }
-
-    .checkout-address-confirm h1 {
-        text-align: left;
-        font-size: 50px;
-    }
-
-    .checkout-address-confirm a p {
-        text-align: left;
-        font-size: 20px;
-    }
-
-    .checkout-address-confirm * {
-        border-radius: 0;
-    }
-
-    .formInputs {
-        width: 100%;
-    }
-
-    .address-form-row2 {
-        padding: 10px !important;
-    }
-
-    .address-form-row2 input {
-        width: 100%;
-    }
-
-    .checkout-address {
-        padding: 10px !important;
-    }
-
-    .checkout-address h1 {
-        text-align: start;
-    }
-
-    .checkout button {
-        width: 100% !important;
     }
 
     section {
@@ -811,95 +572,7 @@
         left: 50px;
     }
 
-    .benefits {
-        margin: 20px !important;
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-
-    }
-
-    .about-us-intro p {
-        text-align: start;
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-left: 25px;
-
-
-    }
-
-    .benefits-card p{
-        margin-left: 0 !important;
-    }
-    .making-process div{
-        justify-content: center;
-        align-items: start !important;
-    }
-    .making-process div div img{
-        justify-content: center;
-        align-items: start !important;
-    }
-    .process-desc .number-circle{
-        position: relative;
-        right: 35%;
-        align-items: start !important; 
-    }
-
-    .process-desc h3{
-        font-family: League Spartan;
-        font-size: 30px;
-        font-weight: 600;
-        margin-left: 25px;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: start;
-        
-    }
-
-
-    .get-in-touch {
-        align-items: start !important;
-    }
-
-    .get-in-touch input {
-        margin-left: 25px;
-    }
-
-    .get-in-touch button {
-        position: relative;
-        right: 45px;
-        justify-content: left;
-        align-items: start;
-    }
-
-    .about-us-intro h1 {
-        width: 80%;
-        margin-left: 25px;
-        font-family: League Spartan;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-
-    }
-
-    .benefits-col-2 {
-        margin: -15px;
-        padding-left: 0px !important;
-    }
-
-    .about-us .line {
-        margin: 2px;
-    }
-
+    
     .WhyMagic {
         display: flex;
         flex-direction: column-reverse;
@@ -1021,3 +694,4 @@
         display: none;
     }
 }
+

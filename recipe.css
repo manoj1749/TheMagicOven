@@ -1,0 +1,135 @@
+section {
+    padding-left: 6em;
+    max-width: 1440px;
+}
+
+.Recipe_img img {
+    max-width: 404px;
+    max-height: 388px;
+    max-width: 120%;
+    max-height: 120%;
+}
+
+.Recipe_Main {
+    padding-left: 6em;
+}
+
+
+
+.Recipe_Main h1 {
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: start;
+
+
+}
+
+.Recipe_Main p {
+    color: #454442;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 90%;
+}
+
+
+
+
+.Recipe_Page {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Recipe_Desc {
+    margin-top: 60px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-right: 100px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .Recipe_Main h1 {
+        font-family: Poppins;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: start;
+        padding-left: 3rem;
+
+
+    }
+
+    .Recipe_Main p {
+        color: #454442;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+        /* width: 90%; */
+        padding-left: 3rem;
+    }
+
+    .Recipe_img img {
+        max-width: 286px !important;
+        max-height: 275px !important;
+        border-radius: 20px;
+    }
+
+    .Recipe_Desc p {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 90%;
+    }
+
+    .Recipe_Desc {
+        margin-top: 15px;
+
+        padding-left: 16px;
+        padding-right: 0px !important;
+
+    }
+
+    .Recipe_Main {
+        margin-top: 4em;
+        padding-left: 6em !important;
+    }
+
+}
+
+@media (max-width: 556px) {
+
+    .Recipe_Main {
+        padding-left: 0 !important;
+    }
+
+    .Recipe_Main p {
+        padding-left: 2rem;
+    }
+
+    .Recipe-Page {
+        padding-left: 1rem;
+    }
+
+}

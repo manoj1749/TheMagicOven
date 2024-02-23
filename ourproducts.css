@@ -1,0 +1,216 @@
+.product_card {
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DD7E1A;
+    height: 395px;
+    max-width: 285px;
+    border-radius: 19px;
+    filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
+}
+
+
+
+.product_card_imgBox {
+    margin-top: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1DDD2;
+    height: 198px;
+    min-width: 265px;
+    border-radius: 19px 19px 0 0
+}
+
+.product_card_img {
+    max-height: 190px;
+    width: 10 0%;
+    aspect-ratio: 4/4;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 19px 19px 0 0;
+
+}
+
+.product_card:hover .buttons {
+    background-color: #008F85;
+}
+
+
+
+.product_card .buttons {
+    position: relative;
+    top: 1em;
+}
+
+.product_card_text {
+    color: #FFF;
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 5px;
+
+}
+
+.product_card_desc {
+    color: #FFF;
+    text-align: center; 
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+
+.product_card .line {
+    border: 1px solid #FFFFFF;
+    width: 53px;
+
+}
+.card {
+    background-color: transparent;
+    border: 0;
+    width: 351px;
+    height: 64px;
+}
+
+.all-products .card .card-body li a{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-header {
+    background-color: #D2CEC2;
+
+    border-radius: 18px;
+    align-items: center;
+}
+
+.card-body li {
+    color: #D2CEC2;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(52, 52, 52, 0.2);
+    ;
+    border-bottom: 1px solid rgba(52, 52, 52, 0.2);
+    ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+.card-body a {
+    color: #343434;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.card-body {
+    background-color: #D2CEC2;
+    border-radius: 18px;
+    align-items: center;
+}
+
+
+.allproducts .product_card .mrp {
+    text-decoration: line-through;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.allproducts .product_card .selling-price {
+    color: #174542;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.product_card:hover .arrow {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-5px, 5px) scale(1.5);
+}
+
+.card{
+    margin-top: .5em;
+}
+
+
+.product_card .arrow {
+    position: absolute;
+    z-index: 2;
+    right: 10%;
+    top: 7.5%;
+}
+
+.filter-content li{
+    margin-top: 0px;
+}
+
+.all-products{
+    margin-left: 20.5rem; 
+    position: relative;
+    top: -100px;
+}
+
+
+@media (max-width: 556px) {
+.our-products .product_card {
+    margin: auto !important;
+        min-width: 300px;
+}
+.product_card .carousel-dark .carousel-item img {
+    margin-top: 40px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.product_card_imgBox {
+    min-width: 275px !important;
+
+}
+.all-products {
+    margin-top: 16.75em;
+}
+
+.our-products article {
+    justify-content: center;
+    width: 100%;
+}
+
+.card{
+    width: 100% !important; 
+}
+}
+

@@ -1,4 +1,4 @@
-const isLoggedIn = false;
+const isLoggedIn = true;
 document.addEventListener('DOMContentLoaded', function () {
 
     const loginSignUpLarge = document.getElementById('loginSignUpDropdown');
@@ -35,8 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function orderNow() {
-
-
     if (!isLoggedIn) {
         $('#notLoggedIn').modal('show');
         setTimeout(function () {
@@ -104,6 +102,47 @@ product_infos.forEach(function (product_info) {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var veganElement = document.getElementById('vegan');
+    var nonVeganElement = document.getElementById('non-vegan');
+    var viewAll = document.getElementById('view-all');
+
+
+    veganElement.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        document.querySelectorAll('.product_card[id="vegan"]').forEach(function (element) {
+            element.style.display = 'block';
+        });
+
+        document.querySelectorAll('.product_card[id="non-vegan"]').forEach(function (element) {
+            element.style.display = 'none';
+        });
+    });
+
+    nonVeganElement.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        document.querySelectorAll('.product_card[id="vegan"]').forEach(function (element) {
+            element.style.display = 'none';
+        });
+
+        document.querySelectorAll('.product_card[id="non-vegan"]').forEach(function (element) {
+            element.style.display = 'block';
+        });
+    });
+    viewAll.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        document.querySelectorAll('.product_card[id="vegan"]').forEach(function (element) {
+            element.style.display = 'block';
+        });
+
+        document.querySelectorAll('.product_card[id="non-vegan"]').forEach(function (element) {
+            element.style.display = 'block';
+        });
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     const toggleBtn = document.getElementById('navbarToggleBtn');

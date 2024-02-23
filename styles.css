@@ -7,7 +7,7 @@
     font-size: 50px;
 }
 
-h1 {
+h1, h2, h3 {
     color: #174542;
     font-family: "League Spartan";
     font-size: 50px;
@@ -16,6 +16,96 @@ h1 {
     line-height: normal;
 }
 
+
+
+.BigText {
+    font-family: League Spartan;
+    color: #ACACAC;
+    opacity: 0.2;
+    font-size: 150px;
+    font-weight: 600;
+    line-height: 138px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.favorites {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DD7E1A;
+    height: 395px;
+    max-width: 285px;
+    border-radius: 19px;
+    filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
+}
+
+.favorites_imgBox {
+    margin-top: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1DDD2;
+    height: 198px;
+    min-width: 265px;
+    border-radius: 19px 19px 0 0
+}
+.favorites_img {
+    max-height: 190px;
+    width: 10 0%;
+    aspect-ratio: 4/4;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 19px 19px 0 0;
+
+}
+
+
+
+.favorites:hover .buttons {
+    background-color: #008F85;
+}
+
+
+
+.favorites .buttons {
+    position: relative;
+    top: 1em;
+}
+
+.favorites_text {
+    color: #FFF;
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 5px;
+
+}
+
+.favorites_desc {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+
+.favorites .line {
+    border: 1px solid #FFFFFF;
+    width: 53px;
+
+}
 
 .flax-input-group.flax-has-error .flax-input:not(:focus),
 .flax-input.flax-has-error:not(:focus) {
@@ -356,17 +446,7 @@ body {
 }
 
 
-.BigText {
-    font-family: League Spartan;
-    color: #ACACAC;
-    opacity: 0.2;
-    font-size: 150px;
-    font-weight: 600;
-    line-height: 138px;
-    letter-spacing: 0em;
-    text-align: left;
 
-}
 
 .customers_favorite {
     padding-top: 0;
@@ -381,10 +461,6 @@ body {
     padding-right: 2rem;
     z-index: -1;
 }
-
-/* section {
-    padding-top: 3vh;
-} */
 
 .buttons {
     color: #FFF;
@@ -518,17 +594,7 @@ body {
     max-height: 120px;
 }
 
-.favorites {
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #DD7E1A;
-    height: 395px;
-    max-width: 285px;
-    border-radius: 19px;
-    filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
-}
+
 
 .landingPage {
     height: 320px;
@@ -541,73 +607,18 @@ body {
 }
 
 
-.favorites_imgBox {
-    margin-top: 10px;
-    padding-top: 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: #E1DDD2;
-    height: 198px;
-    max-width: 263px;
-    border-radius: 19px 19px 0 0
-}
-
-
-.favorites:hover .arrow {
-    transition: transform 0.3s ease-in-out;
-    /* Add smooth transition */
-    transform: translate(-5px, 5px) scale(1.5);
-}
-
-.favorites:hover .buttons {
-    background-color: #008F85;
-}
-
-.favorites_img {
-    max-height: 190px;
-    width: 10 0%;
-    aspect-ratio: 4/4;
-    object-fit: contain;
-    background-color: transparent;
-    border-radius: 19px 19px 0 0;
-
-}
 
 
 
-.favorites .buttons {
-    margin-top: 21px;
-}
-
-.favorites_text {
-    color: #FFF;
-    text-align: center;
-    font-family: League Spartan;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 5px;
-
-}
-
-.favorites_desc {
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 18.75px;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 23px;
-}
 
 
-.favorites .line {
-    border: 1px solid #FFFFFF;
-    width: 53px;
 
-}
+
+
+
+
+
+
 
 .socials {
     margin-bottom: 30px;
@@ -906,7 +917,32 @@ body {
     color: #ffffff;
 }
 
+.mrp {
+    text-decoration: line-through;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
 
+}
+
+.selling-price {
+    color: #174542;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5px;
+    margin-right: 10px;
+}
 
 
 .whyus .carousel-inner .carousel-item {
@@ -1015,88 +1051,6 @@ body {
     line-height: 21px;
 }
 
-.formHeader {
-    font-family: League Spartan;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #174542;
-}
-
-.formInputs {
-    width: 405px;
-    height: 51px;
-    top: 420.2px;
-    left: 85px;
-    border-radius: 33.43px;
-    border: 2px;
-    background-color: transparent;
-    border: 2px solid #174542;
-    outline: 0;
-    margin: 20px;
-    margin-left: 0;
-
-
-}
-
-::placeholder {
-    color: #454442;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-
-input[type="checkbox"] {
-    display: none;
-}
-
-input[type="checkbox"]+label {
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-}
-
-input[type="checkbox"]+label::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333;
-}
-
-input[type="checkbox"]:checked+label::before {
-    content: "\2713";
-    font-size: 18px;
-    line-height: 16px;
-    text-align: center;
-    color: #4CAF50;
-    border-color: #4CAF50;
-}
-
-
-input[type="checkbox"]+label::after {
-    content: attr(data-text);
-    /* Use this to display text next to the checkbox */
-    margin-left: 10px;
-    /* Adjust as needed for your design */
-}
-
-.form-check {
-    margin-right: 50px;
-}
-
-.form-check label {
-    margin-left: 8px;
-}
-
 .product {
     margin: auto;
     text-align: center;
@@ -1125,6 +1079,19 @@ input[type="checkbox"]+label::after {
     transition: transform 0.3s ease-in-out;
     /* Add smooth transition */
     transform: translate(-5px, 5px) scale(1.5);
+}
+
+.favorites:hover .arrow {
+    transition: transform 0.3s ease-in-out;
+    /* Add smooth transition */
+    transform: translate(-5px, 5px) scale(1.5);
+}
+
+.favorites .arrow {
+    position: absolute;
+    z-index: 2;
+    right: 10%;
+    top: 7.5%;
 }
 
 .product:hover .buttons {
@@ -1175,64 +1142,13 @@ input[type="checkbox"]+label::after {
 
 }
 
-.card {
-    background-color: transparent;
-    border: 0;
-    width: 341px;
-    height: 64px;
-}
-
-.card .card-header {
-    background-color: #D2CEC2;
-
-    border-radius: 18px;
-    align-items: center;
-}
-
-.card input {
-    background-color: transparent;
-    border: transparent;
-}
 
 
 
-.card .search {
-    background-color: transparent;
-    border: 0;
-}
 
-.card-body {
-    background-color: #D2CEC2;
-    border-radius: 18px;
-    align-items: center;
-}
 
-.card-body li {
-    color: #D2CEC2;
-    margin-top: 1rem;
-    border-top: 1px solid rgba(52, 52, 52, 0.2);
-    ;
-    border-bottom: 1px solid rgba(52, 52, 52, 0.2);
-    ;
-    padding-top: 10px;
-    padding-bottom: 10px;
 
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0em;
-    text-align: left;
 
-}
-
-.card-body a {
-    color: #343434;
-    justify-content: center;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-}
 
 .products {
     margin: auto;
@@ -1244,19 +1160,6 @@ input[type="checkbox"]+label::after {
     max-width: 285px;
     border-radius: 19px;
     filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.40));
-}
-
-.product_description {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    max-width: 700px;
-    color: #454442;
 }
 
 .qty {
@@ -1278,6 +1181,45 @@ input[type="checkbox"]+label::after {
 
 
 
+.formHeader {
+    font-family: League Spartan;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #174542;
+}
+
+.formInputs {
+    width: 405px;
+    height: 51px;
+    top: 420.2px;
+    left: 85px;
+    border-radius: 33.43px;
+    border: 2px;
+    background-color: transparent;
+    border: 2px solid #174542;
+    outline: 0;
+    margin: 20px;
+    margin-left: 0;
+
+
+}
+
+::placeholder {
+    color: #454442;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+
 .form-check-input {
     width: 20px;
     height: 20px;
@@ -1295,11 +1237,6 @@ input[type="checkbox"]+label::after {
 
 
 
-#carouselExampleDark {
-    position: relative;
-    height: 250px;
-    width: 550px;
-}
 
 
 .qty .plus,
@@ -1313,9 +1250,7 @@ input[type="checkbox"]+label::after {
     text-align: center;
 }
 
-.quantity div {
-    text-align: center;
-}
+
 
 .minus:hover {
     transform: translateX(+5px);
@@ -1336,80 +1271,6 @@ input {
     width: 50px;
 }
 
-.product_info button {
-    text-align: left;
-    width: 100%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    color: #174542;
-    font-size: 1.15rem;
-    font-weight: 400;
-    border: 1px solid #174542;
-    border-radius: 11px;
-    background: transparent;
-    margin-bottom: 13px;
-}
-
-.product_info button.active {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-
-
-.product_info button.active+.product_info-collapse .divider {
-    margin-top: 10px;
-}
-
-.product_info button.active+.product_info-collapse .product_info-body p {
-    margin-top: 10px;
-    /* Adjust margin to overlap with the divider */
-}
-
-.product_info-button {
-    position: relative;
-}
-
-.product_info-button .icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-
-}
-
-
-
-.product_info button:hover,
-.product_info button:focus {
-    cursor: pointer;
-    color: #174542;
-}
-
-.product_info .product_info-title {
-    padding: 1em 1.5em 1em 0;
-}
-
-
-.product_info .product_info-content {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
-}
-
-.product_info .divider {
-    margin: 10px 0;
-    border-color: #174542;
-}
-
-.product_info .product_info-body p {
-    font-size: 1rem;
-    font-weight: 300;
-    margin-right: 2em;
-}
 
 
 .summary {
@@ -1429,74 +1290,6 @@ input {
 
 .trash {
     padding-right: 20px;
-}
-
-#carouselExampleDark .carousel-inner {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-#carouselExampleDark .carousel-item {
-    display: none;
-    transition: 500ms ease-in-out;
-}
-
-#carouselExampleDark .carousel-item.active {
-    aspect-ratio: 4/4;
-    text-align: center;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.carousel-dark .carousel-item img {
-
-    width: auto;
-    height: auto;
-    object-position: center;
-}
-
-.carousel-dark .carousel-item.active img {
-    width: 300px;
-    height: 300px;
-    background: clip;
-    aspect-ratio: 4/4;
-    object-fit: cover;
-    object-position: center;
-}
-
-.carousel-dark .carousel-indicators button {
-    background-color: #174542;
-    height: 14px;
-    width: 14px;
-    border-radius: 100%;
-    opacity: 0.2;
-}
-
-#carouselExampleDark .carousel-indicators .active {
-    opacity: 1;
-    height: 16px;
-    background-color: #174542;
-    width: 16px;
-}
-
-#carouselExampleDark {
-    margin-left: 60px;
-}
-
-#carouselExampleDark .carousel-control-prev,
-#carouselExampleDark .carousel-control-next {
-    z-index: 5;
-    height: 48px;
-    width: 48px;
-    border-radius: 50%;
-}
-
-#carouselExampleDark .carousel-indicators {
-    top: 120px;
 }
 
 
@@ -1560,20 +1353,9 @@ input {
     float: left;
 }
 
-.singleProduct .singlePagePrices span.mrp {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
 
-}
 
-.singlePagePrices {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 60px;
-}
+
 
 .singleProduct .selling-price {
     font-family: Poppins;
@@ -1601,78 +1383,8 @@ input {
 
 }
 
-.Recipe_img img {
-    min-width: 404px;
-    min-height: 388px;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.Recipe_Main {
-    padding-left: 90px;
-}
 
 
-
-.Recipe_Main h1 {
-    font-family: Poppins;
-    font-size: 50px;
-    font-weight: 700;
-    text-align: start;
-
-
-}
-
-.Recipe_Main p {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 90%;
-}
-
-
-
-
-.Recipe_Page {
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.Recipe_Desc {
-    margin-top: 60px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-right: 100px;
-}
-
-
-.checkout {
-    margin-top: 30px;
-}
-
-.checkout button {
-    color: #FFFFFF;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 23px;
-    letter-spacing: 0em;
-
-    background-color: #DD7E1A;
-    width: 396px;
-    height: 76px;
-    border: none;
-}
 
 .health-benefit-card {
     position: relative;
@@ -1684,15 +1396,17 @@ input {
     left: 75%;
     border-radius: 13px;
 }
-.search-bar input::placeholder{
+
+.search-bar input::placeholder {
     font-family: League Spartan;
-font-size: 16px;
-font-weight: 500;
-line-height: 15px;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
+
 .address-form-row2 {
     padding-left: 40px;
 }
@@ -1745,30 +1459,3 @@ text-align: left;
 
 
 
-.benefits-card {
-    width: 380px;
-    height: 165px;
-    background-color: #DD7E1A;
-    box-shadow: 1px 2px 10px 0px #00000066;
-    color: #FFFFFF;
-    margin-bottom: 40px;
-    border-radius: 18px;
-    padding: 1em;
-}
-
-.benefits-col-2 {
-    padding-left: 200px;
-}
-
-.benefits-card .line {
-    width: 92%;
-    margin-left: 10px;
-    height: 1px;
-    border-width: 1px;
-    border-color: #FFF;
-    background-color: #FFF;
-}
-
-.benefits {
-    margin-left: 100px;
-}

@@ -14,8 +14,8 @@
         <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <link rel="stylesheet" href="smallerscreens.css">
         <script src="script.js"></script>
+        <link rel="stylesheet" href="ourproducts.css">
     </head>
 
 
@@ -24,7 +24,7 @@
 
         <header>
 
-            <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100">
+            <nav class="navbar navbar-expand-lg position-fixed fixed-top w-100" id="navbar">
 
                 <div class="container"> <!-- Add a container for max-width -->
                     <a class="navbar-brand" href="#">
@@ -216,33 +216,31 @@
             </div>
         </div>
 
-        <section style="margin-top: 140px; margin-bottom: 220px;">
-            <div class="container">
-                <div class="row">
+        <section style="margin-top: 9em; margin-bottom: 10em; width: 100%;" class="allproducts">
+            <div class="container ">
+                <div class="row m-auto" >
                     <div class="col-md-3 col-12 p-0">
 
-                        <div class="card" style="margin-top: 50px;">
-                            
-                                <div class="filter-content collapse show mt-2" id="collapse_1">
-                                    <div class="card-body ">
-                                        <h1
-                                            style="font-size: 30px; font-weight: 600; color: #343434; margin-top: 20px; margin-bottom: 10px;">
-                                            Product Categories</h1>
+                        <div class="card" >
 
-                                        <ul class="list-menu list-unstyled" style="color: #1E1E1E;">
-                                            <li><a href="#" class="text-decoration-none">Vegan Sourdough Bread
-                                                    <span style="padding-left: 20px;"><img
-                                                            src="./assets/Sign_in_circle_duotone.png" </span></a>
-                                            </li>
-                                            <li style="margin-top: 0;"><a href="#" class="text-decoration-none">Vegan
-                                                    Sourdough Bread
-                                                    <span style="padding-left: 20px;"><img
-                                                            src="./assets/Sign_in_circle_duotone.png" </span></a>
-                                            </li>
-                                        </ul>
+                            <div class="filter-content collapse show mt-2" id="collapse_1">
+                                <div class="card-body ">
+                                    <h1
+                                        style="font-size: 30px; font-weight: 600; color: #343434; margin-top: 20px; margin-bottom: 10px;">
+                                        Product Categories</h1>
 
-                                    </div>
+                                    <ul class="list-menu list-unstyled" style="color: #1E1E1E;">
+                                        <li>
+                                            <a href="#" class="t    ext-decoration-none " id="vegan">Vegan Sourdough Bread<span><img src="./assets/Sign_in_circle_duotone.png" </span></a>
+                                        </li>
+                                        <li ><a href="#" class="text-decoration-none" id="non-vegan">Non-Vegan Sourdough Bread<span><img src="./assets/Sign_in_circle_duotone.png" </span></a>
+                                        </li>
+                                        <li ><a href="#" class="text-decoration-none" id="view-all">View all items<span><img src="./assets/Sign_in_circle_duotone.png" </span></a>
+                                        </li>
+                                    </ul>
+
                                 </div>
+                            </div>
                             </article>
 
                         </div>
@@ -250,18 +248,15 @@
                     </div>
                     <main class="col-md-9 col-12 all-products">
 
-                        <div class="row mt-5 mx-md-3 mx-auto gap-5 gap-md-0">
-                            <div class="favorites col-mad-7 col-12 " style="margin-left: 30px;">
-                                <div>
-                                    <img class="arrow" style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
-                                        src="./assets/Vector 9.svg">
+                        <div class="row mt-5 mx-md-3 mx-auto gap-5 gap-md-0 products-section">
+                            <div class="product_card col-mad-7 col-12 " id="vegan">
+                                <img class="arrow" src="./assets/Vector 9.svg">
 
-                                    <div class="favorites_imgBox position-relative "><img class="favorites_img"
-                                            src="./assets/cranberryWalnut.png"></div>
-                                    <div class="pt-4 favorites_text">Cranberry Wallnut</div>
-                                    <p class="favorites_desc">Delight in Cranberry Harmony</p>
+                                <div class="product_card_imgBox position-relative "><img class="product_card_img"
+                                        src="./assets/cranberryWalnut.png"></div>
+                                <div class="pt-4 product_card_text">Cranberry Wallnut</div>
+                                <p class="product_card_desc">Delight in Cranberry Harmony</p>
 
-                                </div>
                                 <div class="d-flex justify-content-center">
                                     <hr class="line ">
                                 </div>
@@ -275,16 +270,13 @@
 
                                 </div>
                             </div>
-                            <div class="favorites col-lg-7 row-cols-sm-12">
-                                <div>
-                                    <img class="arrow" style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
-                                        src="./assets/Vector 9.svg">
+                            <div class="product_card col-lg-7 row-cols-sm-12" id="non-vegan">
+                                <img class="arrow" src="./assets/Vector 9.svg">
 
-                                    <div class="favorites_imgBox position-relative "><img class="favorites_img"
-                                            src="./assets/multiSeeded.png"></div>
-                                    <div class="pt-4 favorites_text">Multi-seeded</div>
-                                    <p class="favorites_desc">Flaxseed Infusion Nutty richness</p>
-                                </div>
+                                <div class="product_card_imgBox position-relative" id="vegan"><img
+                                        class="product_card_img" src="./assets/multiSeeded.png"></div>
+                                <div class="pt-4 product_card_text">Multi-seeded</div>
+                                <p class="product_card_desc">Flaxseed Infusion Nutty richness</p>
                                 <div class="d-flex justify-content-center">
                                     <hr class="line ">
                                 </div>
@@ -296,17 +288,16 @@
                                     <button class="buttons" onclick="orderNow()">Order Now</button>
                                 </div>
                             </div>
-                            <div class="favorites col-lg-7 row-cols-sm-12">
+                            <div class="product_card col-lg-7 row-cols-sm-12" id="vegan">
                                 <div>
-                                    <img class="arrow" style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
-                                        src="./assets/Vector 9.svg">
+                                    <img class="arrow" src="./assets/Vector 9.svg">
 
-                                    <div class="favorites_imgBox position-relative ">
-                                        <img class="favorites_img"
+                                    <div class="product_card_imgBox position-relative ">
+                                        <img class="product_card_img"
                                             src="./assets/fresh-whole-grain-sourdough-bread-with-flax-seeds-oatmeal-sesame-seeds-colored-background_141549-1523-removebg-preview 2.png">
                                     </div>
-                                    <div class="pt-4 favorites_text">Flaxseed</div>
-                                    <p class="favorites_desc">Flaxseed Infusion Nutty richness</p>
+                                    <div class="pt-4 product_card_text">Flaxseed</div>
+                                    <p class="product_card_desc">Flaxseed Infusion Nutty richness</p>
                                 </div>
                                 <div class="d-flex justify-content-center">
                                     <hr class="line ">
@@ -320,16 +311,13 @@
 
                                 </div>
                             </div>
-                            <div class="row mt-5 mx-md-3 mx-auto gap-md-0 gap-5">
-                                <div class="favorites col-lg-6 mt-5" style="margin-left: 0; margin-right: 0;">
+                                <div class="product_card col-lg-6" id="non-vegan">
                                     <div>
-                                        <img class="arrow"
-                                            style="position: absolute; z-index: 2; right: 10%; top: 7.5%;"
-                                            src="./assets/Vector 9.svg">
-                                        <div class="favorites_imgBox position-relative "><img class="favorites_img"
-                                                src="./assets/classicCountry.png"></div>
-                                        <div class="pt-4 favorites_text">Classic Country</div>
-                                        <p class="favorites_desc">Delight in soft-crusted sourdough</p>
+                                        <img class="arrow" src="./assets/Vector 9.svg">
+                                        <div class="product_card_imgBox position-relative "><img
+                                                class="product_card_img" src="./assets/classicCountry.png"></div>
+                                        <div class="pt-4 product_card_text">Classic Country</div>
+                                        <p class="product_card_desc">Delight in soft-crusted sourdough</p>
                                     </div>
                                     <div class="d-flex justify-content-center">
                                         <hr class="line ">
@@ -341,10 +329,8 @@
 
                                     <div class="position-relative">
                                         <button class="buttons" onclick="orderNow()">Order Now</button>
-
                                     </div>
                                 </div>
-                            </div>
                     </main>
                 </div>
             </div>
@@ -370,11 +356,12 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="notLoggedInLabel"><span><img src="./assets/Cancel.png" height="49" width="49"></span> Please Login to add product to cart</h5>
+                        <h5 class="modal-title" id="notLoggedInLabel"><span><img src="./assets/Cancel.png" height="49"
+                                    width="49"></span> Please Login to add product to cart</h5>
                         <div class="green-line"></div>
 
                     </div>
-                    
+
                 </div>
             </div>
         </div>
